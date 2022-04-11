@@ -1048,6 +1048,16 @@ a {
   font-size: 1.2rem;
 }
 
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .siteProtection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .siteProtection img {
   margin-bottom: 10px;
 }

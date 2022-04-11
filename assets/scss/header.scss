@@ -798,6 +798,8 @@ a{
                             }
                         }
                         .siteProtection{
+                            display: flex;
+                            flex-direction: column;
                             img{
                                 margin-bottom: 10px;
                                 &:nth-child(1){
