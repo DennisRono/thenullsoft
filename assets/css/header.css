@@ -1008,6 +1008,10 @@ a {
   margin-bottom: 10px;
 }
 
+.footer .fcontainer .fdet .fdetflex .fflexsecs h2 {
+  margin-bottom: 20px;
+}
+
 .footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .flogo {
   display: -webkit-box;
   display: -ms-flexbox;

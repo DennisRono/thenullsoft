@@ -771,6 +771,9 @@ a{
                     width: 22%;
                     height: 300px;
                     margin-bottom: 10px;
+                    h2{
+                        margin-bottom: 20px;
+                    }
                     &:nth-child(1){
                         .flogo{
                             display: flex;
