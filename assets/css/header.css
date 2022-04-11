@@ -1050,6 +1050,7 @@ a {
 
 .footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .siteProtection img:nth-child(1) {
   width: 50%;
+  margin-bottom: 10px;
 }
 
 .footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .siteProtection img:nth-child(2) {
