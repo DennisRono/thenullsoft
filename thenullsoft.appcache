@@ -4,8 +4,9 @@ CACHE MANIFEST
 /logo.gif
 /main.js
 
+# Resources that require the user to be online.
 NETWORK:
 login.asp
 
 FALLBACK:
-/offline/offline.html
+/ /offline/offline.html
