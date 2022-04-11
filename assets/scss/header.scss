@@ -756,29 +756,47 @@ a{
 
 /* ======Footer stylings====== */
 .footer{
-    height: 50vh;
+    height: min-content;
     .fcontainer{
         margin: 0 5%;
         position: relative;
         height: 100%;
         .fdet{
-
-        }
-        .fcopyright{
-            position: absolute;
-            bottom: 0%;
-            left: 50%;
-            transform: translate(-50%, 0);
-            margin-bottom: 20px;
-            p{
-                cursor: pointer;
-                font-size: 0.9rem;
-                font-weight: 400;
-                color: rgb(78, 78, 78) !important;
-                font-family: 'Roboto', sans-serif;
-                a{
-                    cursor: pointer;
+            .fdetflex{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                .fflexsecs{
+                    width: 22%;
+                    height: 300px;
+                    margin-bottom: 10px;
+                    &:nth-child(1){
+                        .flogo{
+                            display: flex;
+                            align-items: baseline;
+                            margin-bottom: 20px;
+                        }
+                    }
                 }
+            }
+        }
+    }
+    .fcopyright{
+        height: min-content;
+        display: block;
+        padding: 10px 0px;
+        width: 100%;
+        background-color: #fff;
+        p{
+            text-align: center;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: rgb(78, 78, 78) !important;
+            font-family: 'Roboto', sans-serif;
+            a{
+                cursor: pointer;
             }
         }
     }

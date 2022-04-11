@@ -976,7 +976,9 @@ a {
 
 /* ======Footer stylings====== */
 .footer {
-  height: 50vh;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .footer .fcontainer {
@@ -985,16 +987,49 @@ a {
   height: 100%;
 }
 
-.footer .fcontainer .fcopyright {
-  position: absolute;
-  bottom: 0%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+.footer .fcontainer .fdet .fdetflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .fcontainer .fdet .fdetflex .fflexsecs {
+  width: 22%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .flogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin-bottom: 20px;
 }
 
-.footer .fcontainer .fcopyright p {
+.footer .fcopyright {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  display: block;
+  padding: 10px 0px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.footer .fcopyright p {
+  text-align: center;
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: 400;
@@ -1002,7 +1037,7 @@ a {
   font-family: 'Roboto', sans-serif;
 }
 
-.footer .fcontainer .fcopyright p a {
+.footer .fcopyright p a {
   cursor: pointer;
 }
 
