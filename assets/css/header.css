@@ -1026,6 +1026,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .fsocials i {
