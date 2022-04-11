@@ -1048,13 +1048,13 @@ a {
   font-size: 1.2rem;
 }
 
-.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .siteProtection img:nth-child(1) {
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .siteProtection img {
   width: 50%;
   margin-bottom: 10px;
 }
 
 .footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .siteProtection img:nth-child(2) {
-  width: 50%;
+  width: 25%;
 }
 
 .footer .fcopyright {

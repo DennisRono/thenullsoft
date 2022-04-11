@@ -798,12 +798,12 @@ a{
                             }
                         }
                         .siteProtection{
-                            img:nth-child(1){
+                            img{
                                 width: 50%;
                                 margin-bottom: 10px;
-                            }
-                            img:nth-child(2){
-                                width: 50%;
+                                &:nth-child(2){
+                                    width: 25%;
+                                }
                             }
                         }
                     }
