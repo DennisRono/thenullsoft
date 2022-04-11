@@ -1032,6 +1032,10 @@ a {
   margin-bottom: 20px;
 }
 
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .flogo h3 {
+  font-size: 2rem;
+}
+
 .footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .fsocials {
   display: -webkit-box;
   display: -ms-flexbox;
