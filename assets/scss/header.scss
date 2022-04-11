@@ -769,8 +769,8 @@ a{
                 flex-wrap: wrap;
                 .fflexsecs{
                     width: 22%;
-                    height: 300px;
-                    margin-bottom: 10px;
+                    height: min-content;
+                    margin-bottom: 40px;
                     h2{
                         margin-bottom: 20px;
                     }
@@ -815,7 +815,6 @@ a{
         display: block;
         padding: 10px 0px;
         width: 100%;
-        background-color: #fff;
         p{
             text-align: center;
             cursor: pointer;

@@ -1004,8 +1004,10 @@ a {
 
 .footer .fcontainer .fdet .fdetflex .fflexsecs {
   width: 22%;
-  height: 300px;
-  margin-bottom: 10px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin-bottom: 40px;
 }
 
 .footer .fcontainer .fdet .fdetflex .fflexsecs h2 {
@@ -1061,7 +1063,6 @@ a {
   display: block;
   padding: 10px 0px;
   width: 100%;
-  background-color: #fff;
 }
 
 .footer .fcopyright p {
