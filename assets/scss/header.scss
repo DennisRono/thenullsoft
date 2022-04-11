@@ -774,6 +774,14 @@ a{
                     h2{
                         margin-bottom: 20px;
                     }
+                    ul{
+                        li{
+                            margin-bottom: 10px;
+                            a:hover{
+                                color: #0088f0;
+                            }
+                        }
+                    }
                     &:nth-child(1){
                         .flogo{
                             display: flex;

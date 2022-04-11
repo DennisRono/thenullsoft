@@ -1012,6 +1012,14 @@ a {
   margin-bottom: 20px;
 }
 
+.footer .fcontainer .fdet .fdetflex .fflexsecs ul li {
+  margin-bottom: 10px;
+}
+
+.footer .fcontainer .fdet .fdetflex .fflexsecs ul li a:hover {
+  color: #0088f0;
+}
+
 .footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .flogo {
   display: -webkit-box;
   display: -ms-flexbox;
