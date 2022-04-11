@@ -8,4 +8,4 @@ NETWORK:
 login.asp
 
 FALLBACK:
-/html/offline.html
+/offline/offline.html
