@@ -776,6 +776,11 @@ a{
                             display: flex;
                             align-items: baseline;
                             margin-bottom: 20px;
+                            .fsocials{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-evenly;
+                            }
                         }
                     }
                 }
