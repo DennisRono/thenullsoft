@@ -785,6 +785,14 @@ a{
                                 font-size: 1.2rem;
                             }
                         }
+                        .siteProtection{
+                            img:nth-child(1){
+                                width: 50%;
+                            }
+                            img:nth-child(2){
+                                width: 50%;
+                            }
+                        }
                     }
                 }
             }

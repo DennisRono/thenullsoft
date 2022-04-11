@@ -1033,6 +1033,14 @@ a {
   font-size: 1.2rem;
 }
 
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .siteProtection img:nth-child(1) {
+  width: 50%;
+}
+
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .siteProtection img:nth-child(2) {
+  width: 50%;
+}
+
 .footer .fcopyright {
   height: -webkit-min-content;
   height: -moz-min-content;
