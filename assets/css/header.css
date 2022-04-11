@@ -1018,7 +1018,7 @@ a {
   margin-bottom: 20px;
 }
 
-.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .flogo .fsocials {
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .fsocials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1026,9 +1026,10 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+}
+
+.footer .fcontainer .fdet .fdetflex .fflexsecs:nth-child(1) .fsocials i {
+  margin-right: 20px;
 }
 
 .footer .fcopyright {

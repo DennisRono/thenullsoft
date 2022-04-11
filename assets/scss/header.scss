@@ -776,10 +776,12 @@ a{
                             display: flex;
                             align-items: baseline;
                             margin-bottom: 20px;
-                            .fsocials{
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-evenly;
+                        }
+                        .fsocials{
+                            display: flex;
+                            flex-direction: row;
+                            i{
+                                margin-right: 20px;
                             }
                         }
                     }
