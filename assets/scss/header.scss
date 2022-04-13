@@ -1,9 +1,10 @@
 /* ======Header stylings====== */
 
 .header{
-    height: 54px;
+    height: min-content;
     .hcontainer{
         margin: 0 5%;
+        padding-top: 10px;
         .hflex{
             display: flex;
             flex-direction: row;

@@ -1,11 +1,14 @@
 @charset "UTF-8";
 /* ======Header stylings====== */
 .header {
-  height: 54px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .header .hcontainer {
   margin: 0 5%;
+  padding-top: 10px;
 }
 
 .header .hcontainer .hflex {
