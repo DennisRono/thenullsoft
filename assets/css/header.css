@@ -765,6 +765,10 @@
   margin-top: 2rem;
 }
 
+.forthedevs .devswrapper .devcontainer .devflex .devstext .devbtns .devlearn {
+  padding: 1.5rem 2rem;
+}
+
 .forthedevs .devswrapper .devcontainer .devflex .devstech {
   width: 50%;
 }
