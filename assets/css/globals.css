@@ -40,7 +40,7 @@ a {
 
 body::-webkit-scrollbar {
   width: 5px;
-  background-color: #dee0ff;
+  background-color: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
