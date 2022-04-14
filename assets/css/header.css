@@ -745,6 +745,10 @@
   margin-bottom: 1.5rem;
 }
 
+.forthedevs .devswrapper .devcontainer .devflex .devstext .devtext {
+  margin-bottom: 20px;
+}
+
 .forthedevs .devswrapper .devcontainer .devflex .devstext .devtext a {
   color: #00ffff;
 }
