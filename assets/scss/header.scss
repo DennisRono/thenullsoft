@@ -592,8 +592,12 @@
                         }
                         .devdocs{
                             .devtechcard{
+                                height: 50px;
+                                width: 50px;
                                 .devIcon{
                                     font-size: 3rem !important;
+                                    width: 100%;
+                                    height: 100%;
                                 }
                             }
                         }
