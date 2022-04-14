@@ -722,6 +722,17 @@
   display: flex;
 }
 
+.forthedevs .devswrapper .devcontainer .devflex .devstext .fordestxt {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.forthedevs .devswrapper .devcontainer .devflex .devstext .devbtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* ======social proof stylings====== */
 .secsocproof {
   margin-top: 150px;
