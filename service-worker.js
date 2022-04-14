@@ -1,27 +1,81 @@
-// Choose a cache name
-const cacheName = 'cache-v1';
-// List the files to precache
-const precacheResources = ['/', '/index.html', '/css/style.css', '/js/main.js', '/js/app/editor.js', '/js/lib/actions.js'];
+const CACHE_NAME = "thenullsoft-offline";
+const OFFLINE_VERSION = 1;
+const OFFLINE_URL = "/offline/offline.html";
 
-// When the service worker is installing, open the cache and add the precache resources to it
-self.addEventListener('install', (event) => {
-  console.log('Service worker install event!');
-  event.waitUntil(caches.open(cacheName).then((cache) => cache.addAll(precacheResources)));
-});
+const filesToCache = 
+  [
+    "/offline/offline.html"
+  ];
 
-self.addEventListener('activate', (event) => {
-  console.log('Service worker activate event!');
-});
-
-// When there's an incoming fetch request, try and respond with a precached resource, otherwise fall back to the network
-self.addEventListener('fetch', (event) => {
-  console.log('Fetch intercepted for:', event.request.url);
-  event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-      return fetch(event.request);
-    }),
+self.addEventListener("install", event => {
+  console.log(`${CACHE_NAME} installing…`);
+  console.log("Caching:", filesToCache);
+  event.waitUntil(
+    caches.open(CACHE_NAME).then(cache => cache.addAll(filesToCache))
   );
 });
+
+self.addEventListener("activate", event => {
+  console.log(`${CACHE_NAME} now ready to handle fetches!`);
+
+  // Remove old caches
+  event.waitUntil(
+    caches.keys().then(function(cacheNames) {
+      return Promise.all(
+        cacheNames
+          .filter(function(cacheName) {
+            // Return true if you want to remove this cache,
+            // but remember that caches are shared across
+            // the whole origin
+            return cacheName !== CACHE_NAME;
+          })
+          .map(function(cacheName) {
+            console.log(`deleting ${cacheName}`);
+            return caches.delete(cacheName);
+          })
+      );
+    })
+  );
+});
+
+// state-while-revalidate strategy
+// self.addEventListener("fetch", event => {
+//   event.respondWith(
+//     caches.open(CACHE_NAME).then(function(cache) {
+//       return cache.match(event.request).then(function(response) {
+//         // fetch latest resources and update cache in the background
+//         var fetchPromise = fetch(event.request).then(function(networkResponse) {
+//           cache.put(event.request, networkResponse.clone());
+//           return networkResponse;
+//         });
+
+//         // respond with cache first if available
+//         return response || fetchPromise;
+//       });
+//     })
+//   );
+// });
+
+//offline page
+self.addEventListener('fetch', (event) => {
+  if (event.request.mode === 'navigate') {
+    event.respondWith((async () => {
+      try {
+        const preloadResponse = await event.preloadResponse;
+        if (preloadResponse) {
+          return preloadResponse;
+        }
+        const networkResponse = await fetch(event.request);
+        return networkResponse;
+      } catch (error) {
+        console.log('Fetch failed; returning offline page instead.', error);
+        const cache = await caches.open(CACHE_NAME);
+        const cachedResponse = await cache.match(OFFLINE_URL);
+        return cachedResponse;
+      }
+    })());
+  }
+});
+
+// handle push notifications
+// self.addEventListener('push', ...... );

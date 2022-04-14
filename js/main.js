@@ -18,22 +18,3 @@ function showSlides() {
   setTimeout(showSlides, 7000);
 }
 
-faq()
-function faq() {
-  let faqquestion = document.querySelectorAll('.faqdroptitle')
-  Array.from(faqquestion).forEach(header => {
-      header.addEventListener('click', () => {
-        if(!header.nextElementSibling.classList.contains('faqShow')){
-          for (let i = 0; i < Array.from(faqquestion).length; i++) {
-              Array.from(faqquestion)[i].nextElementSibling.classList.remove('faqShow')
-              Array.from(faqquestion)[i].firstElementChild.nextElementSibling.classList.remove('angleDown')  
-          }
-            header.nextElementSibling.classList.toggle('faqShow')
-            header.firstElementChild.nextElementSibling.classList.toggle('angleDown')
-        } else {
-            header.nextElementSibling.classList.remove('faqShow')
-            header.firstElementChild.nextElementSibling.classList.remove('angleDown')
-        }
-      });
-  });
-}

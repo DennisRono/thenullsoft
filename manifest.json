@@ -1,6 +1,6 @@
 {
-    "short_name": "Dennis Kibet",
-    "name": "Dennis Kibet",
+    "short_name": "thenullsoft",
+    "name": "thenullsoft",
     "icons": [
       {
           "src":"assets/images/icons/android-chrome-192x192.png",
@@ -461,6 +461,7 @@
     ],
     "start_url": ".",
     "display": "standalone",
+    "author": "Dennis Kibet",
     "theme_color": "#000000",
     "background_color": "#ffffff"
 }
