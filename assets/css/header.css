@@ -715,6 +715,13 @@
   color: #17b978;
 }
 
+/* ======for the developers stylings====== */
+.forthedevs .devswrapper .devcontainer .devflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* ======social proof stylings====== */
 .secsocproof {
   margin-top: 150px;
