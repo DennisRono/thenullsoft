@@ -761,6 +761,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -771,6 +774,10 @@
   font-weight: 600;
   font-size: .875rem;
   background-color: #00ffff;
+  border-radius: 0.75rem;
+  border-style: none;
+  border: none;
+  outline: none;
 }
 
 .forthedevs .devswrapper .devcontainer .devflex .devstech {
