@@ -553,6 +553,7 @@
             .devflex{
                 display: flex;
                 .devstext{
+                    width: 50%;
                     .fordestxt{
                         text-transform: uppercase;
                         font-size: .875rem;
@@ -560,11 +561,15 @@
                         font-weight: 700;
                     }
                     .devstitle{
-
+                        font-size: 2rem;
+                        line-height: 2.25rem;
+                        font-weight: 700;
+                        margin-top: 1rem;
+                        margin-bottom: 1.5rem;
                     }
                     .devtext{
                         a{
-
+                            color: #00ffff;
                         }
                     }
                     .devbtns{
@@ -581,7 +586,7 @@
                     }
                 }
                 .devstech{
-
+                    width: 50%;
                 }
             }
         }
