@@ -767,6 +767,10 @@
 
 .forthedevs .devswrapper .devcontainer .devflex .devstext .devbtns .devlearn {
   padding: 1.5rem 2rem;
+  line-height: 1.25;
+  font-weight: 600;
+  font-size: .875rem;
+  background-color: #00ffff;
 }
 
 .forthedevs .devswrapper .devcontainer .devflex .devstech {
