@@ -781,6 +781,10 @@
   outline: none;
 }
 
+.forthedevs .devswrapper .devcontainer .devflex .devstext .devbtns .devdocs .devtechcard .devIcon {
+  font-size: 3rem !important;
+}
+
 .forthedevs .devswrapper .devcontainer .devflex .devstech {
   width: 50%;
 }
