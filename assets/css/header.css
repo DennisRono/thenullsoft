@@ -716,6 +716,10 @@
 }
 
 /* ======for the developers stylings====== */
+.forthedevs .devswrapper .devcontainer {
+  margin: 0 10%;
+}
+
 .forthedevs .devswrapper .devcontainer .devflex {
   display: -webkit-box;
   display: -ms-flexbox;
