@@ -571,7 +571,7 @@
                     .devtext{
                         margin-bottom: 20px;
                         a{
-                            color: #00ffff;
+                            color: #0088f0;
                         }
                     }
                     .devbtns{
@@ -584,14 +584,11 @@
                             line-height: 1.25;
                             font-weight: 600;
                             font-size: .875rem;
-                            background-color: #00ffff;
+                            background: linear-gradient(to bottom right,#14a9ff,#0088f0)!important;
                             border-radius: 0.75rem;
                             border-style: none;
                             border: none;
                             outline: none;
-                        }
-                        p{
-
                         }
                         .devdocs{
 
