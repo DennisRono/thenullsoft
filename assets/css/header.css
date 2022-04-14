@@ -784,6 +784,7 @@
 .forthedevs .devswrapper .devcontainer .devflex .devstext .devbtns .devdocs .devtechcard {
   height: 50px;
   width: 50px;
+  overflow: hidden;
 }
 
 .forthedevs .devswrapper .devcontainer .devflex .devstext .devbtns .devdocs .devtechcard .devIcon {
