@@ -46,6 +46,7 @@ self.addEventListener("install", event => {
 
 self.addEventListener("fetch", function(event) {
   console.log('WORKER: fetch event in progress.');
+  event.respondWith((async () => {
   if (event.request.method !== 'GET') {
     console.log('WORKER: fetch event ignored.', event.request.method, event.request.url);
     return;
@@ -73,4 +74,5 @@ self.addEventListener("fetch", function(event) {
         })
     }
   }
+})
 })
