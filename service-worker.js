@@ -11,6 +11,8 @@ const filesToCache =
     "tos.html",
     "/offline/offpages.html",
     "/js/main.js",
+    "/js/fuse-search.js",
+    "/js/libs/fuse.js",
     "/offline/offline.html",
     "/offline/offline.css"
   ];
