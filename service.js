@@ -47,32 +47,30 @@ self.addEventListener("install", event => {
 self.addEventListener("fetch", function(event) {
   console.log('WORKER: fetch event in progress.');
   event.respondWith((async () => {
-  if (event.request.method !== 'GET') {
-    console.log('WORKER: fetch event ignored.', event.request.method, event.request.url);
-    return;
-  }
-  for (let i = 0; i < offlineExclude.length; i++)
-  {
-    if (event.request.url.indexOf(offlineExclude[i]) !== -1)
-    {
-        const cache = await caches.open(CACHE_NAME);
-        console.log('WORKER: fetch event ignored. URL in exclude list.', event.request.url);
-        const cachedResponse = await cache.match(OFFLINE_URL);
-        return cachedResponse;
-    } else {
-        caches.open(CACHE_NAME).then(function(cache) {
-            return cache.match(event.request).then(function(response) {
-              // fetch latest resources and update cache in the background
-              var fetchPromise = fetch(event.request).then(function(networkResponse) {
-                cache.put(event.request, networkResponse.clone());
-                return networkResponse;
-              });
-      
-              // respond with cache first if available
-              return response || fetchPromise;
-            });
-        })
+    if (event.request.method !== 'GET') {
+        console.log('WORKER: fetch event ignored.', event.request.method, event.request.url);
+        return;
     }
-  }
-})
+    for (let i = 0; i < offlineExclude.length; i++){
+        if (event.request.url.indexOf(offlineExclude[i]) !== -1){
+            const cache = await caches.open(CACHE_NAME);
+            console.log('WORKER: fetch event ignored. URL in exclude list.', event.request.url);
+            const cachedResponse = await cache.match(OFFLINE_URL);
+            return cachedResponse;
+        } else {
+            caches.open(CACHE_NAME).then(function(cache) {
+                return cache.match(event.request).then(function(response) {
+                // fetch latest resources and update cache in the background
+                var fetchPromise = fetch(event.request).then(function(networkResponse) {
+                    cache.put(event.request, networkResponse.clone());
+                    return networkResponse;
+                });
+        
+                // respond with cache first if available
+                return response || fetchPromise;
+                });
+            })
+        }
+    }
+    }))
 })
