@@ -57,8 +57,6 @@ self.addEventListener('fetch', event => {
   );
 });
 
-console.log(window.location.href);
-
 //offline page
 self.addEventListener('fetch', (event) => {
   console.log(event.request.mode);
