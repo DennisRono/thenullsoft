@@ -4,11 +4,11 @@ const OFFLINE_URL = "/offline/offline.html";
 
 const filesToCache = 
   [
-    "index.html",
-    "about.html",
-    "features.html",
-    "privacy.html",
-    "tos.html",
+    "/index.html",
+    "/about.html",
+    "/features.html",
+    "/privacy.html",
+    "/tos.html",
     "/offline/offpages.html",
     "/js/main.js",
     "/js/fuse-search.js",
