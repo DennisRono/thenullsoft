@@ -60,7 +60,7 @@ self.addEventListener("activate", event => {
 
 //offline page
 self.addEventListener('fetch', (event) => {
-  console.log(self.location);
+  console.log(self.location.pathname);
   if (event.request.mode === 'navigate') {
     event.respondWith((async () => {
       try {
