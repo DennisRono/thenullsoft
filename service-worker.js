@@ -26,9 +26,6 @@ self.addEventListener("activate", event => {
       return Promise.all(
         cacheNames
           .filter(function(cacheName) {
-            // Return true if you want to remove this cache,
-            // but remember that caches are shared across
-            // the whole origin
             return cacheName !== CACHE_NAME;
           })
           .map(function(cacheName) {
@@ -77,5 +74,17 @@ self.addEventListener('fetch', (event) => {
   }
 });
 
+self.addEventListener( 'fetch', function ( event ) {
+
+  if ( event.request.url.match( '^.*(\/blog\/).*$' ) ) {
+      return false;
+  }
+   // OR
+
+  if ( event.request.url.indexOf( '/blog/' ) !== -1 ) {
+      return false;
+  }
+  //    **** rest of your service worker code ****
+})
 // handle push notifications
 // self.addEventListener('push', ...... );
