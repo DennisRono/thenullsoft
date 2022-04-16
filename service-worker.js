@@ -14,7 +14,6 @@ const filesToCache =
     "/js/fuse-search.js",
     "/js/libs/fuse.js",
     "/offline/offline.html",
-    "/offline/offline.css",
     "/assets/css/blog.css",
     "/assets/css/features.css",
     "/assets/css/footer.css",
