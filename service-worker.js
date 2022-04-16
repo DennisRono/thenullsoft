@@ -23,7 +23,7 @@ const filesToCache =
     "/assets/css/header.css",
     "/assets/css/home.css",
     "/assets/css/newsletter.css",
-    "",
+    "/assets/images/",
     "",
   ];
 
