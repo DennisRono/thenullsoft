@@ -57,6 +57,8 @@ self.addEventListener('fetch', event => {
   );
 });
 
+console.log(window.location.href);
+console.log(event.request.mode);
 //offline page
 self.addEventListener('fetch', (event) => {
   if (event.request.mode === 'navigate') {
