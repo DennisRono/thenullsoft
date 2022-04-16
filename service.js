@@ -12,19 +12,33 @@ var offlineExclude = [
     'contact.html','blog.html'
 ];
 
-self.addEventListener("install", function(event) {
-  console.log('WORKER: install event in progress.');
-  event.waitUntil(
-    caches
-      .open(version + 'fundamentals')
-      .then(function(cache) {
-        return cache.addAll(offlineInclude);
+self.addEventListener("install", event => {
+    console.log(`${CACHE_NAME} installing…`);
+    console.log("Caching:", offlineInclude);
+    event.waitUntil(
+      caches.open(CACHE_NAME).then(cache => cache.addAll(offlineInclude))
+    );
+  });
+  
+  self.addEventListener("activate", event => {
+    console.log(`${CACHE_NAME} now ready to handle fetches!`);
+  
+    // Remove old caches
+    event.waitUntil(
+      caches.keys().then(function(cacheNames) {
+        return Promise.all(
+          cacheNames
+            .filter(function(cacheName) {
+              return cacheName !== CACHE_NAME;
+            })
+            .map(function(cacheName) {
+              console.log(`deleting ${cacheName}`);
+              return caches.delete(cacheName);
+            })
+        );
       })
-      .then(function() {
-        console.log('WORKER: install completed');
-      })
-  );
-});
+    );
+  });
 
 self.addEventListener("fetch", function(event) {
   console.log('WORKER: fetch event in progress.');
