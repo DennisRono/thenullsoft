@@ -23,7 +23,7 @@ const filesToCache =
     "/assets/css/home.css",
     "/assets/css/newsletter.css",
     "/assets/images/cookie-bg.png",
-    "/assets/images/dmca-badg.png",
+    "/assets/images/dmca-badge.png",
     "/assets/images/enterprise-overview-hero.webp",
     "/assets/images/google-page-speed.png",
     "/assets/images/icons/favicon-16x16.png",
