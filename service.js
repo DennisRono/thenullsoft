@@ -4,13 +4,11 @@ const OFFLINE_URL = "/offline/offline.html";
 
 var offlineInclude = [
     'index.html','about.html','privacy.html','features.html','tos.html',
-    '/assets/',
     '/js/main.js',
     '/offline/offline.html'
 ];
 
 var offlineExclude = [
-    '/auth/',
     'contact.html','blog.html'
 ];
 
