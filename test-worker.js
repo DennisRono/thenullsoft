@@ -1,10 +1,5 @@
 "use strict";
-// Service worker
-//
-// References
-// https://github.com/webmaxru/pwatter/blob/workbox/src/sw-default.js
-// Caching strategies: https://developers.google.com/web/tools/workbox/modules/workbox-strategies#stale-while-revalidate
-// Example: https://github.com/JeremieLitzler/mws.nd.2018.s3/blob/master/sw.js
+
 Object.defineProperty(exports, "__esModule", { value: true });
 var workbox_cacheable_response_1 = require("workbox-cacheable-response");
 var workbox_expiration_1 = require("workbox-expiration");
