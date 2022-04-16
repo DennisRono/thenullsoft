@@ -1,0 +1,369 @@
+/* ======blog featured stylings====== */
+.jumbotron{
+    .jcontainer{
+        margin: 50px 5%;
+        .featuredBlogs{
+            padding: 5px 10px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            border-left: 4px solid #000;
+            letter-spacing: 2px;
+        }
+        .jfeeds{
+            display: flex;
+            gap: 3px;
+            margin: 20px 0px;
+            height: 400px;
+            overflow: hidden;
+            .jfeedone{
+                width: 50%;
+                position: relative;
+                background-color: rgb(2, 2, 2);
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    overflow: hidden;
+                    filter: brightness(90%);
+                    aspect-ratio: auto 1440 / 500;
+                    transition: 0.5s;
+                    mask-image: linear-gradient(180deg,rgb(0, 0, 0),transparent);
+                    transition: .5s;
+                }
+                img:hover{
+                    opacity: 0.9;
+                    filter: brightness(100%);
+                }
+                .feedtxt{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 20px;
+                    a{
+                        color: #fff;
+                        font-family: 'Roboto', sans-serif;
+                        text-overflow: ellipsis;
+                        white-space: normal;
+                    }
+                    .category-link{
+                        padding: 2px 5px;
+                        transition: all .3s;
+                        color: #fff;
+                        border-color: #fff;
+                        font-family: Roboto-Regular;
+                        font-size: 14px;
+                        line-height: 1.2;
+                        border: 1px solid #fff;
+                    }
+                    .category-link:hover{
+                        background-color: #17b978;
+                        border-color: #17b978;
+                        color: #fff;
+                    }
+                    .jfeedtitle{
+                        margin-top: 20px;
+                        a{
+                            font-size: 30px;
+                            line-height: 1.2;
+                            cursor: pointer;
+                            font-weight: 500;
+                            letter-spacing: 1.5px;
+                            color: #ffffff;
+                            transition: all .3s;
+                        }
+                        a:hover{
+                            color: #17b978;
+                        }
+                    }
+                }
+            }
+            .jfeedleftflex{
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                width: 50%;
+                .jfeedtwo{
+                    height: 50%;
+                    position: relative;
+                    background-color: rgb(2, 2, 2);
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        overflow: hidden;
+                        filter: brightness(90%);
+                        aspect-ratio: auto 1440 / 500;
+                        transition: 0.5s;
+                        mask-image: linear-gradient(180deg,rgb(0, 0, 0),transparent);
+                        transition: .5s;
+                    }
+                    img:hover{
+                        opacity: 0.9;
+                        filter: brightness(100%);
+                    }
+                    .feedtxt{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        padding: 20px;
+                        a{
+                            color: #fff;
+                            font-family: 'Roboto', sans-serif;
+                            text-overflow: ellipsis;
+                            white-space: normal;
+                        }
+                        .category-link{
+                            padding: 2px 5px;
+                            transition: all .3s;
+                            color: #fff;
+                            border-color: #fff;
+                            font-family: Roboto-Regular;
+                            font-size: 14px;
+                            line-height: 1.2;
+                            border: 1px solid #fff;
+                        }
+                        .category-link:hover{
+                            background-color: #17b978;
+                            border-color: #17b978;
+                            color: #fff;
+                        }
+                        .jfeedtitle{
+                            margin-top: 10px;
+                            a{
+                                font-size: 22px;
+                                line-height: 1.2;
+                                cursor: pointer;
+                                font-weight: 500;
+                                letter-spacing: 1.5px;
+                                color: #ffffff;
+                                transition: all .3s;
+                            }
+                            a:hover{
+                                color: #17b978;
+                            }
+                        }
+                    }
+                }
+                .jfeedlbflex{
+                    display: flex;
+                    height: 50%;
+                    gap: 3px;
+                    .jfeedthree{
+                        position: relative;
+                        width: 50%;
+                        background-color: rgb(2, 2, 2);
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            overflow: hidden;
+                            filter: brightness(90%);
+                            aspect-ratio: auto 1440 / 500;
+                            transition: 0.5s;
+                            mask-image: linear-gradient(180deg,rgb(0, 0, 0),transparent);
+                            transition: .5s;
+                        }
+                        img:hover{
+                            opacity: 0.9;
+                            filter: brightness(100%);
+                        }
+                        .feedtxt{
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            padding: 20px;
+                            a{
+                                color: #fff;
+                                font-family: 'Roboto', sans-serif;
+                                text-overflow: ellipsis;
+                                white-space: normal;
+                            }
+                            .category-link{
+                                padding: 2px 5px;
+                                transition: all .3s;
+                                color: #fff;
+                                border-color: #fff;
+                                font-family: Roboto-Regular;
+                                font-size: 14px;
+                                line-height: 1.2;
+                                border: 1px solid #fff;
+                            }
+                            .category-link:hover{
+                                background-color: #17b978;
+                                border-color: #17b978;
+                                color: #fff;
+                            }
+                            .jfeedtitle{
+                                margin-top: 10px;
+                                a{
+                                    font-size: 16px;
+                                    line-height: 1.2;
+                                    cursor: pointer;
+                                    font-weight: 500;
+                                    letter-spacing: 1.5px;
+                                    color: #ffffff;
+                                    transition: all .3s;
+                                }
+                                a:hover{
+                                    color: #17b978;
+                                }
+                            }
+                        }
+                    }
+                    .jfeedfour{
+                        position: relative;
+                        width: 50%;
+                        background-color: rgb(2, 2, 2);
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            overflow: hidden;
+                            filter: brightness(90%);
+                            aspect-ratio: auto 1440 / 500;
+                            transition: 0.5s;
+                            mask-image: linear-gradient(180deg,rgb(0, 0, 0),transparent);
+                            transition: .5s;
+                        }
+                        img:hover{
+                            opacity: 0.9;
+                            filter: brightness(100%);
+                        }
+                        .feedtxt{
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            padding: 20px;
+                            a{
+                                color: #fff;
+                                font-family: 'Roboto', sans-serif;
+                                text-overflow: ellipsis;
+                                white-space: normal;
+                            }
+                            .category-link{
+                                padding: 2px 5px;
+                                transition: all .3s;
+                                color: #fff;
+                                border-color: #fff;
+                                font-family: Roboto-Regular;
+                                font-size: 14px;
+                                line-height: 1.2;
+                                border: 1px solid #fff;
+                            }
+                            .category-link:hover{
+                                background-color: #17b978;
+                                border-color: #17b978;
+                                color: #fff;
+                            }
+                            .jfeedtitle{
+                                margin-top: 10px;
+                                a{
+                                    font-size: 16px;
+                                    line-height: 1.2;
+                                    cursor: pointer;
+                                    font-weight: 500;
+                                    letter-spacing: 1.5px;
+                                    color: #ffffff;
+                                    transition: all .3s;
+                                }
+                                a:hover{
+                                    color: #17b978;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ======blogs Showcase stylings====== */
+.bloghigh{
+    .highwrapper{
+        .highcontainer{
+            margin: 0 5%;
+            .bloghighHeader{
+                display: flex;
+                margin: 0 3%;
+                justify-content: space-between;
+                margin-bottom: 2rem;
+                .blogsFileters{
+                    display: flex;
+                    .filter{
+                        margin: 0 20px;
+                        cursor: pointer;
+                        &:nth-child(1){
+                            margin-left: 0px !important;
+                        }
+                    }
+                }
+            }
+            .highflex{
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 4%;
+                .highblogcard{
+                    width: 380px;
+                    overflow: hidden;
+                    margin-bottom: 30px;
+                    cursor: pointer !important;
+                    .bloghighImage{
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        border-radius: 8px;
+                        overflow: hidden !important;
+                        img{
+                            max-height: 250px;
+                            height: auto!important;
+                            border-radius: 0;
+                            box-shadow: initial;
+                            padding: 0!important;
+                            width: 100%;
+                            object-fit: cover;
+                            filter: brightness(90%);
+                            transition: 0.5s;
+                            vertical-align: middle;
+                            border-style: none;
+                            &:hover{
+                                margin-top: 0;
+                                filter: initial;
+                                box-shadow: initial;
+                                transform: scale(1.05);
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+                    .bloghighTitle{
+                        padding: 10px;
+                        a{
+                            h2{
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                                max-height: 3.5rem;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                word-wrap: break-word;
+                                word-break: break-word;
+                                cursor: pointer;
+                                &:hover{
+                                    transition: .3s;
+                                    color: #0088f0;
+                                }
+                            }
+                        }
+                    }
+                    .bloghighInfo{
+                        p{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

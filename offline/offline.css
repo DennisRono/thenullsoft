@@ -1,0 +1,43 @@
+.offlinewrapper{
+    width: 100%;
+}
+.offlinecontainer{
+    margin: 0 10%;
+    position: relative;
+    height: 100vh !important;
+}
+.wifiSlash{
+    width: min-content;
+    margin: 0 auto;
+    position: relative;
+}
+.wifiSlash i{
+    font-size: 15rem;
+}
+.wifiSlash i:nth-child(2){
+    font-size: 7rem;
+    color: #ff3939;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: -10px;
+    margin-bottom: -20px;
+}
+.offlineCenter{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+}
+.offlineTexts{
+    text-align: center;
+    margin-top: 50px;
+}
+h4{
+    text-align: center;
+    margin-bottom: 20px;
+}
+a{
+    text-align: center;
+    color: #397eff;
+}

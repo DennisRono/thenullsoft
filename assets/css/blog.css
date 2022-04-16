@@ -1,0 +1,491 @@
+/* ======blog featured stylings====== */
+.jumbotron .jcontainer {
+  margin: 50px 5%;
+}
+
+.jumbotron .jcontainer .featuredBlogs {
+  padding: 5px 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  border-left: 4px solid #000;
+  letter-spacing: 2px;
+}
+
+.jumbotron .jcontainer .jfeeds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3px;
+  margin: 20px 0px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedone {
+  width: 50%;
+  position: relative;
+  background-color: #020202;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedone img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  aspect-ratio: auto 1440 / 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  -webkit-mask-image: linear-gradient(180deg, black, transparent);
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+          mask-image: linear-gradient(180deg, black, transparent);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedone img:hover {
+  opacity: 0.9;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt a {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .category-link {
+  padding: 2px 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+  border-color: #fff;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  line-height: 1.2;
+  border: 1px solid #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .category-link:hover {
+  background-color: #17b978;
+  border-color: #17b978;
+  color: #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .jfeedtitle {
+  margin-top: 20px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .jfeedtitle a {
+  font-size: 30px;
+  line-height: 1.2;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedone .feedtxt .jfeedtitle a:hover {
+  color: #17b978;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3px;
+  width: 50%;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo {
+  height: 50%;
+  position: relative;
+  background-color: #020202;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  aspect-ratio: auto 1440 / 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  -webkit-mask-image: linear-gradient(180deg, black, transparent);
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+          mask-image: linear-gradient(180deg, black, transparent);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo img:hover {
+  opacity: 0.9;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt a {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt .category-link {
+  padding: 2px 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+  border-color: #fff;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  line-height: 1.2;
+  border: 1px solid #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt .category-link:hover {
+  background-color: #17b978;
+  border-color: #17b978;
+  color: #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt .jfeedtitle {
+  margin-top: 10px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt .jfeedtitle a {
+  font-size: 22px;
+  line-height: 1.2;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedtwo .feedtxt .jfeedtitle a:hover {
+  color: #17b978;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+  gap: 3px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree {
+  position: relative;
+  width: 50%;
+  background-color: #020202;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  aspect-ratio: auto 1440 / 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  -webkit-mask-image: linear-gradient(180deg, black, transparent);
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+          mask-image: linear-gradient(180deg, black, transparent);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree img:hover {
+  opacity: 0.9;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt a {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt .category-link {
+  padding: 2px 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+  border-color: #fff;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  line-height: 1.2;
+  border: 1px solid #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt .category-link:hover {
+  background-color: #17b978;
+  border-color: #17b978;
+  color: #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt .jfeedtitle {
+  margin-top: 10px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt .jfeedtitle a {
+  font-size: 16px;
+  line-height: 1.2;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedthree .feedtxt .jfeedtitle a:hover {
+  color: #17b978;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour {
+  position: relative;
+  width: 50%;
+  background-color: #020202;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  aspect-ratio: auto 1440 / 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+  -webkit-mask-image: linear-gradient(180deg, black, transparent);
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+          mask-image: linear-gradient(180deg, black, transparent);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour img:hover {
+  opacity: 0.9;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt a {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt .category-link {
+  padding: 2px 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+  border-color: #fff;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  line-height: 1.2;
+  border: 1px solid #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt .category-link:hover {
+  background-color: #17b978;
+  border-color: #17b978;
+  color: #fff;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt .jfeedtitle {
+  margin-top: 10px;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt .jfeedtitle a {
+  font-size: 16px;
+  line-height: 1.2;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.jumbotron .jcontainer .jfeeds .jfeedleftflex .jfeedlbflex .jfeedfour .feedtxt .jfeedtitle a:hover {
+  color: #17b978;
+}
+
+/* ======blogs Showcase stylings====== */
+.bloghigh .highwrapper .highcontainer {
+  margin: 0 5%;
+}
+
+.bloghigh .highwrapper .highcontainer .bloghighHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 3%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.bloghigh .highwrapper .highcontainer .bloghighHeader .blogsFileters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bloghigh .highwrapper .highcontainer .bloghighHeader .blogsFileters .filter {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.bloghigh .highwrapper .highcontainer .bloghighHeader .blogsFileters .filter:nth-child(1) {
+  margin-left: 0px !important;
+}
+
+.bloghigh .highwrapper .highcontainer .highflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 4%;
+}
+
+.bloghigh .highwrapper .highcontainer .highflex .highblogcard {
+  width: 380px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  cursor: pointer !important;
+}
+
+.bloghigh .highwrapper .highcontainer .highflex .highblogcard .bloghighImage {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  overflow: hidden !important;
+}
+
+.bloghigh .highwrapper .highcontainer .highflex .highblogcard .bloghighImage img {
+  max-height: 250px;
+  height: auto !important;
+  border-radius: 0;
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
+  padding: 0 !important;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.bloghigh .highwrapper .highcontainer .highflex .highblogcard .bloghighImage img:hover {
+  margin-top: 0;
+  -webkit-filter: initial;
+          filter: initial;
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.bloghigh .highwrapper .highcontainer .highflex .highblogcard .bloghighTitle {
+  padding: 10px;
+}
+
+.bloghigh .highwrapper .highcontainer .highflex .highblogcard .bloghighTitle a h2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  max-height: 3.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-word;
+  cursor: pointer;
+}
+
+.bloghigh .highwrapper .highcontainer .highflex .highblogcard .bloghighTitle a h2:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #0088f0;
+}
+
+.bloghigh .highwrapper .highcontainer .highflex .highblogcard .bloghighInfo p {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=blog.css.map */
