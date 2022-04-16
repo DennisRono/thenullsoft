@@ -14,7 +14,17 @@ const filesToCache =
     "/js/fuse-search.js",
     "/js/libs/fuse.js",
     "/offline/offline.html",
-    "/offline/offline.css"
+    //assets to cache
+    "/offline/offline.css",
+    "/assets/css/blog.css",
+    "/assets/css/features.css",
+    "/assets/css/footer.css",
+    "/assets/css/globals.css",
+    "/assets/css/header.css",
+    "/assets/css/home.css",
+    "/assets/css/newsletter.css",
+    "",
+    "",
   ];
 
 self.addEventListener("install", event => {
