@@ -112,7 +112,7 @@ self.addEventListener('fetch', event => {
           } catch (error) {
             console.log('Fetch failed; returning offline page instead.', error);
             const cache = await caches.open(CACHE_NAME);
-            console.log(self.location.pathname);
+            console.log(client);
             if(self.location.pathname === '/blog.html'){
               const cachedResponse = await cache.match(OFFLINE_URL);
               return cachedResponse;
