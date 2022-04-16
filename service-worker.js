@@ -4,31 +4,8 @@ const OFFLINE_URL = "/offline/offline.html";
 
 const filesToCache = 
   [
-    "/index.html",
-    "/about.html",
-    "/features.html",
-    "/privacy.html",
-    "/tos.html",
-    "/offline/offpages.html",
-    "/js/main.js",
-    "/js/fuse-search.js",
-    "/js/libs/fuse.js",
     "/offline/offline.html",
-    "/assets/css/blog.css",
-    "/assets/css/features.css",
-    "/assets/css/footer.css",
-    "/assets/css/globals.css",
-    "/assets/css/header.css",
-    "/assets/css/home.css",
-    "/assets/css/newsletter.css",
-    "/assets/images/cookie-bg.png",
-    "/assets/images/dmca-badge.png",
-    "/assets/images/enterprise-overview-hero.webp",
-    "/assets/images/google-page-speed.png",
-    "/assets/images/icons/favicon-16x16.png",
-    "/assets/images/icons/favicon-32x32.png",
-    "/assets/images/icons/favicon.ico",
-    "/assets/images/icons/apple-touch-icon.png"
+    "/assets/images/icons/favicon.ico"
   ];
 
 self.addEventListener("install", event => {
