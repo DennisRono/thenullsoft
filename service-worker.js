@@ -59,82 +59,48 @@ self.addEventListener("activate", event => {
 // });
 
 //offline page
-// self.addEventListener('fetch', (event) => {
-//   if (event.request.mode === 'navigate') {
-//     event.respondWith((async () => {
-//       try {
-//         const preloadResponse = await event.preloadResponse;
-//         if (preloadResponse) {
-//           return preloadResponse;
-//         }
-//         const networkResponse = await fetch(event.request);
-//         return networkResponse;
-//       } catch (error) {
-//         console.log('Fetch failed; returning offline page instead.', error);
-//         const cache = await caches.open(CACHE_NAME);
-//         console.log(self.location.pathname);
-//         if(self.location.pathname === '/blog.html'){
-//           const cachedResponse = await cache.match(OFFLINE_URL);
-//           return cachedResponse;
-//         } else {
-//           caches.open(CACHE_NAME).then(function(cache) {
-//             return cache.match(event.request).then(function(response) {
-//               // fetch latest resources and update cache in the background
-//               var fetchPromise = fetch(event.request).then(function(networkResponse) {
-//                 cache.put(event.request, networkResponse.clone());
-//                 return networkResponse;
-//               });
-      
-//               // respond with cache first if available
-//               return response || fetchPromise;
-//             });
-//           })
-//         }
-//       }
-//     })());
-//   }
-// });
-
-self.addEventListener('fetch', event => {
-  event.waitUntil(self.clients.claim().then(() => {
-    return self.clients.matchAll({type: 'window'});
-  }).then(clients => {
-    return clients.map(client => {
-      if (event.request.mode === 'navigate') {
-        event.respondWith((async () => {
-          try {
-            const preloadResponse = await event.preloadResponse;
-            if (preloadResponse) {
-              return preloadResponse;
-            }
-            const networkResponse = await fetch(event.request);
-            return networkResponse;
-          } catch (error) {
-            console.log('Fetch failed; returning offline page instead.', error);
-            const cache = await caches.open(CACHE_NAME);
+self.addEventListener('fetch', (event) => {
+  if (event.request.mode === 'navigate') {
+    event.respondWith((async () => {
+        event.waitUntil(self.clients.claim().then(() => {
+          return self.clients.matchAll({type: 'window'});
+        }).then(clients => {
+          return clients.map(client => {
             console.log(client);
-            if(self.location.pathname === '/blog.html'){
-              const cachedResponse = await cache.match(OFFLINE_URL);
-              return cachedResponse;
-            } else {
-              caches.open(CACHE_NAME).then(function(cache) {
-                return cache.match(event.request).then(function(response) {
-                  // fetch latest resources and update cache in the background
-                  var fetchPromise = fetch(event.request).then(function(networkResponse) {
-                    cache.put(event.request, networkResponse.clone());
-                    return networkResponse;
-                  });
-          
-                  // respond with cache first if available
-                  return response || fetchPromise;
-                });
-              })
-            }
-          }
-        })());
+            return client
+          });
+        }));
+      try {
+        const preloadResponse = await event.preloadResponse;
+        if (preloadResponse) {
+          return preloadResponse;
+        }
+        const networkResponse = await fetch(event.request);
+        return networkResponse;
+      } catch (error) {
+        console.log('Fetch failed; returning offline page instead.', error);
+        const cache = await caches.open(CACHE_NAME);
+        console.log(self.location.pathname);
+        if(self.location.pathname === '/blog.html'){
+          const cachedResponse = await cache.match(OFFLINE_URL);
+          return cachedResponse;
+        } else {
+          caches.open(CACHE_NAME).then(function(cache) {
+            return cache.match(event.request).then(function(response) {
+              // fetch latest resources and update cache in the background
+              var fetchPromise = fetch(event.request).then(function(networkResponse) {
+                cache.put(event.request, networkResponse.clone());
+                return networkResponse;
+              });
+      
+              // respond with cache first if available
+              return response || fetchPromise;
+            });
+          })
+        }
       }
-    });
-  }));
+    })());
+  }
 });
 
 // handle push notifications
