@@ -3,15 +3,13 @@ const OFFLINE_VERSION = 1;
 const OFFLINE_URL = "/offline/offline.html";
 
 var offlineInclude = [
-    'index.html','about.html','privacy.html','features.html','tos.html',              // index.html
+    'index.html','about.html','privacy.html','features.html','tos.html',
     '/assets/',
     '/js/main.js',
     '/offline/offline.html'
 ];
 
 var offlineExclude = [
-    '/networkimages/bigimg.png',   //exclude a file
-    '/networkimages/smallimg.png',
     '/auth/',
     'contact.html','blog.html'
 ];
