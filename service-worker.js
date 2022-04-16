@@ -44,14 +44,6 @@ self.addEventListener("activate", event => {
 self.addEventListener('fetch', (event) => {
   if (event.request.mode === 'navigate') {
     event.respondWith((async () => {
-        event.waitUntil(self.clients.claim().then(() => {
-          return self.clients.matchAll({type: 'window'});
-        }).then(clients => {
-          return clients.map(client => {
-            console.log(client);
-            return client
-          });
-        }));
       try {
         const preloadResponse = await event.preloadResponse;
         if (preloadResponse) {
