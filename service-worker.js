@@ -40,22 +40,22 @@ self.addEventListener("activate", event => {
 });
 
 // state-while-revalidate strategy
-// self.addEventListener('fetch', event => {
-//   event.respondWith(
-//     caches.open(CACHE_NAME).then(function(cache) {
-//       return cache.match(event.request).then(function(response) {
-//         // fetch latest resources and update cache in the background
-//         var fetchPromise = fetch(event.request).then(function(networkResponse) {
-//           cache.put(event.request, networkResponse.clone());
-//           return networkResponse;
-//         });
+self.addEventListener('fetch', event => {
+  event.respondWith(
+    caches.open(CACHE_NAME).then(function(cache) {
+      return cache.match(event.request).then(function(response) {
+        // fetch latest resources and update cache in the background
+        var fetchPromise = fetch(event.request).then(function(networkResponse) {
+          cache.put(event.request, networkResponse.clone());
+          return networkResponse;
+        });
 
-//         // respond with cache first if available
-//         return response || fetchPromise;
-//       });
-//     })
-//   );
-// });
+        // respond with cache first if available
+        return response || fetchPromise;
+      });
+    })
+  );
+});
 
 //offline page
 self.addEventListener('fetch', (event) => {
