@@ -58,9 +58,10 @@ self.addEventListener('fetch', event => {
 });
 
 console.log(window.location.href);
-console.log(event.request.mode);
+
 //offline page
 self.addEventListener('fetch', (event) => {
+  console.log(event.request.mode);
   if (event.request.mode === 'navigate') {
     event.respondWith((async () => {
       try {
