@@ -1,4 +1,4 @@
-'/about.html',
+const files = ['/about.html',
 '/assets/css/blog.css',
 '/assets/css/blog.css.map',
 '/assets/css/features.css',
@@ -245,4 +245,4 @@
 '/service-worker.js',
 '/sw.js',
 '/test.js',
-'/tos.html',
+'/tos.html'];
