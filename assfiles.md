@@ -1,5 +1,3 @@
-'/.gitignore',
-'/.htaccess',
 '/about.html',
 '/assets/css/blog.css',
 '/assets/css/blog.css.map',
