@@ -1,4 +1,4 @@
-const files = ['/about.html',
+const filespaths = ['/about.html',
 '/assets/css/blog.css',
 '/assets/css/blog.css.map',
 '/assets/css/features.css',
@@ -246,3 +246,5 @@ const files = ['/about.html',
 '/sw.js',
 '/test.js',
 '/tos.html'];
+
+export filespaths;
