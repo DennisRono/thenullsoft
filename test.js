@@ -13,5 +13,7 @@ const getAllFiles = function(dirPath, arrayOfFiles) {
   })
   return arrayOfFiles
 }
-
-console.log(getAllFiles('assets', []));
+var stream = fs.createWriteStream("assfiles.md", {'flags': 'a'});
+stream.once('open', function(fd) {
+  stream.write(getAllFiles('assets', [])+"\r\n");
+});
