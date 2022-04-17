@@ -1,3 +1,5 @@
+import filespaths from './files.js'
+
 const CACHE_NAME = "thenullsoft-offline";
 const OFFLINE_VERSION = 1;
 const OFFLINE_URL = "/offline/offline.html";
