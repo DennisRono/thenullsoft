@@ -23,3 +23,15 @@
 import filespaths from './files.js'
 
 console.log(filespaths);
+
+
+
+// let currUrl = new URL(event.request.url)
+// const cache = await caches.open(CACHE_NAME);
+// if(!filespaths.includes(currUrl.pathname)){
+//     const cachedResponse = await cache.match(OFFLINE_URL);
+//     return cachedResponse;
+// } else {
+//     const cachresp = await cache.match(event.request);
+//     return cachresp;
+// }
