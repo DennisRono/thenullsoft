@@ -67,16 +67,12 @@ const filespaths = ['/about.html',
 '/tos.html'];
 
 self.addEventListener("install", event => {
-  console.log(`${CACHE_NAME} installing…`);
-  console.log("Caching:", filespaths);
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => cache.addAll(filespaths))
   );
 });
 
 self.addEventListener("activate", event => {
-  console.log(`${CACHE_NAME} now ready to handle fetches!`);
-
   // Remove old caches
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
