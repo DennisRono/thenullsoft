@@ -15,7 +15,7 @@ const getAllFiles = function(dirPath, arrayOfFiles) {
 }
 var stream = fs.createWriteStream("assfiles.md", {'flags': 'a'});
 stream.once('open', function(fd) {
-    getAllFiles('offline', []).forEach(element => {
+    getAllFiles('../offline', []).forEach(element => {
         stream.write("'"+element+"',"+"\r\n");
     });
 });
