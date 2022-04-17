@@ -103,8 +103,9 @@ function fromCache(event, request) {
   return caches.open(CACHE_NAME).then(function (cache) {
     let currUrl = new URL(event.request.url)
     if(!filespaths.includes(currUrl.pathname)){
-        const cachedResponse = await cache.match(OFFLINE_URL);
-        return cachedResponse;
+        return cache.match(OFFLINE_URL).then((offpage)=>{
+          return offpage;
+        });
     } else {
       return cache.match(request).then(function (matching) {
         return matching || Promise.reject('no-match');
