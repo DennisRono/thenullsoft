@@ -246,5 +246,3 @@ const filespaths = ['/about.html',
 '/sw.js',
 '/test.js',
 '/tos.html'];
-
-module.exports = filespaths;
