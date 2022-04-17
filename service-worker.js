@@ -4,24 +4,15 @@ const CACHE_NAME = "thenullsoft-offline";
 const OFFLINE_VERSION = 1;
 const OFFLINE_URL = "/offline/offline.html";
 
-const filesToCache = 
-  [
-    '/index.html','/about.html','/privacy.html','/features.html','/tos.html',
-    '/assets/css/home.css','/assets/css/header.css','/assets/css/footer.css','/assets/css/newsletter.css','/assets/css/globals.css',
-    '/assets/css/features.css','/assets/css/blog.css',
-    '/assets/images/enterprise-overview-hero.webp',
-    '/js/main.js',
-    '/offline/offline.html'
-  ];
 var offlineExclude = [
     '/contact.html','/blog.html'
 ];
 
 self.addEventListener("install", event => {
   console.log(`${CACHE_NAME} installing…`);
-  console.log("Caching:", filesToCache);
+  console.log("Caching:", filespaths);
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(filesToCache))
+    caches.open(CACHE_NAME).then(cache => cache.addAll(filespaths))
   );
 });
 
@@ -59,7 +50,7 @@ self.addEventListener('fetch', (event) => {
       } catch (error) {
         let currUrl = new URL(event.request.url)
         const cache = await caches.open(CACHE_NAME);
-        if(!filesToCache.includes(currUrl.pathname)){
+        if(!filespaths.includes(currUrl.pathname)){
             const cachedResponse = await cache.match(OFFLINE_URL);
             return cachedResponse;
         } else {
