@@ -1,4 +1,4 @@
-import filespaths from './files.js'
+const filespaths = require('./files.js')
 
 const CACHE_NAME = "thenullsoft-offline";
 const OFFLINE_VERSION = 1;
