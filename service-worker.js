@@ -4,10 +4,6 @@ const CACHE_NAME = "thenullsoft-offline";
 const OFFLINE_VERSION = 1;
 const OFFLINE_URL = "/offline/offline.html";
 
-var offlineExclude = [
-    '/contact.html','/blog.html'
-];
-
 self.addEventListener("install", event => {
   console.log(`${CACHE_NAME} installing…`);
   console.log("Caching:", filespaths);
