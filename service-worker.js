@@ -4,10 +4,16 @@ const OFFLINE_URL = "/offline/offline.html";
 
 const filesToCache = 
   [
-    "/",
-    "/offline/offline.html",
-    "/assets/images/icons/favicon.ico"
+    '/index.html','/about.html','/privacy.html','/features.html','/tos.html',
+    '/assets/css/home.css','/assets/css/header.css','/assets/css/footer.css','/assets/css/newsletter.css','/assets/css/globals.css',
+    '/assets/css/features.css','/assets/css/blog.css',
+    '/assets/images/enterprise-overview-hero.webp',
+    '/js/main.js',
+    '/offline/offline.html'
   ];
+var offlineExclude = [
+    '/contact.html','/blog.html'
+];
 
 self.addEventListener("install", event => {
   console.log(`${CACHE_NAME} installing…`);
@@ -38,6 +44,27 @@ self.addEventListener("activate", event => {
 });
 
 //offline page
+// self.addEventListener('fetch', (event) => {
+//   if (event.request.mode === 'navigate') {
+//     event.respondWith((async () => {
+//       try {
+//         const preloadResponse = await event.preloadResponse;
+//         if (preloadResponse) {
+//           return preloadResponse;
+//         }
+//         const networkResponse = await fetch(event.request);
+//         return networkResponse;
+//       } catch (error) {
+//         console.log('Fetch failed; returning offline page instead.', error);
+//         const cache = await caches.open(CACHE_NAME);
+//         const cachedResponse = await cache.match(OFFLINE_URL);
+//         return cachedResponse;
+//       }
+//     })());
+//   }
+// });
+
+//offline page
 self.addEventListener('fetch', (event) => {
   if (event.request.mode === 'navigate') {
     event.respondWith((async () => {
@@ -49,42 +76,20 @@ self.addEventListener('fetch', (event) => {
         const networkResponse = await fetch(event.request);
         return networkResponse;
       } catch (error) {
-        console.log('Fetch failed; returning offline page instead.', error);
+        let currUrl = new URL(event.request.url)
         const cache = await caches.open(CACHE_NAME);
-        console.log(self.location.pathname);
-        if(self.location.pathname === '/blog.html'){
-          const cachedResponse = await cache.match(OFFLINE_URL);
-          return cachedResponse;
+        if(!filesToCache.includes(currUrl.pathname)){
+            const cachedResponse = await cache.match(OFFLINE_URL);
+            return cachedResponse;
         } else {
-          caches.open(CACHE_NAME).then(function(cache) {
-            return cache.match(event.request).then(function(response) {
-              // fetch latest resources and update cache in the background
-              var fetchPromise = fetch(event.request).then(function(networkResponse) {
-                cache.put(event.request, networkResponse.clone());
-                return networkResponse;
-              });
-      
-              // respond with cache first if available
-              return response || fetchPromise;
-            });
-          })
+            const cachresp = await cache.match(currUrl.pathname);
+            return cachresp;
         }
       }
     })());
   }
 });
 
-self.addEventListener( 'fetch', function ( event ) {
 
-  if ( event.request.url.match( '^.*(\/blog\/).*$' ) ) {
-      return false;
-  }
-   // OR
-
-  if ( event.request.url.indexOf( '/blog/' ) !== -1 ) {
-      return false;
-  }
-  //    **** rest of your service worker code ****
-})
 // handle push notifications
 // self.addEventListener('push', ...... );
