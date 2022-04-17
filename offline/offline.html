@@ -57,6 +57,106 @@
             text-align: center;
             color: #397eff;
         }
+        /* ======Header stylings====== */
+        .header {
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
+        }
+
+        .header .hcontainer {
+        margin: 0 5%;
+        padding-top: 10px;
+        }
+
+        .header .hcontainer .hflex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        padding-top: 25px;
+        }
+
+        .header .hcontainer .hflex .hlogo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: -8px;
+        margin-left: 20px;
+        }
+
+        .header .hcontainer .hflex .hlogo img {
+        width: 40px;
+        height: 40px;
+        margin-right: 30px;
+        }
+
+        .header .hcontainer .hflex .hlogo .bSearch .bSearchForm {
+        margin-top: 3px;
+        }
+
+        .header .hcontainer .hflex .hlogo .bSearch .bSearchForm .bsgroup {
+        border: 1px solid #222;
+        border-radius: 30px;
+        padding: 7px 20px;
+        }
+
+        .header .hcontainer .hflex .hlogo .bSearch .bSearchForm .bsgroup input {
+        outline: 0;
+        border: none;
+        background: 0 0;
+        }
+
+        .header .hcontainer .hflex .hlogo .bSearch .bSearchForm .bsgroup button {
+        outline: 0;
+        border: none;
+        background: 0 0;
+        cursor: pointer;
+        }
+
+        .header .hcontainer .hflex .hnavigation {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 20px;
+        }
+
+        .header .hcontainer .hflex .hnavigation .hnav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        }
+
+        .header .hcontainer .hflex .hnavigation .hnav li a {
+        padding: 20px;
+        padding-top: 16px;
+        padding-bottom: 10px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #4e4e4e !important;
+        font-family: 'Roboto', sans-serif;
+        }
+
+        .header .hcontainer .hflex .hnavigation .hcalltoaction li a {
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-weight: 300;
+        font-size: 1.1rem !important;
+        font-family: 'Roboto', sans-serif;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        background: -webkit-gradient(linear, left top, right bottom, from(#14a9ff), to(#0088f0)) !important;
+        background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
+        color: #fff !important;
+        }
+        /*# sourceMappingURL=header.css.map */
     </style>
 </head>
 <body>
