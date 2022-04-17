@@ -81,7 +81,7 @@ self.addEventListener('fetch', function (evt) {
   console.log('The service worker is serving the asset.');
 
   evt.respondWith(fromNetwork(evt.request, 400).catch(function () {
-    return fromCache(evt.request);
+    return fromCache(evt, evt.request);
   }));
 });
 
@@ -98,9 +98,18 @@ function fromNetwork(request, timeout) {
   });
 }
 
-function fromCache(request) {
+function fromCache(event, request) {
   console.log('fromCache');
   return caches.open(CACHE_NAME).then(function (cache) {
+    let currUrl = new URL(event.request.url)
+    const cache = await caches.open(CACHE_NAME);
+    if(!filespaths.includes(currUrl.pathname)){
+        const cachedResponse = await cache.match(OFFLINE_URL);
+        return cachedResponse;
+    } else {
+        const cachresp = await cache.match(event.request);
+        return cachresp;
+    }
     return cache.match(request).then(function (matching) {
       return matching || Promise.reject('no-match');
     });
