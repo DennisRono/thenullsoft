@@ -72,49 +72,40 @@ self.addEventListener("install", event => {
   );
 });
 
-self.addEventListener("activate", event => {
-  // Remove old caches
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames
-          .filter(function(cacheName) {
-            return cacheName !== CACHE_NAME;
-          })
-          .map(function(cacheName) {
-            console.log(`deleting ${cacheName}`);
-            return caches.delete(cacheName);
-          })
-      );
-    })
-  );
+self.addEventListener('activate', function () {
+  clients.claim();
+  console.log('Now ready to handle fetches!');
 });
 
-//offline page
-self.addEventListener('fetch', (event) => {
-  if (event.request.mode === 'navigate') {
-    event.respondWith((async () => {
-      try {
-        const preloadResponse = await event.preloadResponse;
-        if (preloadResponse) {
-          return preloadResponse;
-        }
-        const networkResponse = await fetch(event.request);
-        return networkResponse;
-      } catch (error) {
-        let currUrl = new URL(event.request.url)
-        const cache = await caches.open(CACHE_NAME);
-        if(!filespaths.includes(currUrl.pathname)){
-            const cachedResponse = await cache.match(OFFLINE_URL);
-            return cachedResponse;
-        } else {
-            const cachresp = await cache.match(event.request);
-            return cachresp;
-        }
-      }
-    })());
-  }
+self.addEventListener('fetch', function (evt) {
+  console.log('The service worker is serving the asset.');
+
+  evt.respondWith(fromNetwork(evt.request, 400).catch(function () {
+    return fromCache(evt.request);
+  }));
 });
+
+function fromNetwork(request, timeout) {
+  console.log('fromNetwork');
+  return new Promise(function (fulfill, reject) {
+
+    var timeoutId = setTimeout(reject, timeout);
+
+    fetch(request).then(function (response) {
+      clearTimeout(timeoutId);
+      fulfill(response);
+    }, reject);
+  });
+}
+
+function fromCache(request) {
+  console.log('fromCache');
+  return caches.open(CACHE).then(function (cache) {
+    return cache.match(request).then(function (matching) {
+      return matching || Promise.reject('no-match');
+    });
+  });
+}
 
 
 // handle push notifications
