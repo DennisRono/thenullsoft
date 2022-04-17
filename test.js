@@ -1,5 +1,5 @@
 const fs = require("fs")
-const path = require("path")
+// const path = require("path")
 
 const getAllFiles = function(dirPath, arrayOfFiles) {
   files = fs.readdirSync(dirPath)
