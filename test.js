@@ -21,3 +21,5 @@
 // });
 
 import filespaths from './files.js'
+
+console.log(filespaths);
