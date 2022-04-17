@@ -247,4 +247,4 @@ const filespaths = ['/about.html',
 '/test.js',
 '/tos.html'];
 
-export filespaths;
+export default filespaths;
