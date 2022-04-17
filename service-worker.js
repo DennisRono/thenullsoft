@@ -45,7 +45,7 @@ self.addEventListener("activate", event => {
 
 //offline page
 self.addEventListener('fetch', (event) => {
-  if (event.request.mode === 'navigate') {
+  if (event.request.mode === 'GET') {
     event.respondWith((async () => {
       try {
         const preloadResponse = await event.preloadResponse;
