@@ -66,6 +66,9 @@
                                     align-items: center;
                                     transition: color 0.15s ease-in-out 0s;
                                     display: inline-block;
+                                    display: flex;
+                                    -webkit-box-align: center;
+                                    align-items: center;
                                     &:hover{
                                         color: rgb(109, 216, 255);
                                     }
