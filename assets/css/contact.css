@@ -25,20 +25,20 @@
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea {
   width: 80%;
+  position: relative;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack {
   background-color: #99fcce;
   height: 100%;
   width: 100%;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 0px !important;
+  position: absolute;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain {
   padding: 20px;
   background-color: #4db8ff;
+  position: absolute;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain .contactTitle {
