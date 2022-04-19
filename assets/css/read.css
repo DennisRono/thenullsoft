@@ -2,6 +2,10 @@
   margin: 0 5%;
 }
 
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-breadcrumb {
+  margin: 20px;
+}
+
 .readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-breadcrumb .read-breadcrumb-container p span {
   margin: 0 20px;
 }
