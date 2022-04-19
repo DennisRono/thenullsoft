@@ -31,6 +31,8 @@
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack {
   position: absolute;
   background-color: #7effc3;
+  height: 100%;
+  width: 100%;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack .contPlayMain {
