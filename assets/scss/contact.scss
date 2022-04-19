@@ -12,6 +12,14 @@
                 }
                 .contactPlayarea{
                     width: 80%;
+                    position: relative;
+                    .contPlayBack{
+                        position: absolute;
+                        background-color: rgb(126, 255, 195);
+                        .contPlayMain{
+                            position: absolute;
+                        }
+                    }
                 }
             }
         }
