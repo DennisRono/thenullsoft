@@ -13,10 +13,12 @@
                 .contactPlayarea{
                     width: 80%;
                     position: relative;
+                    display: block;
                     .contPlayBack{
                         background-color: rgb(153, 252, 206);
-                        height: 100px;
-                        width: 100px;
+                        display: block;
+                        height: 100%;
+                        width: 100%;
                         position: absolute;
                         top: 0;
                     }

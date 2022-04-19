@@ -26,12 +26,14 @@
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea {
   width: 80%;
   position: relative;
+  display: block;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack {
   background-color: #99fcce;
-  height: 100px;
-  width: 100px;
+  display: block;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
 }
