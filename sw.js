@@ -3,7 +3,7 @@ const registerServiceWorker = async () => {
     try {
       const registration = await navigator.serviceWorker.register(
         './service-worker.js',
-        { scope: '/thenullsoft/' }
+        { scope: '/' }
       );
       if (registration.installing) {
         console.log('Service worker installing');
