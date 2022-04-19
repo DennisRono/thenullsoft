@@ -44,6 +44,30 @@
                         .contFormSec{
                             margin-top: 3rem;
                             margin-left: 25px;
+                            form{
+                                .contact-btn{
+                                    border-radius: 4px;
+                                    padding: 13px 54px 15px;
+                                    background-color: rgb(109, 216, 255);
+                                    box-shadow: rgb(0 0 0 / 10%) 0px 0px 7px -2px;
+                                    border: 1px solid rgb(109, 216, 255);
+                                    position: relative;
+                                    overflow: hidden;
+                                    z-index: 1;
+                                    text-align: center;
+                                    line-height: 19px;
+                                    cursor: pointer;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    letter-spacing: 1.6px;
+                                    text-transform: uppercase;
+                                    color: rgb(255, 255, 255);
+                                    -webkit-box-align: center;
+                                    align-items: center;
+                                    transition: color 0.15s ease-in-out 0s;
+                                    display: inline-block;
+                                }
+                            }
                         }
                     }
                 }
