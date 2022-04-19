@@ -93,4 +93,8 @@
   transition: color 0.15s ease-in-out 0s;
   display: inline-block;
 }
+
+.contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain .contFormSec form .contact-btn:hover {
+  color: #6dd8ff;
+}
 /*# sourceMappingURL=contact.css.map */
