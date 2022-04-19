@@ -25,17 +25,11 @@
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea {
   width: 80%;
-  position: relative;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack {
-  position: absolute;
   background-color: #7effc3;
   height: 100%;
   width: 100%;
-}
-
-.contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack .contPlayMain {
-  position: absolute;
 }
 /*# sourceMappingURL=contact.css.map */
