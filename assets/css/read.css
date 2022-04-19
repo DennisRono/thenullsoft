@@ -163,6 +163,8 @@
 }
 
 .readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-content .read-content-container .rcont {
-  font-size: 24px;
+  font-size: 1.5rem;
+  letter-spacing: 1.5;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=read.css.map */
