@@ -32,7 +32,7 @@
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack {
   background-color: #99fcce;
   display: block;
-  min-height: 100%;
+  min-height: 50vh;
   width: 100%;
   position: absolute;
   right: 0;
@@ -46,6 +46,7 @@
   position: absolute;
   top: 0;
   margin-top: 20px;
+  margin-right: 20px;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain .contactTitle {
