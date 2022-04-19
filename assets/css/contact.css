@@ -31,10 +31,14 @@
   background-color: #99fcce;
   height: 100%;
   width: 100%;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px !important;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack .contPlayMain {
   padding: 20px;
+  background-color: #4db8ff;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack .contPlayMain .contactTitle {
