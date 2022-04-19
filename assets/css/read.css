@@ -160,6 +160,7 @@
 
 .readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-content .read-content-container {
   margin: 20px 5%;
+  margin-bottom: 60px;
 }
 
 .readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-content .read-content-container .rcont {
