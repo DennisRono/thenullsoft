@@ -37,5 +37,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 2rem;
+}
+
+.contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack .contPlayMain .contactTitle h1 {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=contact.css.map */
