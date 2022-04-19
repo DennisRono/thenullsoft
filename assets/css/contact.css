@@ -36,19 +36,19 @@
   padding-bottom: 0px !important;
 }
 
-.contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack .contPlayMain {
+.contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain {
   padding: 20px;
   background-color: #4db8ff;
 }
 
-.contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack .contPlayMain .contactTitle {
+.contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain .contactTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
 }
 
-.contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack .contPlayMain .contactTitle h1 {
+.contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain .contactTitle h1 {
   font-size: 2rem;
 }
 /*# sourceMappingURL=contact.css.map */
