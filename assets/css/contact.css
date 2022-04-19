@@ -30,8 +30,8 @@
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack {
   background-color: #99fcce;
-  height: 100%;
-  width: 100%;
+  height: 100px;
+  width: 100px;
   position: absolute;
   top: 0;
 }
