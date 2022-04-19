@@ -1,0 +1,8 @@
+.readsec .read .readwrapper .readcontainer {
+  margin: 0 5%;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-breadcrumb .read-breadcrumb-container p span {
+  margin: 0 20px;
+}
+/*# sourceMappingURL=read.css.map */
