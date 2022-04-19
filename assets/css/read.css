@@ -112,9 +112,8 @@
   padding-right: 60px;
 }
 
-.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo .dateColumn p .eventIcon {
-  margin-bottom: -5px;
-  margin-right: 10px;
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo .dateColumn p .space {
+  margin: 0 10px;
 }
 
 .readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo .dateColumn p .updateDate {
