@@ -1,4 +1,25 @@
 .contactsec .contact .contactwrapper {
   margin: 0 3%;
 }
+
+.contactsec .contact .contactwrapper .contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contactsec .contact .contactwrapper .contactFlex .contactSidebar {
+  width: 20%;
+}
+
+.contactsec .contact .contactwrapper .contactFlex .contactPlayarea {
+  width: 80%;
+}
 /*# sourceMappingURL=contact.css.map */

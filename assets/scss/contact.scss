@@ -3,11 +3,14 @@
         .contactwrapper{
             margin: 0 3%;
             .contactFlex{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
                 .contactSidebar{
-
+                    width: 20%;
                 }
                 .contactPlayarea{
-
+                    width: 80%;
                 }
             }
         }
