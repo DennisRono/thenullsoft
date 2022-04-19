@@ -49,7 +49,6 @@
                                     border-radius: 4px;
                                     padding: 13px 54px 15px;
                                     background-color: rgb(109, 216, 255);
-                                    box-shadow: rgba(0,0,0,10%) 0px 0px 7px -2px;
                                     border: 1px solid rgb(109, 216, 255);
                                     position: relative;
                                     overflow: hidden;
@@ -66,6 +65,7 @@
                                     align-items: center;
                                     transition: color 0.15s ease-in-out 0s;
                                     display: inline-block;
+                                    margin-bottom: 6rem;
                                     &:hover{
                                         color: rgb(109, 216, 255);
                                         background-color: #fff;
