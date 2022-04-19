@@ -91,6 +91,7 @@
   transition: color 0.15s ease-in-out 0s;
   display: inline-block;
   margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain .contFormSec form .contact-btn:hover {
