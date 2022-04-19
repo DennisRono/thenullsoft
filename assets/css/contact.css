@@ -97,5 +97,7 @@
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain .contFormSec form .contact-btn:hover {
   color: #6dd8ff;
   background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=contact.css.map */
