@@ -9,4 +9,8 @@
 .readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-breadcrumb .read-breadcrumb-container p span {
   margin: 0 20px;
 }
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .readTitle {
+  font-size: 4rem;
+}
 /*# sourceMappingURL=read.css.map */
