@@ -34,10 +34,14 @@
                         margin-right: 20px;
                         .contactTitle{
                             display: flex;
+                            margin: 0 5%;
                             gap: 2rem;
                             h1{
                                 font-size: 2rem;
                             }
+                        }
+                        .contFormSec{
+                            margin-top: 3rem;
                         }
                     }
                 }

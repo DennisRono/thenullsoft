@@ -54,10 +54,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 5%;
   gap: 2rem;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain .contactTitle h1 {
   font-size: 2rem;
+}
+
+.contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain .contFormSec {
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=contact.css.map */
