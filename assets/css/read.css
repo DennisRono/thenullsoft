@@ -157,4 +157,12 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-content .read-content-container {
+  margin: 20px 5%;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-content .read-content-container .rcont {
+  font-size: 24px;
+}
 /*# sourceMappingURL=read.css.map */
