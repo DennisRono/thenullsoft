@@ -23,7 +23,6 @@
                         right: 0;
                         top: 0;
                         bottom: 0;
-                        padding: 0 6%;
                     }
                     .contPlayMain{
                         padding: 20px;
@@ -33,6 +32,7 @@
                         margin-top: 20px;
                         margin-left: -20px;
                         margin-right: 20px;
+                        padding: 0 6%;
                         .contactTitle{
                             display: flex;
                             margin: 3rem 0;
@@ -43,6 +43,7 @@
                         }
                         .contFormSec{
                             margin-top: 3rem;
+                            margin-left: 25px;
                         }
                     }
                 }

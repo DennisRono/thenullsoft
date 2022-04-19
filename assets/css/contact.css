@@ -38,7 +38,6 @@
   right: 0;
   top: 0;
   bottom: 0;
-  padding: 0 6%;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain {
@@ -49,6 +48,7 @@
   margin-top: 20px;
   margin-left: -20px;
   margin-right: 20px;
+  padding: 0 6%;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain .contactTitle {
@@ -65,5 +65,6 @@
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain .contFormSec {
   margin-top: 3rem;
+  margin-left: 25px;
 }
 /*# sourceMappingURL=contact.css.map */
