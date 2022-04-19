@@ -66,6 +66,27 @@
                         </div>
                         <div class="read-cont-UCard">
                             <h1 class="readTitle">Artificial Inteligence: Getting started with TensorFlow Python AI Library</h1>
+                            <div class="blogPostCardInfo">
+                                <div class="blogAuthor">
+                                    <img src={`http://localhost/admin-panel/uploads/${blogs.AuthorImg}`} alt="" />
+                                    {/* <img src={`${process.env.PUBLIC_URL}/images/${blogs.AuthorImg}`} alt="" /> */}
+                                    <div class="authorInfo">
+                                        <div class="authorName">
+                                            <Link to="" class="linktoAuthor">{blogs.Author}</Link>
+                                        </div>
+                                        <div class="blogMeta">
+                                            <span class="blogDate">{dateFormat(blogs.DatePublished, "dddd, mmmm dS, yyyy")}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dateColumn">
+                                    <p><EventIcon class="eventIcon"/>Last Updated on <span class="updateDate">{dateFormat(blogs.DateModified, "dddd, mmmm dS, yyyy")}</span></p>
+                                </div>
+                            </div>
+                            <div class="blogPostthumbnail">
+                                <img class="thumbnailImage" src={`http://localhost/admin-panel/uploads/${blogs.BlogThumbnail}`} alt="" />
+                            </div>
+                            <div class="artImage"></div>
                         </div>
                         <div class="read-content"></div>
                     </div>
