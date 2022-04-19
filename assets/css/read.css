@@ -14,4 +14,147 @@
   font-size: 3rem;
   margin-left: 10px;
 }
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo .blogAuthor {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 50px;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo .blogAuthor img {
+  margin-right: 10px;
+  float: left;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo .blogAuthor .authorInfo {
+  margin-bottom: 0px;
+  padding-top: 5px;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo .blogAuthor .authorInfo .authorName {
+  margin-bottom: 10px;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo .blogAuthor .authorInfo .authorName .linktoAuthor {
+  font-weight: 700;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  text-decoration: none !important;
+  font-size: 1.0rem;
+  line-height: 1.0rem;
+  margin-bottom: 0.8rem;
+  margin-left: 10px;
+  color: var(--text-primary) !important;
+  font-family: "gibsonsemibold",Helvetica,Arial,sans-serif;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo .blogAuthor .authorInfo .blogMeta {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: var(--text-primary) !important;
+  font-size: 15px;
+  font-weight: 400;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin-right: 50px;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo .blogAuthor .authorInfo .blogMeta .blogDate {
+  border: 0;
+  color: var(--text-primary) !important;
+  font-weight: 500;
+  font-family: "gibsonsemibold",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  margin-left: 7px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo .dateColumn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--text-primary) !important;
+  padding-bottom: 9px;
+  padding-right: 60px;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo .dateColumn p .eventIcon {
+  margin-bottom: -5px;
+  margin-right: 10px;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostCardInfo .dateColumn p .updateDate {
+  font-weight: bold;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostthumbnail {
+  height: auto !important;
+  margin-bottom: 24px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostthumbnail .thumbnailImage {
+  max-height: 350px;
+  height: auto !important;
+  border-radius: 0;
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
+  padding: 0 !important;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.readsec .read .readwrapper .readcontainer .read-inner-wrapper .read-cont-UCard .blogPostthumbnail .thumbnailImage:hover {
+  margin-top: 0;
+  -webkit-filter: initial;
+          filter: initial;
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 /*# sourceMappingURL=read.css.map */

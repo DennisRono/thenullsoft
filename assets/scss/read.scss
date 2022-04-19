@@ -19,6 +19,112 @@
                             font-size: 3rem;
                             margin-left: 10px;
                         }
+                        .blogPostCardInfo{
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: space-between;
+                            margin-bottom: 25px;
+                            width: 100%;
+                            margin-top: 20px;
+                            .blogAuthor{
+                                margin: 0;
+                                display: flex;
+                                min-height: 30px;
+                                align-items: flex-start;
+                                margin-left: 50px;
+                                img{
+                                    margin-right: 10px;
+                                    float: left;
+                                    border-radius: 50%;
+                                    width: 60px;
+                                    height: 60px;
+                                    vertical-align: middle;
+                                    border-style: none;
+                                }
+                                .authorInfo{
+                                    margin-bottom: 0px;
+                                    padding-top: 5px;
+                                    .authorName{
+                                        margin-bottom: 10px;
+                                        .linktoAuthor{
+                                            font-weight: 700;
+                                            transition: 0.2s;
+                                            text-decoration: none!important;
+                                            font-size: 1.0rem;
+                                            line-height: 1.0rem;
+                                            margin-bottom: 0.8rem;
+                                            margin-left: 10px;
+                                            color: var(--text-primary) !important;
+                                            font-family: "gibsonsemibold",Helvetica,Arial,sans-serif;
+                                        }
+                                    }
+                                    .blogMeta{
+                                        margin: 0;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        color: var(--text-primary) !important;
+                                        font-size: 15px;
+                                        font-weight: 400;
+                                        transition: 0.2s;
+                                        margin-right: 50px;
+                                        .blogDate{
+                                            border: 0;
+                                            color: var(--text-primary) !important;
+                                            font-weight: 500;
+                                            font-family: "gibsonsemibold",Helvetica,Arial,sans-serif;
+                                            font-size: 14px;
+                                            margin-left: 7px;
+                                            font-weight: 700;
+                                            margin-top: 3px;
+                                        }
+                                    }
+                                }
+                            }
+                            .dateColumn{
+                                align-items: center;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 18px;
+                                color: var(--text-primary) !important;
+                                padding-bottom: 9px;
+                                padding-right: 60px;
+                                p{
+                                    .eventIcon{
+                                        margin-bottom: -5px;
+                                        margin-right: 10px;
+                                    }
+                                    .updateDate{
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                        .blogPostthumbnail{
+                            height: auto!important;
+                            margin-bottom: 24px;
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            // overflow: hidden;
+                            .thumbnailImage{
+                                max-height: 350px;
+                                height: auto!important;
+                                border-radius: 0;
+                                box-shadow: initial;
+                                padding: 0!important;
+                                width: 100%;
+                                object-fit: cover;
+                                filter: brightness(90%);
+                                transition: 0.5s;
+                                vertical-align: middle;
+                                border-style: none;
+                            }
+                            .thumbnailImage:hover{
+                                margin-top: 0;
+                                filter: initial;
+                                box-shadow: initial;
+                                transition: 0.5s;
+                            }
+                        }
                     }
                 }
             }
