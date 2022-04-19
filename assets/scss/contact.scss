@@ -66,19 +66,9 @@
                                     align-items: center;
                                     transition: color 0.15s ease-in-out 0s;
                                     display: inline-block;
-                                    display: flex;
-                                    -webkit-box-align: center;
-                                    align-items: center;
                                     &:hover{
                                         color: rgb(109, 216, 255);
-                                    }
-                                    &:hover::before{
-                                        transform: translateY(0px);
-                                        transition: all 0.2s ease-in-out 0s;
-                                    }
-                                    &:hover::after{
-                                        transform: translateY(0px);
-                                        transition: all 0ms ease-in-out 0.2s;
+                                        background-color: #fff;
                                     }
                                 }
                             }
