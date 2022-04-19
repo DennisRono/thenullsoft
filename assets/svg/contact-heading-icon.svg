@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>contact_us_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="75.4765625%" y1="91.8652344%" x2="23.3007812%" y2="9.76367188%" id="linearGradient-1">
+            <stop stop-color="#63D5FF" offset="0%"></stop>
+            <stop stop-color="#D3F3FF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-11.1%" y="-13.9%" width="122.2%" height="127.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="2" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Ecommerce-Development" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contact-Us" transform="translate(-571.000000, -659.000000)">
+            <g id="Group-7" transform="translate(565.000000, 659.000000)">
+                <g id="Group-13" transform="translate(6.000000, 0.000000)">
+                    <g id="contact_us_icon" transform="translate(0.000000, -0.000000)">
+                        <circle id="Oval" fill="url(#linearGradient-1)" cx="45" cy="45" r="45"></circle>
+                        <path d="M38.6,25.4 L22.4,25.4 C19.43,25.4 17,27.83 17,30.8 L17,63.2 C17,66.17 19.43,68.6 22.4,68.6 L65.6,68.6 C68.57,68.6 71,66.17 71,63.2 L71,36.2 C71,33.23 68.57,30.8 65.6,30.8 L44,30.8 L38.6,25.4 Z" id="Path" fill="#66C8EB" filter="url(#filter-2)"></path>
+                        <path d="M38.6,23.4 L22.4,23.4 C19.43,23.4 17,25.83 17,28.8 L17,61.2 C17,64.17 19.43,66.6 22.4,66.6 L65.6,66.6 C68.57,66.6 71,64.17 71,61.2 L71,34.2 C71,31.23 68.57,28.8 65.6,28.8 L44,28.8 L38.6,23.4 Z" id="Path" fill="#FFFFFF"></path>
+                        <path d="M53.9281079,46.7010756 C53.7947493,46.3840978 53.4978562,46.1799703 53.1703003,46.1799703 C52.222108,46.1799703 46.9282437,46.1799703 46.9282437,46.1799703 L49.4958015,38.9901277 C49.5922512,38.7200778 49.5573704,38.4170237 49.4024343,38.1793763 C49.2475794,37.9418149 48.9924622,37.8 48.7199046,37.8 L42.5444461,37.8 C42.1995309,37.8 41.8905511,38.0261303 41.768468,38.3679471 L37.8536967,49.3301516 C37.757247,49.6002015 37.7921279,49.9032556 37.9470639,50.140903 C38.1019999,50.3784644 38.3571171,50.5203652 38.6296748,50.5203652 L45.5571003,50.4762737 L41.8969595,60.7905131 C41.8486129,60.9268272 41.898663,61.0803311 42.0161223,61.1559657 C42.1335817,61.2316003 42.285273,61.2078786 42.3771801,61.0995836 L53.7874487,47.64668 C54.006306,47.388491 54.0614665,47.0180533 53.9281079,46.7010756 Z" id="Path" fill="#42BCE9" fill-rule="nonzero" opacity="0.700055804"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
