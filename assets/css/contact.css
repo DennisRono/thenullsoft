@@ -32,4 +32,10 @@
   height: 100%;
   width: 100%;
 }
+
+.contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack .contPlayMain .contactTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=contact.css.map */
