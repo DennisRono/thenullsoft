@@ -33,12 +33,16 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain {
   padding: 20px;
   background-color: #4db8ff;
   position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayMain .contactTitle {
