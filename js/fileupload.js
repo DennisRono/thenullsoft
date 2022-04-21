@@ -19,7 +19,7 @@ $(document).ready(function (e) {
                 }else{
                     // view uploaded file.
                     $("#preview").html(data).fadeIn();
-                    $("#form")[0].reset(); 
+                    $("#form")[0].reset();
                 }
             },
             error: function(e) {
