@@ -5,8 +5,9 @@ $(document).ready(function (e) {
      $.ajax({
             url: "./includes/fileupload.php",
             type: "POST",
-            data:  "hello",
-            contentType: false,
+            data: '{"value":"10"}', //Data sent to server
+            contentType:"application/json",
+            dataType: "json",
             cache: false,
             processData:false,
             beforeSend : function(){
