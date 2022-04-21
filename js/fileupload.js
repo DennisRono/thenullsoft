@@ -3,7 +3,7 @@ $(document).ready(function (e) {
      e.preventDefault();
      console.log($(".file-field").val());
      $.ajax({
-            url: "includes/fileupload.php",
+            url: "./includes/fileupload.php",
             type: "POST",
             data:  "hello",
             contentType: false,
