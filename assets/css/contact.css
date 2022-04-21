@@ -38,10 +38,10 @@
 .contactsec .contact .contactwrapper .contactFlex .contactSidebar .cttchild {
   font-size: 1.3rem;
   margin-top: 20px;
+  margin-bottom: 50%;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactSidebar .contsidesteps {
-  margin-top: 50%;
   margin-left: 20px;
   padding-bottom: 290px;
   position: relative;
