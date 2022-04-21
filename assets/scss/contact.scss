@@ -1,6 +1,7 @@
 .contactsec{
+    height: min-content;
     .contact{
-        height: 100vh;
+        height: 200vh;
         .contactwrapper{
             margin: 0 3%;
             .contactFlex{
@@ -18,7 +19,7 @@
                     .contPlayBack{
                         background-color: rgb(153, 252, 206);
                         display: block;
-                        min-height: 50vh;
+                        min-height: 135vh;
                         width: 100%;
                         position: absolute;
                         right: 0;
@@ -27,7 +28,7 @@
                     }
                     .contPlayMain{
                         padding: 20px;
-                        background-color: rgb(77, 184, 255);
+                        background-color: rgb(143, 210, 254);
                         position: absolute;
                         top: 0;
                         margin-top: 20px;
@@ -46,11 +47,130 @@
                             margin-top: 3rem;
                             margin-left: 25px;
                             form{
+                                .cont-group{
+                                    margin-bottom: 40px;
+                                    .user-input-wrp {
+                                        position: relative;
+                                        width: 94%;
+                                        margin: 5px 0px;
+                                    }
+                                    .user-input-wrp .inputText{
+                                        width: 100%;
+                                        outline: none;
+                                        border: 1px solid rgb(211, 211, 211);
+                                        padding: 10px 13px;
+                                         box-shadow: none !important;
+                                        border-radius: 5px;
+                                        background-color: #fff;
+                                    }
+                                    .user-input-wrp .inputText:not([value=""]){
+                                        background-color: rgb(255, 219, 166);
+                                    }
+                                    .user-input-wrp .floating-label {
+                                        position: absolute;
+                                        pointer-events: none;
+                                        top: 26px;
+                                        left: 10px;
+                                        transition: 0.2s ease all;
+                                        opacity: .5;
+                                        color: rgb(95, 95, 95);
+                                    }
+                                    .user-input-wrp .inputText:not([value=""]) ~ .floating-label,
+                                    .user-input-wrp .inputText:focus ~ .floating-label{
+                                        top: 0px;
+                                        left: 8px;
+                                        font-size: 13px;
+                                        opacity: 1;
+                                    }
+                                    // #id-input{
+                                    //     border: 2px solid #ff5b5b;
+                                    // }
+                                    // #id-err{
+                                    //     font-size: 12px;
+                                    //     color: red;
+                                    //     margin-left: 10px;
+                                    // }
+                                    .cont-gr-flex{
+                                        width: 97%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        .contPut{
+                                            width: 46%;
+                                        }
+                                    }
+                                    .input-field-row{
+                                        display: flex;
+                                        margin-bottom: 22px;
+                                        -webkit-box-pack: justify;
+                                        justify-content: space-between;
+                                        margin: 15px 0px;
+                                        .input-file-row{
+                                            width: 97%;
+                                            position: relative;
+                                            .project_brief{
+                                                display: flex;
+                                                padding: 18px 20px;
+                                                -webkit-box-align: center;
+                                                align-items: center;
+                                                -webkit-box-pack: justify;
+                                                justify-content: space-between;
+                                                cursor: pointer;
+                                                border: 1px dashed rgba(0, 0, 0, 0.2);
+                                                border-radius: 5px;
+                                                .file-content{
+                                                    display: flex;
+                                                    -webkit-box-align: center;
+                                                    align-items: center;
+                                                    position: relative;
+                                                    .icon{
+                                                        margin-right: 15px;
+                                                        img{
+                                                            max-width: 100%;
+                                                            height: auto;
+                                                        }
+                                                    }
+                                                    .content-label{
+                                                        font-size: 16px;
+                                                        letter-spacing: -0.17px;
+                                                        line-height: 22px;
+                                                        color: rgb(80, 79, 79);
+                                                    }
+                                                }
+                                                .row-wrap{
+                                                    display: flex;
+                                                    -webkit-box-align: center;
+                                                    align-items: center;
+                                                    .button{
+                                                        background: rgb(109, 216, 255);
+                                                        border-radius: 4px;
+                                                        box-shadow: rgba(0, 0, 0, 10%) 0px 0px 7px -2px;
+                                                        padding: 9px 23px 11px;
+                                                        font-size: 16px;
+                                                        letter-spacing: 1.6px;
+                                                        color: rgb(255, 255, 255);
+                                                        text-transform: uppercase;
+                                                        font-weight: 500;
+                                                    }
+                                                }
+                                            }
+                                            .file-field{
+                                                height: 100%;
+                                                opacity: 0;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                width: 100%;
+                                                top: 0px;
+                                                left: 0px;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
                                 .contact-btn{
                                     border-radius: 4px;
                                     padding: 13px 54px 15px;
-                                    background-color: rgb(109, 216, 255);
-                                    border: 1px solid rgb(109, 216, 255);
+                                    background-color: #2ac6ff;
+                                    border: 1px solid #2ac6ff;
                                     position: relative;
                                     overflow: hidden;
                                     z-index: 1;
