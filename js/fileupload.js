@@ -3,7 +3,7 @@ $(document).ready(function (e) {
      e.preventDefault();
      console.log($(".file-field").val());
      $.ajax({
-            url: "./includes/fileupload.php",
+            url: "http://127.0.0.1:5500/includes/fileupload.php",
             type: "POST",
             data: '{"value":"10"}', //Data sent to server
             contentType:"application/json",
