@@ -30,6 +30,11 @@
   width: 30%;
 }
 
+.contactsec .contact .contactwrapper .contactFlex .contactSidebar .contSideTitle {
+  margin-top: 50px;
+  font-size: 2rem;
+}
+
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea {
   width: 70%;
   position: relative;
