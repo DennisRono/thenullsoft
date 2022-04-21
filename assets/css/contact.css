@@ -40,6 +40,10 @@
   margin-top: 20px;
 }
 
+.contactsec .contact .contactwrapper .contactFlex .contactSidebar .contsidesteps {
+  margin: 10% 0px;
+}
+
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea {
   width: 70%;
   position: relative;
