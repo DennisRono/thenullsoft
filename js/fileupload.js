@@ -3,16 +3,14 @@ $(document).ready(function (e) {
      e.preventDefault();
      $.ajax({
             url: "includes/fileupload.php",
-      type: "PUT",
-      data:  $(".file-field").val(),
-      contentType: false,
+            type: "PUT",
+            data:  $(".file-field").val(),
+            contentType: false,
             cache: false,
-      processData:false,
-      beforeSend : function()
-      {
-       //$("#preview").fadeOut();
-       $("#fileErr").fadeOut();
-      },
+            processData:false,
+            beforeSend : function(){
+                $("#fileErr").fadeOut();
+            },
       success: function(data)
          {
        if(data=='invalid')
