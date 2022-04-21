@@ -32,13 +32,13 @@
 
 .contactsec .contact .contactwrapper .contactFlex .contactSidebar .contSideTitle {
   margin-top: 50px;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactSidebar .cttchild {
   font-size: 1.3rem;
   margin-top: 20px;
-  margin-bottom: 50%;
+  margin-bottom: 25%;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactSidebar .contsidesteps {
@@ -82,7 +82,7 @@
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack {
   background-color: #99fcce;
   display: block;
-  height: auto;
+  height: 135vh;
   width: 100%;
   position: absolute;
   right: 0;
