@@ -1,5 +1,9 @@
 <?php
-    $files = array_filter($_FILES['upload']['name']); //Use something similar before processing files.
+    $img = $_FILES['image']['name'];
+    // can upload same image using rand function
+    $final_image = rand(1000,1000000).$img;
+
+    $files = array_filter($final_image); //Use something similar before processing files.
     // Count the number of uploaded files in array
     $total_count = count($_FILES['upload']['name']);
     // Loop through every file
