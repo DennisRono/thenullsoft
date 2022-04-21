@@ -1,8 +1,8 @@
 $(document).ready(function (e) {
-    $("#form").on('submit',(function(e) {
+    $("#filePush").on('click',(function(e) {
      e.preventDefault();
      $.ajax({
-            url: "ajaxupload.php",
+            url: "includes/fileupload.php",
       type: "POST",
       data:  new FormData(this),
       contentType: false,
