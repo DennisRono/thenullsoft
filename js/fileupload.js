@@ -11,24 +11,18 @@ $(document).ready(function (e) {
             beforeSend : function(){
                 $("#fileErr").fadeOut();
             },
-      success: function(data)
-         {
-       if(data=='invalid')
-       {
-        // invalid file format.
-        $("#fileErr").html("Invalid File !").fadeIn();
-       }
-       else
-       {
-        // view uploaded file.
-        $("#preview").html(data).fadeIn();
-        $("#form")[0].reset(); 
-       }
-         },
-        error: function(e) 
-         {
-       $("#fileErr").html(e).fadeIn();
-         }          
+            success: function(data){
+                if(data=='invalid'){
+                        $("#fileErr").html("Invalid File !").fadeIn();
+                }else{
+                    // view uploaded file.
+                    $("#preview").html(data).fadeIn();
+                    $("#form")[0].reset(); 
+                }
+            },
+            error: function(e) {
+                $("#fileErr").html(e).fadeIn();
+            }          
        });
     }));
-   });
+});
