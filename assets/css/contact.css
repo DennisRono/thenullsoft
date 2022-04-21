@@ -49,6 +49,16 @@
   margin-top: 10px;
 }
 
+.contactsec .contact .contactwrapper .contactFlex .contactSidebar .contsidesteps::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: rgba(145, 225, 255, 0.2);
+  left: -26px;
+  top: 6px;
+  height: 100%;
+}
+
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea {
   width: 70%;
   position: relative;
