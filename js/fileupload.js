@@ -11,14 +11,14 @@ $(document).ready(function (e) {
       beforeSend : function()
       {
        //$("#preview").fadeOut();
-       $("#err").fadeOut();
+       $("#fileErr").fadeOut();
       },
       success: function(data)
          {
        if(data=='invalid')
        {
         // invalid file format.
-        $("#err").html("Invalid File !").fadeIn();
+        $("#fileErr").html("Invalid File !").fadeIn();
        }
        else
        {
@@ -29,7 +29,7 @@ $(document).ready(function (e) {
          },
         error: function(e) 
          {
-       $("#err").html(e).fadeIn();
+       $("#fileErr").html(e).fadeIn();
          }          
        });
     }));
