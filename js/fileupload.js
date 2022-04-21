@@ -1,10 +1,11 @@
 $(document).ready(function (e) {
     $("#filePush").on('click',(function(e) {
      e.preventDefault();
+     console.log($(".file-field").val());
      $.ajax({
             url: "includes/fileupload.php",
             type: "POST",
-            data:  $(".file-field").val(),
+            data:  "hello",
             contentType: false,
             cache: false,
             processData:false,
