@@ -41,8 +41,10 @@
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactSidebar .contsidesteps {
-  margin: 50% 0px;
+  margin-top: 50%;
   margin-left: 20px;
+  padding-bottom: 290px;
+  position: relative;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactSidebar .contsidesteps p {
