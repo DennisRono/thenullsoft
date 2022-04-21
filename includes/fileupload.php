@@ -1,6 +1,6 @@
 <?php
 
-$valid_extensions = array('jpeg', 'jpg', 'png', 'gif', 'bmp' , 'pdf' , 'doc' , 'ppt'); // valid extensions
+$valid_extensions = array('jpeg', 'jpg', 'png', 'gif', 'bmp' , 'pdf' , 'doc' , 'ppt', 'xls', 'docx'); // valid extensions
 $path = 'uploads/'; // upload directory
 
 if(!empty($_POST['name']) || !empty($_POST['email']) || $_FILES['image'])
