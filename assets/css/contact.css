@@ -20,19 +20,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 4rem;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactSidebar {
-  width: 30%;
+  width: 25%;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactSidebar .contSideTitle {
   margin-top: 50px;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea {

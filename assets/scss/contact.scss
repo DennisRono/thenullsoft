@@ -7,13 +7,13 @@
             .contactFlex{
                 display: flex;
                 flex-direction: row;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 margin-top: 4rem;
                 .contactSidebar{
-                    width: 30%;
+                    width: 25%;
                     .contSideTitle{
                         margin-top: 50px;
-                        font-size: 2rem;
+                        font-size: 3rem;
                     }
                 }
                 .contactPlayarea{
