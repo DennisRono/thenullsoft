@@ -5,7 +5,7 @@
 
     $files = array_filter($final_image); //Use something similar before processing files.
     // Count the number of uploaded files in array
-    $total_count = count($_FILES['upload']['name']);
+    $total_count = count($img);
     // Loop through every file
     for( $i=0 ; $i < $total_count ; $i++ ) {
     //The temp file path is obtained
