@@ -24,6 +24,20 @@
                         margin-left: 20px;
                         padding-bottom: 290px;
                         position: relative;
+                        h3{
+                            &::before{
+                                content: "";
+                                width: 18px;
+                                height: 18px;
+                                border: 3px solid rgb(255, 255, 255);
+                                background: rgb(145, 225, 255);
+                                position: absolute;
+                                left: -34px;
+                                top: 2px;
+                                border-radius: 50%;
+                                z-index: 1;
+                            }
+                        }
                         p{
                             margin-top: 10px;
                         }
