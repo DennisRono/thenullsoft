@@ -4,7 +4,7 @@ $(document).ready(function (e) {
      $.ajax({
             url: "includes/fileupload.php",
       type: "POST",
-      data:  new FormData(this),
+      data:  $(".file-field").val(),
       contentType: false,
             cache: false,
       processData:false,
