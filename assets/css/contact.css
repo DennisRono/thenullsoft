@@ -82,7 +82,7 @@
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea .contPlayBack {
   background-color: #99fcce;
   display: block;
-  min-height: 135vh;
+  height: auto;
   width: 100%;
   position: absolute;
   right: 0;
