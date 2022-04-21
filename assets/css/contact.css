@@ -35,6 +35,11 @@
   font-size: 3rem;
 }
 
+.contactsec .contact .contactwrapper .contactFlex .contactSidebar .cttchild {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea {
   width: 70%;
   position: relative;
