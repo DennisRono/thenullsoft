@@ -42,6 +42,11 @@
 
 .contactsec .contact .contactwrapper .contactFlex .contactSidebar .contsidesteps {
   margin: 50% 0px;
+  margin-left: 20px;
+}
+
+.contactsec .contact .contactwrapper .contactFlex .contactSidebar .contsidesteps p {
+  margin-top: 10px;
 }
 
 .contactsec .contact .contactwrapper .contactFlex .contactPlayarea {
