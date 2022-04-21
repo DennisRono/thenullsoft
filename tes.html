@@ -38,7 +38,10 @@ $( "#userForm" ).submit(function( event ) {
         //if request if made successfully then the response represent the data
 
         $( "#result" ).empty().append( response );
-    }
+    },
+    error: function(e) {
+        $( "#result" ).empty().append( e );
+    }  
   });
   
 });
