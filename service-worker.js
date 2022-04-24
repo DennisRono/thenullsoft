@@ -80,7 +80,7 @@ self.addEventListener('activate', function () {
 self.addEventListener('fetch', function (evt) {
   console.log('The service worker is serving the asset.');
 
-  evt.respondWith(fromNetwork(evt.request, 600).catch(function () {
+  evt.respondWith(fromNetwork(evt.request, 6000).catch(function () {
     return fromCache(evt, evt.request);
   }));
 });
