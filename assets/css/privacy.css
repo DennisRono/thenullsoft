@@ -1,0 +1,27 @@
+.terms {
+  color: inherit;
+  margin: 20px 10%;
+  padding-top: 50px;
+}
+
+.title {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  margin-bottom: 0.8rem;
+  color: inherit;
+  font-family: "gibsonsemibold",Helvetica,Arial,sans-serif;
+}
+
+.terms > p {
+  font-size: 1.3rem !important;
+  line-height: 2.4rem !important;
+  font-family: "canada-type-gibson", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: inherit;
+  margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=privacy.css.map */
