@@ -7,8 +7,6 @@
   font-size: 1.4rem;
   line-height: 1.4rem;
   margin-bottom: 0.8rem;
-  color: var(--text-primary);
-  font-family: "gibsonsemibold",Helvetica,Arial,sans-serif;
   position: relative;
 }
 
@@ -17,11 +15,9 @@
   margin-bottom: 50px;
   font-size: 0.9rem !important;
   line-height: 1.4rem !important;
-  font-family: "canada-type-gibson", sans-serif;
   font-weight: 300;
   font-style: normal;
   margin-top: 0px;
-  color: var(--text-primary);
 }
 
 .whatwedo .whatwedocontainer .whatwedogrid {
@@ -38,7 +34,6 @@
   display: flex;
   padding: 10px;
   border: 1px solid #fcd9c3;
-  background-color: var(--related);
   -webkit-box-shadow: rgba(0, 0, 0, 0.548);
           box-shadow: rgba(0, 0, 0, 0.548);
   -webkit-transition: all 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
@@ -59,8 +54,6 @@
   font-size: 1.4rem;
   line-height: 1.4rem;
   margin-bottom: 0.8rem;
-  color: var(--text-primary);
-  font-family: "gibsonsemibold",Helvetica,Arial,sans-serif;
   position: relative;
 }
 
@@ -72,6 +65,5 @@
   font-weight: 300;
   font-style: normal;
   margin-top: 0px;
-  color: var(--text-primary);
 }
 /*# sourceMappingURL=about.css.map */

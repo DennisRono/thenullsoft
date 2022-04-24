@@ -6,8 +6,6 @@
             font-size: 1.4rem;
             line-height: 1.4rem;
             margin-bottom: 0.8rem;
-            color: var(--text-primary);
-            font-family: "gibsonsemibold",Helvetica,Arial,sans-serif;
             position: relative;
         }
         .whatwedopreview{
@@ -15,11 +13,9 @@
             margin-bottom: 50px;
             font-size: 0.9rem !important;
             line-height: 1.4rem !important;
-            font-family: "canada-type-gibson", sans-serif;
             font-weight: 300;
             font-style: normal;
             margin-top: 0px;
-            color: var(--text-primary);
         }
         .whatwedogrid{
             display: grid;
@@ -29,7 +25,6 @@
                 display: flex;
                 padding: 10px;
                 border: 1px solid rgb(252, 217, 195);
-                background-color: var(--related);
                 box-shadow: rgba(0, 0, 0, 0.548);
                 transition: all 800ms cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
                 border-radius: 5px;
@@ -46,8 +41,6 @@
                         font-size: 1.4rem;
                         line-height: 1.4rem;
                         margin-bottom: 0.8rem;
-                        color: var(--text-primary);
-                        font-family: "gibsonsemibold",Helvetica,Arial,sans-serif;
                         position: relative;
                     }
                     .wwdicontext{
@@ -58,7 +51,6 @@
                         font-weight: 300;
                         font-style: normal;
                         margin-top: 0px;
-                        color: var(--text-primary);
                     }
                 }
             }
