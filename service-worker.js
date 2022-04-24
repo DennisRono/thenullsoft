@@ -113,19 +113,19 @@ function fromCache(event, request) {
 }
 
 //cache aricle page from user
-// document.querySelector('.cache-article').addEventListener('click', function(event) {
-//   event.preventDefault();
-//   var id = this.dataset.articleId;
-//   caches.open(CACHE_NAME).then(function(cache) {
-//     fetch('/get-article-urls?id=' + id).then(function(response) {
-//       // /get-article-urls returns a JSON-encoded array of
-//       // resource URLs that a given article depends on
-//       return response.json();
-//     }).then(function(urls) {
-//       cache.addAll(urls);
-//     });
-//   });
-// });
+document.querySelector('.cache-article').addEventListener('click', function(event) {
+  event.preventDefault();
+  var id = this.dataset.articleId;
+  caches.open(CACHE_NAME).then(function(cache) {
+    fetch('/get-article-urls?id=' + id).then(function(response) {
+      // /get-article-urls returns a JSON-encoded array of
+      // resource URLs that a given article depends on
+      return response.json();
+    }).then(function(urls) {
+      cache.addAll(urls);
+    });
+  });
+});
 
 
 // handle push notifications
