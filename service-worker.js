@@ -104,11 +104,11 @@ function fromCache(event, request) {
     let currUrl = new URL(event.request.url)
     if(!filespaths.includes(currUrl.pathname)){
         return cache.match(OFFLINE_URL).then((offpage)=>{
-          return offpage;
+          return offpage || fetch(event.request);
         });
     } else {
       return cache.match(request).then(function (matching) {
-        return matching || Promise.reject('no-match');
+        return matching  || fetch(event.request);
       });
     }
   });
