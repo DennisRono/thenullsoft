@@ -1,6 +1,7 @@
 .reg .regcontainer .regwrapper .reg-inner-wrapper {
   position: relative;
   height: 100vh;
+  background-color: #e4e4e4;
 }
 
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox {
