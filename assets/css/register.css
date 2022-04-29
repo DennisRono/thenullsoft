@@ -64,7 +64,7 @@
 }
 
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .id-input {
-  border: 2px solid #ff5b5b;
+  border: 2px solid #ff5b5b !important;
 }
 
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .id-err {
