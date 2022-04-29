@@ -53,14 +53,14 @@
                             font-size: 13px;
                             opacity: 1;
                         }
-                        // #id-input{
-                        //     border: 2px solid #ff5b5b;
-                        // }
-                        // #id-err{
-                        //     font-size: 12px;
-                        //     color: red;
-                        //     margin-left: 10px;
-                        // }
+                        #id-input{
+                            border: 2px solid #ff5b5b;
+                        }
+                        .id-err{
+                            font-size: 12px;
+                            color: red;
+                            margin-left: 10px;
+                        }
                         .cont-gr-flex{
                             width: 97%;
                             display: flex;
