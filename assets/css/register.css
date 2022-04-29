@@ -1,9 +1,6 @@
-.reg {
-  height: 100vh;
-}
-
 .reg .regcontainer .regwrapper .reg-inner-wrapper {
   position: relative;
+  height: 100vh;
 }
 
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox {
