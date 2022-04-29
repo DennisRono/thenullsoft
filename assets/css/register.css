@@ -1,5 +1,18 @@
+.reg {
+  height: 100vh;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper {
+  position: relative;
+}
+
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox {
   width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .user-input-wrp {

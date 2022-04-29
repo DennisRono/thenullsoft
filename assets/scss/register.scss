@@ -1,9 +1,15 @@
 .reg{
+    height: 100vh;
     .regcontainer{
         .regwrapper{
             .reg-inner-wrapper{
+                position: relative;
                 .regbox{
                     width: 500px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     .regtitle{
 
                     }
