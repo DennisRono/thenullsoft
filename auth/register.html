@@ -67,11 +67,12 @@
         </div>
     </div>
     <script typee="text/JavaScript">
+        function hasUpper(str) {
+            return !/[a-z]/.test(str) && /[A-Z]/.test(str);
+        }
         const checkphone = (a) => {
-            if (!a || isNaN(a) || parseInt(a, 10) < 700 || parseInt(a, 10) > 800) {
-                console.log("invalid val");
-            } else {
-                console.log("valid val");
+            if(hasUpper){
+                console.log("has upper case else");
             }
         }
     </script>
