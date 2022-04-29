@@ -16,6 +16,11 @@
   border-radius: 5px;
 }
 
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regtitle {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+}
+
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .user-input-wrp {
   position: relative;
   width: 94%;
