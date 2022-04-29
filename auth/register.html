@@ -68,7 +68,11 @@
     </div>
     <script typee="text/JavaScript">
         const checkphone = (a) => {
-            console.log(a);
+            if (!a || isNaN(a) || parseInt(a, 10) < 700 || parseInt(a, 10) > 800) {
+                console.log("invalid val");
+            } else {
+                console.log("valid val");
+            }
         }
     </script>
 </body>
