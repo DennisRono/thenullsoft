@@ -73,6 +73,10 @@
                 phoneErr.innerHTML = "Invalid Phone number";
                 phoneErr.classList.add('id-err')
                 document.getElementById('phoneNumber').classList.add('id-input')
+            } else {
+                phoneErr.innerHTML = "";
+                phoneErr.classList.remove('id-err')
+                document.getElementById('phoneNumber').classList.remove('id-input')
             }
         }
     </script>
