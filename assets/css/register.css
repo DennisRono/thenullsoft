@@ -1,3 +1,7 @@
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox {
+  width: 500px;
+}
+
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .user-input-wrp {
   position: relative;
   width: 94%;
