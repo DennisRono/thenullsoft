@@ -68,8 +68,8 @@
     </div>
     <script typee="text/JavaScript">
         const checkphone = (a) => {
-            if(isNaN(a) || /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im){
-                console.log("has upper case else");
+            if(isNaN(a) || /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(a)){
+                console.log("Phone Err");
             }
         }
     </script>
