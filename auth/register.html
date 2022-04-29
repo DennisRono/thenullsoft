@@ -41,7 +41,7 @@
                                 <div class="contPut">
                                     <div class="user-input-wrp">
                                         <br/>
-                                        <input id="regnumber" type="text" onkeyup="this.setAttribute('value', this.value); checkphone(this.value);" class="inputText" name="idno" value=""/>
+                                        <input id="phoneNumber" type="text" onkeyup="this.setAttribute('value', this.value); checkphone(this.value);" class="inputText" name="idno" value=""/>
                                         <span class="floating-label">Your Phone Number</span>
                                     </div>
                                     <span id="phone-err"></span>
@@ -69,11 +69,10 @@
     <script typee="text/JavaScript">
         const checkphone = (a) => {
             let phoneErr = document.getElementById('phone-err');
-            let phoneInput = document.getElementById('regnumber');
             if(isNaN(a) || a.length >= 10 && /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(a)){
                 phoneErr.innerHTML = "Invalid Phone number";
                 phoneErr.classList.add('id-err')
-                phoneInput.classList.add('id-input')
+                document.getElementById('phoneNumber').classList.add('id-input')
             }
         }
     </script>
