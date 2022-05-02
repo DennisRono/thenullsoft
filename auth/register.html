@@ -58,7 +58,7 @@
                                 <input id="usrcpass" type="password" onkeyup="this.setAttribute('value', this.value); confirmpass(this.value);" class="inputText" name="idno" value=""/>
                                 <span class="floating-label">Confirm Password *</span>
                             </div>
-                            <span id="id-err"></span>
+                            <span id="cpass-err"></span>
                             <div class="termsofservice">
                                 <br>
                                 <p>By signing up to thenullsoft you opt in to our <a href="../tos.html" >terms of service</a> and our <a href="../privacy.html" >privacy policies</a></p>
@@ -119,10 +119,10 @@
         }
         const confirmpass = (a) => {
             let usrpassw = document.getElementById('usrpass').value;
-            let cpassErr = document.getElementById('email-err');
+            let cpassErr = document.getElementById('cpass-err');
             if(a.length >= usrpassw.length){
                 if(a !== usrpassw){
-                    cpassErr.innerHTML = "Invalid email address";
+                    cpassErr.innerHTML = "passwords do not match!";
                     cpassErr.classList.add('id-err')
                     document.getElementById('usrcpass').classList.add('id-input')
                 }
