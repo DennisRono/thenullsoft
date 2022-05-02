@@ -119,11 +119,12 @@
         }
         const confirmpass = (a) => {
             let usrpassw = document.getElementById('usrpass').value;
+            let cpassErr = document.getElementById('email-err');
             if(a.length >= usrpassw.length){
                 if(a !== usrpassw){
-                    emailErr.innerHTML = "Invalid email address";
-                    emailErr.classList.add('id-err')
-                    document.getElementById('emailaddr').classList.add('id-input')
+                    cpassErr.innerHTML = "Invalid email address";
+                    cpassErr.classList.add('id-err')
+                    document.getElementById('usrcpass').classList.add('id-input')
                 }
             }
         }
