@@ -49,13 +49,13 @@
                             </div>
                             <div class="user-input-wrp" >
                                 <br/>
-                                <input id="id-input" type="password" onkeyup="this.setAttribute('value', this.value); passcheck(this.value);" class="inputText" name="idno" value=""/>
+                                <input id="usrpass" type="password" onkeyup="this.setAttribute('value', this.value); passcheck(this.value);" class="inputText" name="idno" value=""/>
                                 <span class="floating-label">Password *</span>
                             </div>
                             <span id="pass-err"></span>
                             <div class="user-input-wrp">
                                 <br/>
-                                <input id="id-input" type="password" onkeyup="this.setAttribute('value', this.value); confirmpass(this.value);" class="inputText" name="idno" value=""/>
+                                <input id="usrcpass" type="password" onkeyup="this.setAttribute('value', this.value); confirmpass(this.value);" class="inputText" name="idno" value=""/>
                                 <span class="floating-label">Confirm Password *</span>
                             </div>
                             <span id="id-err"></span>
@@ -118,7 +118,14 @@
             }
         }
         const confirmpass = (a) => {
-
+            let usrpassw = document.getElementById('usrpass').value;
+            if(a.length >= usrpassw.length){
+                if(a !== usrpassw){
+                    emailErr.innerHTML = "Invalid email address";
+                    emailErr.classList.add('id-err')
+                    document.getElementById('emailaddr').classList.add('id-input')
+                }
+            }
         }
     </script>
 </body>
