@@ -98,7 +98,7 @@
           flex-grow: 1;
   margin: 0 10px;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: #3cff87;
 }
 
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .passwarn:nth-child(1) {
@@ -117,5 +117,38 @@
 
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .cont-gr-flex .contPut {
   width: 46%;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .register-btn {
+  border-radius: 4px;
+  padding: 13px 54px 15px;
+  background-color: #2ac6ff;
+  border: 1px solid #2ac6ff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  line-height: 19px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: white;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-transition: color 0.15s ease-in-out 0s;
+  transition: color 0.15s ease-in-out 0s;
+  display: inline-block;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .register-btn:hover {
+  color: #6dd8ff;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=register.css.map */

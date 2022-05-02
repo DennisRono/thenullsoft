@@ -76,7 +76,7 @@
                             flex-grow:1;
                             margin: 0 10px;
                             border-radius: 20px;
-                            background-color: #fff;
+                            background-color: #3cff87;
                             &:nth-child(1){
                                 margin-left: 10px !important;
                             }
@@ -87,6 +87,34 @@
                             justify-content: space-between;
                             .contPut{
                                 width: 46%;
+                            }
+                        }
+                        .register-btn{
+                            border-radius: 4px;
+                            padding: 13px 54px 15px;
+                            background-color: #2ac6ff;
+                            border: 1px solid #2ac6ff;
+                            position: relative;
+                            overflow: hidden;
+                            z-index: 1;
+                            text-align: center;
+                            line-height: 19px;
+                            cursor: pointer;
+                            font-size: 16px;
+                            font-weight: 600;
+                            letter-spacing: 1.6px;
+                            text-transform: uppercase;
+                            color: rgb(255, 255, 255);
+                            -webkit-box-align: center;
+                            align-items: center;
+                            transition: color 0.15s ease-in-out 0s;
+                            display: inline-block;
+                            margin-bottom: 4rem;
+                            margin-top: 2rem;
+                            &:hover{
+                                color: rgb(109, 216, 255);
+                                background-color: #fff;
+                                transition: 0.3s;
                             }
                         }
                     }
