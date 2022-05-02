@@ -55,7 +55,7 @@
                             <span id="pass-err"></span>
                             <div class="user-input-wrp">
                                 <br/>
-                                <input id="id-input" type="password" onkeyup="this.setAttribute('value', this.value);" class="inputText" name="idno" value=""/>
+                                <input id="id-input" type="password" onkeyup="this.setAttribute('value', this.value); confirmpass(this.value);" class="inputText" name="idno" value=""/>
                                 <span class="floating-label">Confirm Password *</span>
                             </div>
                             <span id="id-err"></span>
