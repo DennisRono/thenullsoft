@@ -5,7 +5,11 @@
 }
 
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox {
+  display: block;
   width: 500px;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -72,6 +76,33 @@
   font-size: 12px;
   color: red;
   margin-left: 10px;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform #pass-err {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 5px;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .passwarn {
+  display: inline-block;
+  width: 30px;
+  height: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0 10px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .passwarn:nth-child(1) {
+  margin-left: 10px !important;
 }
 
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .cont-gr-flex {

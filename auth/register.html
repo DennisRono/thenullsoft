@@ -33,10 +33,10 @@
                                 <div class="contPut">
                                     <div class="user-input-wrp">
                                         <br/>
-                                        <input id="id-input" type="text" onkeyup="this.setAttribute('value', this.value);" class="inputText" name="idno" value=""/>
+                                        <input id="emailaddr" type="email" onkeyup="this.setAttribute('value', this.value); checkemail(this.value);" class="inputText" name="idno" value=""/>
                                         <span class="floating-label">Your Email *</span>
                                     </div>
-                                    <span id="id-err"></span>
+                                    <span id="email-err"></span>
                                 </div>
                                 <div class="contPut">
                                     <div class="user-input-wrp">
@@ -47,18 +47,23 @@
                                     <span id="phone-err"></span>
                                 </div>
                             </div>
-                            <div class="user-input-wrp">
+                            <div class="user-input-wrp" >
                                 <br/>
-                                <input id="id-input" type="password" onkeyup="this.setAttribute('value', this.value);" class="inputText" name="idno" value=""/>
+                                <input id="id-input" type="password" onkeyup="this.setAttribute('value', this.value); passcheck(this.value);" class="inputText" name="idno" value=""/>
                                 <span class="floating-label">Password *</span>
                             </div>
-                            <span id="id-err"></span>
+                            <span id="pass-err"></span>
                             <div class="user-input-wrp">
                                 <br/>
                                 <input id="id-input" type="password" onkeyup="this.setAttribute('value', this.value);" class="inputText" name="idno" value=""/>
                                 <span class="floating-label">Confirm Password *</span>
                             </div>
                             <span id="id-err"></span>
+                            <div class="termsofservice">
+                                <br>
+                                <p>By signing up to thenullsoft you opt in to our <a href="../tos.html" >terms of service</a> and our <a href="../privacy.html" >privacy policies</a></p>
+                                <br>
+                            </div>
                             <input type="submit" value="submit" name="register" class="register-btn">
                         </form>
                     </div>
@@ -77,6 +82,39 @@
                 phoneErr.innerHTML = "";
                 phoneErr.classList.remove('id-err')
                 document.getElementById('phoneNumber').classList.remove('id-input')
+            }
+        }
+        const validateEmail = (email) => {
+            return String(email)
+            .toLowerCase()
+            .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+        };
+        const checkemail = (a) => {
+            let emailErr = document.getElementById('email-err');
+            if(!validateEmail(a)){
+                emailErr.innerHTML = "Invalid email address";
+                emailErr.classList.add('id-err')
+                document.getElementById('emailaddr').classList.add('id-input')
+            } else {
+                emailErr.innerHTML = "";
+                emailErr.classList.remove('id-err')
+                document.getElementById('emailaddr').classList.remove('id-input')
+            }
+        }
+        const passcheck = (a) => {
+            const passerr = document.getElementById('pass-err');
+            let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
+            let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))')
+            if(a.length !== 0){
+                if(strongPassword.test(a)) {
+                    passerr.innerHTML = "<span class='passwarn' style='background-color: #3cff87;'></span>".repeat(8);
+                } else if(mediumPassword.test(a)) {
+                    passerr.innerHTML = "<span class='passwarn' style='background-color: #ffea71;'></span>".repeat(8);
+                } else {
+                    passerr.innerHTML = "<span class='passwarn' style='background-color: #fe7979;'></span>".repeat(8);
+                }
             }
         }
     </script>
