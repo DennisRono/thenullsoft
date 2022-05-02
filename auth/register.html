@@ -125,6 +125,10 @@
                     cpassErr.innerHTML = "passwords do not match!";
                     cpassErr.classList.add('id-err')
                     document.getElementById('usrcpass').classList.add('id-input')
+                } else {
+                    cpassErr.innerHTML = "";
+                    cpassErr.classList.remove('id-err')
+                    document.getElementById('usrcpass').classList.remove('id-input')
                 }
             }
         }
