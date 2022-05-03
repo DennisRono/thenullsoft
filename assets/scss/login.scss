@@ -14,7 +14,7 @@
                     display: block;
                     width: 500px;
                     height: auto;
-                    margin-left: 10%;
+                    margin-right: 10%;
                     min-height: fit-content;
                     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                     padding: 20px;
@@ -146,6 +146,7 @@
                 .regImage{
                     order: 1;
                     width: 50%;
+                    margin-left: 5%;
                     .regImageWrapper{
                         width: 600px;
                         img{

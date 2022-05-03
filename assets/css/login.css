@@ -20,7 +20,7 @@
   display: block;
   width: 500px;
   height: auto;
-  margin-left: 10%;
+  margin-right: 10%;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
@@ -202,6 +202,7 @@
       -ms-flex-order: 1;
           order: 1;
   width: 50%;
+  margin-left: 5%;
 }
 
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regImage .regImageWrapper {
