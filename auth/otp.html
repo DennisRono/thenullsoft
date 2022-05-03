@@ -54,7 +54,7 @@
     <script typee="text/JavaScript">
         const checkotp =  (a) => {
             let otpErr = document.getElementById('otp-err');
-            if(isNaN(a) || a.length !== 5){
+            if(isNaN(a) || a.length > 5){
                 otpErr.innerHTML = "Invalid OTP";
                 otpErr.classList.add('id-err')
                 document.getElementById('usrotp').classList.add('id-input')
