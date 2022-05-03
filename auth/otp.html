@@ -29,7 +29,7 @@
                                 <input id="usrcpass" type="text" onkeyup="this.setAttribute('value', this.value); checkotp(this.value);" class="inputText" name="idno" value=""/>
                                 <span class="floating-label">OTP *</span>
                             </div>
-                            <span id="cpass-err"></span>
+                            <span id="otp-err"></span>
                             <br>
                             <div class="subflex">
                                 <input type="submit" value="get otp" name="login" class="register-btn">
@@ -52,6 +52,9 @@
         </div>
     </div>
     <script typee="text/JavaScript">
+        const checkotp =  (a) => {
+            let otpErr = document.getElementById('otp-err');
+        }
         const checkphone = (a) => {
             let phoneErr = document.getElementById('phone-err');
             if(isNaN(a) || a.length >= 10 && !/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(a)){
