@@ -26,7 +26,7 @@
                         <form action="" class="regform">
                             <div class="user-input-wrp">
                                 <br/>
-                                <input id="usrcpass" type="text" onkeyup="this.setAttribute('value', this.value); checkemail(this.value);" class="inputText" name="idno" value=""/>
+                                <input id="usrcpass" type="text" onkeyup="this.setAttribute('value', this.value); checkotp(this.value);" class="inputText" name="idno" value=""/>
                                 <span class="floating-label">OTP *</span>
                             </div>
                             <span id="cpass-err"></span>
@@ -35,8 +35,8 @@
                                 <input type="submit" value="get otp" name="login" class="register-btn">
                                 <div class="logDirect">
                                     <p>
-                                        Get to your account? 
-                                        <a href="./login.html">login here</a>
+                                        Didn't get an OTP? 
+                                        <a href="./login.html">Resend</a>
                                     </p>
                                 </div>
                             </div>
