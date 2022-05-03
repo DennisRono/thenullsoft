@@ -81,6 +81,11 @@
     display: none !important;
     margin-top: 10px;
 }
+.showsearch{
+    display: unset !important;
+    position: relative;
+    z-index: 999;
+}
 @media(max-width: 1030px){
     .searchIconm{
         display: unset !important;
