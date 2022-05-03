@@ -98,9 +98,15 @@
   color: #fff !important;
 }
 
+.searchIconm {
+  display: none;
+  margin-top: 10px;
+}
+
 @media (max-width: 1030px) {
   .searchIconm {
-    margin-top: 20px;
+    display: unset;
+    margin-top: 10px;
   }
   .bSearch {
     display: none;
