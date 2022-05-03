@@ -18,3 +18,11 @@ function showSlides() {
   setTimeout(showSlides, 7000);
 }
 
+const showsearch = () => {
+  let searchform = document.querySelector('.bSearch');
+  if(searchform.classList.contains('showsearch')){
+    searchform.classList.remove('showsearch')
+  } else {
+    searchform.classList.add('showsearch')
+  }
+}
