@@ -107,7 +107,7 @@
   display: unset !important;
   position: absolute;
   top: 20px;
-  left: 30px;
+  left: calc(10% + 5%);
   z-index: 999;
 }
 
