@@ -99,6 +99,9 @@
 }
 
 @media (max-width: 1030px) {
+  .searchIconm {
+    margin-top: 20px;
+  }
   .bSearch {
     display: none;
   }
