@@ -46,7 +46,7 @@
                                 <div class="logDirect">
                                     <p>
                                         Don't have an account? 
-                                        <a href="./login.html">register here</a>
+                                        <a href="./register.html">register here</a>
                                     </p>
                                 </div>
                             </div>
@@ -91,35 +91,6 @@
                 emailErr.innerHTML = "";
                 emailErr.classList.remove('id-err')
                 document.getElementById('emailaddr').classList.remove('id-input')
-            }
-        }
-        const passcheck = (a) => {
-            const passerr = document.getElementById('pass-err');
-            let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
-            let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))')
-            if(a.length !== 0){
-                if(strongPassword.test(a) || a.length > 10) {
-                    passerr.innerHTML = "<span class='passwarn' style='background-color: #3cff87;'></span>".repeat(8);
-                } else if(mediumPassword.test(a) || a.length > 6) {
-                    passerr.innerHTML = "<span class='passwarn' style='background-color: #ffea71;'></span>".repeat(8);
-                } else {
-                    passerr.innerHTML = "<span class='passwarn' style='background-color: #fe7979;'></span>".repeat(8);
-                }
-            }
-        }
-        const confirmpass = (a) => {
-            let usrpassw = document.getElementById('usrpass').value;
-            let cpassErr = document.getElementById('cpass-err');
-            if(a.length >= usrpassw.length){
-                if(a !== usrpassw){
-                    cpassErr.innerHTML = "passwords do not match!";
-                    cpassErr.classList.add('id-err')
-                    document.getElementById('usrcpass').classList.add('id-input')
-                } else {
-                    cpassErr.innerHTML = "";
-                    cpassErr.classList.remove('id-err')
-                    document.getElementById('usrcpass').classList.remove('id-input')
-                }
             }
         }
     </script>
