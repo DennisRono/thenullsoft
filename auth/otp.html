@@ -26,7 +26,7 @@
                         <form action="" class="regform">
                             <div class="user-input-wrp">
                                 <br/>
-                                <input id="usrcpass" type="text" onkeyup="this.setAttribute('value', this.value); checkotp(this.value);" class="inputText" name="idno" value=""/>
+                                <input id="usrotp" type="text" onkeyup="this.setAttribute('value', this.value); checkotp(this.value);" class="inputText" name="idno" value=""/>
                                 <span class="floating-label">OTP *</span>
                             </div>
                             <span id="otp-err"></span>
@@ -54,6 +54,15 @@
     <script typee="text/JavaScript">
         const checkotp =  (a) => {
             let otpErr = document.getElementById('otp-err');
+            if(isNaN(a) || a.length !== 5){
+                otpErr.innerHTML = "Invalid OTP";
+                otpErr.classList.add('id-err')
+                document.getElementById('usrotp').classList.add('id-input')
+            } else {
+                otpErr.innerHTML = "";
+                otpErr.classList.remove('id-err')
+                document.getElementById('usrotp').classList.remove('id-input')
+            }
         }
         const checkphone = (a) => {
             let phoneErr = document.getElementById('phone-err');
