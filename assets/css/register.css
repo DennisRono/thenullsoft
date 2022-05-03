@@ -1,4 +1,13 @@
 .reg .regcontainer .regwrapper .reg-inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: relative;
   height: 100vh;
   background-color: #e4e4e4;
@@ -7,14 +16,11 @@
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox {
   display: block;
   width: 500px;
+  height: auto;
+  margin-left: 10%;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 20px;
@@ -119,7 +125,32 @@
   width: 46%;
 }
 
-.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .register-btn {
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .termsofservice {
+  font-size: 0.9rem;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .termsofservice a {
+  color: #2550ff;
+  text-decoration: underline;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .subflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .subflex .register-btn {
   border-radius: 4px;
   padding: 13px 54px 15px;
   background-color: #2ac6ff;
@@ -143,10 +174,38 @@
   display: inline-block;
 }
 
-.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .register-btn:hover {
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .subflex .register-btn:hover {
   color: #6dd8ff;
   background-color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .subflex .logDirect {
+  padding-right: 20px;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .subflex .logDirect p {
+  font-size: 0.8rem;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .subflex .logDirect p a {
+  color: #2550ff;
+  text-decoration: underline;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regImage {
+  width: 50%;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regImage .regImageWrapper {
+  width: 600px;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regImage .regImageWrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=register.css.map */
