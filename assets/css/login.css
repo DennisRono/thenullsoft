@@ -114,6 +114,18 @@
   margin-left: 10px !important;
 }
 
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .forgotpass {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .forgotpass a {
+  color: #2550ff;
+  text-decoration: underline;
+  font-size: 0.85rem;
+  margin-right: 10px;
+}
+
 .reg .regcontainer .regwrapper .reg-inner-wrapper .regbox .regform .cont-gr-flex {
   width: 97%;
   display: -webkit-box;
