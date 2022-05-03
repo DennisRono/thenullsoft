@@ -97,4 +97,10 @@
   background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
   color: #fff !important;
 }
+
+@media (max-width: 1030px) {
+  .bSearch {
+    display: none;
+  }
+}
 /*# sourceMappingURL=header.css.map */
