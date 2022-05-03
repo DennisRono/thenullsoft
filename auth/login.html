@@ -25,43 +25,19 @@
                         <form action="" class="regform">
                             <div class="user-input-wrp">
                                 <br/>
-                                <input id="id-input" type="text" onkeyup="this.setAttribute('value', this.value);" class="inputText" name="idno" value=""/>
-                                <span class="floating-label">Your Full Name *</span>
+                                <input id="usrcpass" type="text" onkeyup="this.setAttribute('value', this.value); confirmpass(this.value);" class="inputText" name="idno" value=""/>
+                                <span class="floating-label">Email or Phone *</span>
                             </div>
-                            <span id="id-err"></span>
-                            <div class="cont-gr-flex">
-                                <div class="contPut">
-                                    <div class="user-input-wrp">
-                                        <br/>
-                                        <input id="emailaddr" type="email" onkeyup="this.setAttribute('value', this.value); checkemail(this.value);" class="inputText" name="idno" value=""/>
-                                        <span class="floating-label">Your Email *</span>
-                                    </div>
-                                    <span id="email-err"></span>
-                                </div>
-                                <div class="contPut">
-                                    <div class="user-input-wrp">
-                                        <br/>
-                                        <input id="phoneNumber" type="text" onkeyup="this.setAttribute('value', this.value); checkphone(this.value);" class="inputText" name="idno" value=""/>
-                                        <span class="floating-label">Your Phone Number</span>
-                                    </div>
-                                    <span id="phone-err"></span>
-                                </div>
-                            </div>
+                            <span id="cpass-err"></span>
                             <div class="user-input-wrp" >
                                 <br/>
                                 <input id="usrpass" type="password" onkeyup="this.setAttribute('value', this.value); passcheck(this.value);" class="inputText" name="idno" value=""/>
                                 <span class="floating-label">Password *</span>
                             </div>
                             <span id="pass-err"></span>
-                            <div class="user-input-wrp">
-                                <br/>
-                                <input id="usrcpass" type="password" onkeyup="this.setAttribute('value', this.value); confirmpass(this.value);" class="inputText" name="idno" value=""/>
-                                <span class="floating-label">Confirm Password *</span>
-                            </div>
-                            <span id="cpass-err"></span>
                             <div class="termsofservice">
                                 <br>
-                                <p>By signing up to thenullsoft you opt in to our <a href="../tos.html" >terms of service</a> and our <a href="../privacy.html" >privacy policies</a></p>
+                                <p>By signing in to thenullsoft you opt in to our <a href="../tos.html" >terms of service</a> and our <a href="../privacy.html" >privacy policies</a></p>
                                 <br>
                             </div>
                             <div class="subflex">
