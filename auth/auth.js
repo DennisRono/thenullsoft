@@ -14,8 +14,6 @@ function checkCookie() {
   let userdet = getCookie("thenullsoft");
   if (userdet != "") {
     autologin(userdet);
-  } else {
-    console.log("hjsdgfhjsdf");
   }
 }
 checkCookie()
