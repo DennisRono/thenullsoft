@@ -15,7 +15,7 @@ function checkCookie() {
   if (userdet != "") {
     autologin(userdet);
   } else {
-    
+    console.log("hjsdgfhjsdf");
   }
 }
 checkCookie()
