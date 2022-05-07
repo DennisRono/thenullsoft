@@ -47,6 +47,7 @@
                 $stmt=NULL;
 
                 //send confirmation email
+                emailconfirm($email);
 
                 //redirect user to homepage
                 header("Location: login.php");
