@@ -120,6 +120,7 @@
             </div>
         </div>
     </div>
+    <script src="../js/libs/jquery.min.js"></script>
     <script typee="text/JavaScript">
         const checkphone = (a) => {
             let phoneErr = document.getElementById('phone-err');
