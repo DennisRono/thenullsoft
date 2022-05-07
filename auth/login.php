@@ -101,7 +101,7 @@
                                 <br>
                             </div>
                             <div class="subflex">
-                                <input type="submit" value="sign in" name="login" class="register-btn">
+                                <input id="loginBtn" type="submit" value="sign in" name="login" class="register-btn">
                                 <div class="logDirect">
                                     <p>
                                         Don't have an account? 
