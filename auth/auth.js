@@ -1,4 +1,3 @@
-//persist on the mode on refresh
 /*
     Dennis kibet github: @DennisRono
     Licence: MIT
