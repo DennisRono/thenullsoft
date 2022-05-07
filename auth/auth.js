@@ -39,21 +39,20 @@ function getCookie(cname) {
 }
 //reverse string
 function reverseString(str) {
-  return str.split("").reverse().join("");
+  return str.split("").reverse().join(":#:");
 }
-cpass = reverseString(cpass);
 document.getElementById("loginBtn").addEventListener("click", ()=>{
   var data = $('#logform').serializeArray().reduce(function(obj, item) {
       obj[item.name] = item.value;
       return obj;
   }, {});
-  console.log(data);
-  setCookie("thenullsoft", cpass, 5);
+  setCookie("thenullsoft", reverseString(data), 5); 
 });
 
 //auto login user
 function autologin(userdet){
   userdet = atob(reverseString(userdet)).split(":#:");
+  console.log(userdet);
   var data = {
     email: userdet[0],
     password: userdet[1]
