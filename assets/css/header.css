@@ -130,11 +130,9 @@
 }
 
 @media (min-width: 650px) {
-  .closemobinav {
+  .closemobinav, .mobinavs {
     display: none;
-  }
-  .mobinavs {
-    display: none;
+    visibility: hidden;
   }
 }
 
@@ -155,6 +153,7 @@
 @media (max-width: 650px) {
   .mobinavs {
     display: unset;
+    visibility: visible;
   }
   .hnavigation {
     position: fixed;
@@ -177,6 +176,7 @@
   }
   .hnavigation .closemobinav {
     display: unset;
+    visibility: visible;
     position: relative;
     top: 0;
     left: 0;
