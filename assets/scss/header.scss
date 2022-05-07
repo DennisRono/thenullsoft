@@ -117,5 +117,13 @@
     .hnavigation{
         display: flex;
         flex-direction: column;
+        .hnav{
+            order: 2;
+            display: flex;
+            flex-direction: column;
+        }
+        .hcalltoaction{
+            order: 1;
+        }
     }
 }
