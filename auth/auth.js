@@ -42,7 +42,7 @@ function reverseString(str) {
   return str.split("").reverse().join("");
 }
 cpass = reverseString(cpass);
-document.getElementById("login").addEventListener("click", ()=>{
+document.getElementById("loginBtn").addEventListener("click", ()=>{
   var data = $('.sign-in-form').serializeArray().reduce(function(obj, item) {
       obj[item.name] = item.value;
       return obj;

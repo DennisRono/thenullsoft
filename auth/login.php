@@ -79,7 +79,7 @@
                             <?php } ?>
                         </div>
                         <br>
-                        <form action="login.php" method="POST" class="regform">
+                        <form action="login.php" method="POST" class="regform" id="logform">
                             <div class="user-input-wrp">
                                 <br/>
                                 <input id="usrcpass" type="text" onkeyup="this.setAttribute('value', this.value); confirmpass(this.value);" class="inputText" name="emphone" value=""/>
