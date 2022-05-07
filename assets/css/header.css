@@ -141,6 +141,11 @@
 
 @media (max-width: 650px) {
   .hnavigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    background-color: #6cb1ff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
