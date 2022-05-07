@@ -20,7 +20,34 @@
         } else if($password != $cpassword){
             $err = "passwords mismatch!";
         } else if(!preg_match("/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im", $phone)){
-            $err = "invalid phone number";
+            $err = "invalid phone number!";
+        } else if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+            $err = "invalid email value!";
+        } else {
+            //check if user is already registered
+            $stmt = $conn->prepare('SELECT Email FROM users WHERE Email=?');
+            $stmt->execute([$email]);
+            if($stmt->rowCount > 0){
+                $error = "Email already in use";
+            } else {
+                $pass = password_hash($pass, PASSWORD_DEFAULT);
+
+                //generate sessionID userID
+                $generator = new RandomStringGenerator;
+                $sessionid = $generator->generate(10);
+                $generator = new RandomStringGenerator;
+                $userid = $generator->generate(8);
+               
+                echo $sessionid.'    '.$userid;
+
+                //save user data to database
+                $stmt = $conn->prepare("INSERT INTO users(Name, Email, Password, User_Type, SessionID, UserID) values(?, ?, ?,?,?,?)");
+                $stmt->execute([$name, $email, $pass, $user_type, $sessionid, $userid]);
+                $stmt=NULL;
+
+                //redirect user to homepage
+                echo '<script>window.location.href="./login.php";</script>';
+            }
         }
     }
 ?>
