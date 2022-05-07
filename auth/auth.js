@@ -51,34 +51,6 @@ document.getElementById("loginBtn").addEventListener("click", ()=>{
   setCookie("thenullsoft", cpass, 5);
 });
 
-
-const sign_in_btn = document.querySelector("#loginBtn");
-const sign_up_btn = document.querySelector("#sign-up-btn");
-const container = document.querySelector(".container");
-
-if (atob(reverseString(getCookie("thenullsoft"))).split(":#:")[2] == "register"){
-  container.classList.add("sign-up-mode");
-} else {
-  container.classList.remove("sign-up-mode");
-}
-
-
-sign_up_btn.addEventListener("click", () => {
-  container.classList.add("sign-up-mode");
-  let regperspective = atob(reverseString(getCookie("thenullsoft"))).split(':#:');
-  regperspective[2] = "register";
-  regperspective = reverseString(btoa(regperspective.join(":#:")));
-  setCookie("thenullsoft", regperspective, 5);
-});
-
-sign_in_btn.addEventListener("click", () => {
-  container.classList.remove("sign-up-mode");
-  let logperspective = atob(reverseString(getCookie("thenullsoft"))).split(':#:');
-  logperspective[2] = "login";
-  logperspective = reverseString(btoa(logperspective.join(":#:")));
-  setCookie("thenullsoft", logperspective, 5);
-});
-
 //auto login user
 function autologin(userdet){
   userdet = atob(reverseString(userdet)).split(":#:");
