@@ -7,6 +7,16 @@
     if(isset($_POST['register'])){
         $emphone = trim($_POST['emphone']);
         $password = trim($_POST['password']);
+
+        if(empty($emphone) && empty($password)){
+            $err = "please fill out the form";
+        } else if(empty($emphone)){
+            $err = "Please enter your email or phone number";
+        } else if(empty($password)){
+            $err = "Please enter your password";
+        } else {
+            
+        }
     }
 ?>
 <!DOCTYPE html>
