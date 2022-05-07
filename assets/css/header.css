@@ -141,7 +141,7 @@
 
 @media (max-width: 650px) {
   .hnavigation {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 70%;
@@ -189,6 +189,7 @@
   .hnavigation .hcalltoaction .pavatar {
     width: 60px !important;
     height: 60px !important;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=header.css.map */
