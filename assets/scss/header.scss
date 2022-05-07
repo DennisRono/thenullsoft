@@ -104,14 +104,16 @@
         }
     }
 }
-.mobinavs{
-    display: none;
+@media(min-width: 650px){
+    .closemobinav{
+        display: none;
+    }
+    .mobinavs{
+        display: none;
+    }
 }
 .showmobinav{
     margin-right: 0 !important;
-}
-.closemobinav{
-    display: none;
 }
 @media(max-width: 1030px){
     .searchIconm{
