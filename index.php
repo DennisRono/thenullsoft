@@ -50,7 +50,6 @@
                             </div>
                         <?php } else { ?>
                             <li><a href="auth/register.php" >Get Started</a></li>
-                            <img src="https://avatars.dicebear.com/api/human/denno.svg" alt="">
                         <?php } ?>
                     </div>
                 </div>
