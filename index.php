@@ -46,11 +46,11 @@
                     <div class="hcalltoaction">
                         <?php if(isset($_SESSION['sessionid'])) {?>
                             <div class="pavatar">
-                                <img src="" alt="">
+                                <img src="https://avatars.dicebear.com/api/human/denno.svg" alt="">
                             </div>
-                        <?php} else {?>
+                        <?php } else { ?>
                             <li><a href="auth/register.html" >Get Started</a></li>
-                        <?php}?>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
