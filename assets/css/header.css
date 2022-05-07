@@ -168,6 +168,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
+  }
+  .hnavigation .hnav li a {
+    padding: 20px;
   }
   .hnavigation .hcalltoaction {
     -webkit-box-ordinal-group: 2;

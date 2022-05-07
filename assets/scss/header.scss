@@ -129,6 +129,12 @@
             order: 2;
             display: flex;
             flex-direction: column;
+            text-align: center;
+            li{
+                a{
+                    padding: 20px;
+                }
+            }
         }
         .hcalltoaction{
             order: 1;
