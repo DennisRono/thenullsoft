@@ -82,13 +82,13 @@
                         <form action="login.php" method="POST" class="regform" id="logform">
                             <div class="user-input-wrp">
                                 <br/>
-                                <input id="usrcpass" type="text" onkeyup="this.setAttribute('value', this.value); confirmpass(this.value);" class="inputText" name="emphone" value=""/>
+                                <input id="usrcpass" type="text" onkeyup="this.setAttribute('value', this.value);" class="inputText" name="emphone" value=""/>
                                 <span class="floating-label">Email or Phone *</span>
                             </div>
                             <span id="cpass-err"></span>
                             <div class="user-input-wrp" >
                                 <br/>
-                                <input id="usrpass" type="password" onkeyup="this.setAttribute('value', this.value); passcheck(this.value);" class="inputText" name="password" value=""/>
+                                <input id="usrpass" type="password" onkeyup="this.setAttribute('value', this.value);" class="inputText" name="password" value=""/>
                                 <span class="floating-label">Password *</span>
                             </div>
                             <span id="pass-err"></span>
