@@ -186,5 +186,9 @@
         -ms-flex-order: 1;
             order: 1;
   }
+  .hnavigation .hcalltoaction .pavatar {
+    width: 20%;
+    height: 20%;
+  }
 }
 /*# sourceMappingURL=header.css.map */
