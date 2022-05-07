@@ -8,6 +8,7 @@
         $emphone = trim($_POST['emphone']);
         $password = trim($_POST['password']);
         //check if email or phone number is entered
+        (!filter_var($emphone, FILTER_VALIDATE_EMAIL))?$phone = $emphone:$email = $emphone;
 
         if(empty($emphone) && empty($password)){
             $err = "please fill out the form";
