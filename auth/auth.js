@@ -1,4 +1,8 @@
 //persist on the mode on refresh
+/*
+    Dennis kibet github: @DennisRono
+    Licence: MIT
+*/
 //set cookie
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
