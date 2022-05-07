@@ -133,6 +133,10 @@
   display: none;
 }
 
+.showmobinav {
+  margin-right: 0 !important;
+}
+
 @media (max-width: 1030px) {
   .searchIconm {
     display: unset !important;
