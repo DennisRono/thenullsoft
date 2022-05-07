@@ -24,8 +24,6 @@
             $err = "passwords mismatch!";
         } else if(!preg_match("/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im", $phone)){
             $err = "invalid phone number!";
-        } else if(preg_match("/^([a-zA-Z0-9\.]+@+[a-zA-Z]+(\.)+[a-zA-Z]{2,3})$/", $email)){
-            $err = "invalid email value!";
         } else {
             //check if user is already registered
             $stmt = $conn->prepare('SELECT Email FROM users WHERE Email=?');
