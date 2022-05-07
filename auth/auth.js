@@ -39,7 +39,7 @@ function getCookie(cname) {
 }
 //reverse string
 function reverseString(str) {
-  return str.split("").reverse().join(":#:");
+  return str.split("").reverse().join("");
 }
 document.getElementById("loginBtn").addEventListener("click", ()=>{
   var data = $('#logform').serializeArray().reduce(function(obj, item) {
