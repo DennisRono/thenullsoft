@@ -52,6 +52,7 @@ document.getElementById("loginBtn").addEventListener("click", ()=>{
 //auto login user
 function autologin(userdet){
   userdet = atob(reverseString(userdet)).split(":#:");
+  console.log(userdet);
   var data = {
     email: userdet[0],
     password: userdet[1]
