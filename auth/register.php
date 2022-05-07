@@ -1,6 +1,7 @@
 <?php
     require "../db/config.php";
     require "../includes/rand.php";
+    include "../includes/emailconfirm.php";
     use Utils\RandomStringGenerator;
     $err = "";
     if(isset($_POST['register'])){
