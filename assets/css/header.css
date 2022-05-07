@@ -170,7 +170,7 @@
             flex-direction: column;
     text-align: center;
   }
-  .hnavigation .hnav li a {
+  .hnavigation .hnav li {
     position: relative;
     left: 0;
     right: 0;

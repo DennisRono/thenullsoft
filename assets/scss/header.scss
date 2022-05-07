@@ -131,11 +131,12 @@
             flex-direction: column;
             text-align: center;
             li{
+                position: relative;
+                left: 0;
+                right: 0;
+                padding: 20px !important;
                 a{
-                    position: relative;
-                    left: 0;
-                    right: 0;
-                    padding: 20px !important;
+                    
                 }
             }
         }
