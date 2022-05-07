@@ -1,5 +1,8 @@
 <?php
     require "../db/config.php";
+    require "../includes/rand.php";
+    use Utils\RandomStringGenerator;
+    
     if(isset($_POST['register'])){
         $fullname = $_POST['fullname'];
         $email = $_POST['email'];
