@@ -78,6 +78,13 @@
                 <div class="reg-inner-wrapper">
                     <div class="regbox">
                         <h2 class="regtitle">create an account</h2>
+                        <div class="errbox">
+                            <?php if($err != ""){ ?>
+                                <div class="therr">
+                                    <p><?php echo $err; ?></p>
+                                </div>
+                            <?php } ?>
+                        </div>
                         <form action="register.php" method="POST" class="regform">
                             <div class="user-input-wrp">
                                 <br/>
