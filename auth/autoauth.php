@@ -1,4 +1,8 @@
 <?php
+    /*
+        Dennis kibet github: @DennisRono
+        Licence: MIT
+    */
     include "../db/config.php";
     //include "../includes/emailconfirm.php";
     include "../includes/rand.php";

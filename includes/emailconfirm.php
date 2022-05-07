@@ -1,4 +1,8 @@
 <?php
+    /*
+        Dennis kibet github: @DennisRono
+        Licence: MIT
+    */
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     require '../vendor/autoload.php';

@@ -1,4 +1,8 @@
 <?php
+/*
+    Dennis kibet github: @DennisRono
+    Licence: MIT
+*/
 namespace Utils;
 class RandomStringGenerator {
     /** @var string */
