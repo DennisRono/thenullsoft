@@ -7,6 +7,7 @@
     if(isset($_POST['login'])){
         $emphone = trim($_POST['emphone']);
         $password = trim($_POST['password']);
+        //check if email or phone number is entered
 
         if(empty($emphone) && empty($password)){
             $err = "please fill out the form";
