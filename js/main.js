@@ -26,3 +26,12 @@ const showsearch = () => {
     searchform.classList.add('showsearch')
   }
 }
+
+const shownav = () => {
+  let navigation = document.querySelector('.hnavigation');
+  if(navigation.classList.contains('showmobinav')){
+    navigation.classList.remove('showmobinav')
+  } else {
+    navigation.classList.add('showmobinav')
+  }
+}
