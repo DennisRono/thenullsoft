@@ -49,7 +49,7 @@
                                 <img src="https://avatars.dicebear.com/api/human/denno.svg" alt="">
                             </div>
                         <?php } else { ?>
-                            <li><a href="auth/register.html" >Get Started</a></li>
+                            <li><a href="auth/register.php" >Get Started</a></li>
                         <?php } ?>
                     </div>
                 </div>

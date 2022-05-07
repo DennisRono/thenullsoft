@@ -37,7 +37,7 @@
                     $sql = "UPDATE users SET Sessionid=? WHERE Email=?";
                     $conn->prepare($sql)->execute([$sessionid, $email]);
                     $_SESSION['sessionid'] = $sessionid;
-                    //header("Location: ../index.html");
+                    header("Location: ../index.php");
                 } else {
                     $err = "invalid details!";
                 }
