@@ -15,7 +15,14 @@
         } else if(empty($password)){
             $err = "Please enter your password";
         } else {
-
+            //check if user is registered
+            $stmt = $conn->prepare('SELECT Email FROM users WHERE Email=?');
+            $stmt->execute([$email]);
+            if($stmt->rowCount > 0){
+                
+            } else {
+                $err = "Your details did not match our records!";
+            }
         }
     }
 ?>
