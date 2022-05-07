@@ -12,11 +12,11 @@
         } else if(empty($fullname)){
             $err = "User Name is required";
         } else if(empty($email)){
-            $err = "User Name is required";
+            $err = "Email is required";
         } else if(empty($password)){
-            $err = "User Name is required";
+            $err = "Password is required";
         } else if(empty($cpassword)){
-            $err = "User Name is required";
+            $err = "You must confirm your password!";
         } else if(){
             $err = "User Name is required";
         }
