@@ -6,6 +6,20 @@
         $phone = $_POST['phoneno'];
         $password = $_POST['password'];
         $cpassword = $_POST['cpassword'];
+
+        if(empty($fullname) && empty($email) && empty($password) && empty($cpassword)){
+            $err = "please fill out the form";
+        } else if(empty($fullname)){
+            $err = "User Name is required";
+        } else if(empty($email)){
+            $err = "User Name is required";
+        } else if(empty($password)){
+            $err = "User Name is required";
+        } else if(empty($cpassword)){
+            $err = "User Name is required";
+        } else if(){
+            $err = "User Name is required";
+        }
     }
 ?>
 <!DOCTYPE html>
