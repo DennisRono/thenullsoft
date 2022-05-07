@@ -145,7 +145,10 @@
     top: 0;
     right: 0;
     width: 70%;
+    height: 100vh !important;
+    z-index: 999;
     background-color: #6cb1ff;
+    padding-top: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
