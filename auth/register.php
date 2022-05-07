@@ -134,7 +134,7 @@
                                 <div class="logDirect">
                                     <p>
                                         Already have an account? 
-                                        <a href="./login.html">login here</a>
+                                        <a href="./login.php">login here</a>
                                     </p>
                                 </div>
                             </div>
