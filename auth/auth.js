@@ -44,7 +44,7 @@ document.getElementById("loginBtn").addEventListener("click", ()=>{
       obj[item.name] = item.value;
       return obj;
   }, {});
-  console.log(data);
+  // console.log(data);
   setCookie("thenullsoft", cpass, 5); 
 });
 
@@ -66,7 +66,7 @@ function autologin(userdet){
             result = result.split(":#:");
             if(result[0] == "success"){
               console.log("login succesful");
-                window.location.href = "../index.html?Sessionid="+result[1];
+                window.location.href = "../index.html?sessionid="+result[1];
             }
         }
     });
