@@ -44,7 +44,13 @@
                         <li><a href="contact.html">Contact</a></li>
                     </nav>
                     <div class="hcalltoaction">
-                        <li><a href="auth/register.html" >Get Started</a></li>
+                        <?php if(isset($_SESSION['sessionid'])) {?>
+                            <div class="pavatar">
+                                <img src="" alt="">
+                            </div>
+                        <?php} else {?>
+                            <li><a href="auth/register.html" >Get Started</a></li>
+                        <?php}?>
                     </div>
                 </div>
             </div>
