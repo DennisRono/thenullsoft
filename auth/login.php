@@ -1,3 +1,13 @@
+<?php
+    require "../db/config.php";
+    require "../includes/rand.php";
+    use Utils\RandomStringGenerator;
+    $err = "";
+
+    if(isset($_POST['register'])){
+        
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
