@@ -78,7 +78,7 @@
                 <div class="reg-inner-wrapper">
                     <div class="regbox">
                         <h2 class="regtitle">create an account</h2>
-                        <form action="" class="regform">
+                        <form action="register.php" method="POST" class="regform">
                             <div class="user-input-wrp">
                                 <br/>
                                 <input id="id-input" type="text" onkeyup="this.setAttribute('value', this.value);" class="inputText" name="fullname" value=""/>
