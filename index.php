@@ -36,6 +36,16 @@
                     <i onclick="showsearch()" class="searchIconm fa fa-search"></i>
                 </div>
                 <i onclick="shownav()" class="mobinavs fa-solid fa-bars"></i>
+                <script>
+                    const shownav = () => {
+                        let navigation = document.querySelector('.hnavigation');
+                        if(navigation.classList.contains('showmobinav')){
+                            navigation.classList.remove('showmobinav')
+                        } else {
+                            navigation.classList.add('showmobinav')
+                        }
+                    }
+                </script>
                 <div class="hnavigation">
                     <nav class="hnav">
                         <li><a href="index.html">Home</a></li>
