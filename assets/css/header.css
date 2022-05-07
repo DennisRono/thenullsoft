@@ -137,6 +137,10 @@
   margin-right: 0 !important;
 }
 
+.closemobinav {
+  display: none;
+}
+
 @media (max-width: 1030px) {
   .searchIconm {
     display: unset !important;
@@ -171,6 +175,7 @@
     transition: ease-in-out 0.3s;
   }
   .hnavigation .closemobinav {
+    display: unset;
     position: relative;
     top: 0;
     left: 0;
