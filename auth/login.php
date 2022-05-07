@@ -19,7 +19,26 @@
             $stmt = $conn->prepare('SELECT Email FROM users WHERE Email=?');
             $stmt->execute([$email]);
             if($stmt->rowCount > 0){
-                
+                //fetch password
+                $query = $conn->prepare( "SELECT Password FROM users WHERE Email=?" );
+                $query->execute([$email]);
+                $row = $query->fetch(PDO::FETCH_OBJ);
+                $pass = $row->Password;
+                //authenticate password
+                if (password_verify($password, $pass)) {
+                    // start session
+                    session_start();
+                    //generate session
+                    $generator = new RandomStringGenerator;
+                    $sessionid = $generator->generate(32);
+                    //update session to database
+                    $sql = "UPDATE users SET Sessionid=? WHERE Email=?";
+                    $conn->prepare($sql)->execute([$sessionid, $email]);
+                    $_SESSION['sessionid'] = $sessionid;
+                    echo '<script>window.location.href="../index.php?Sessionid='.$sessionid.'"</script>';
+                } else {
+                    $msgErr = "Wrong Password!";
+                }
             } else {
                 $err = "Your details did not match our records!";
             }
