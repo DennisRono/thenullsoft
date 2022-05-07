@@ -129,6 +129,10 @@
   overflow: hidden;
 }
 
+.mobinavs {
+  display: none;
+}
+
 @media (max-width: 1030px) {
   .searchIconm {
     display: unset !important;
@@ -140,6 +144,9 @@
 }
 
 @media (max-width: 650px) {
+  .mobinavs {
+    display: unset;
+  }
   .hnavigation {
     position: fixed;
     top: 0;

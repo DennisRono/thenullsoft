@@ -35,6 +35,7 @@
                     </div>
                     <i onclick="showsearch()" class="searchIconm fa fa-search"></i>
                 </div>
+                <i class="fa-solid fa-bars"></i>
                 <div class="hnavigation">
                     <nav class="hnav">
                         <li><a href="index.html">Home</a></li>
