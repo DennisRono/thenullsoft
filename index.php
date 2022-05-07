@@ -47,6 +47,7 @@
                     }
                 </script>
                 <div class="hnavigation">
+                    <i class="closemobinav fa-solid fa-xmark"></i>
                     <nav class="hnav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="blog.html">Blog</a></li>

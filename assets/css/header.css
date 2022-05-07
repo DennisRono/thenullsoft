@@ -169,6 +169,12 @@
             flex-direction: column;
     margin-right: -70%;
   }
+  .hnavigation .closemobinav {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px;
+  }
   .hnavigation .hnav {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
