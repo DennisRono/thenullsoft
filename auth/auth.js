@@ -64,7 +64,7 @@ function autologin(userdet){
         success: function(result) {
             result = result.split(":#:");
             if(result[0] == "success"){
-                window.location.href = "../index.html?sessionid="+result[1];
+                window.location.href = "../index.php?sessionid="+result[1];
             }
         }
     });
