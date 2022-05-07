@@ -17,8 +17,8 @@
             $err = "Password is required";
         } else if(empty($cpassword)){
             $err = "You must confirm your password!";
-        } else if(){
-            $err = "User Name is required";
+        } else if($password != $cpassword){
+            $err = "passwords mismatch!";
         }
     }
 ?>
