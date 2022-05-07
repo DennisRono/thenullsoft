@@ -29,7 +29,7 @@
             $stmt = $conn->prepare('SELECT Email FROM users WHERE Email=?');
             $stmt->execute([$email]);
             if($stmt->rowCount > 0){
-                $error = "Email already in use";
+                $err = "Email already in use";
             } else {
                 $pass = password_hash($password, PASSWORD_DEFAULT);
 
@@ -47,7 +47,7 @@
                 $stmt=NULL;
 
                 //redirect user to homepage
-                echo '<script>window.location.href="./login.php";</script>';
+                header("Location: login.php");
             }
         }
     }
