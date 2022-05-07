@@ -44,6 +44,7 @@ document.getElementById("loginBtn").addEventListener("click", ()=>{
       obj[item.name] = item.value;
       return obj;
   }, {});
+  console.log(data);
   setCookie("thenullsoft", cpass, 5); 
 });
 
