@@ -2,13 +2,13 @@
     require "../db/config.php";
     require "../includes/rand.php";
     use Utils\RandomStringGenerator;
-    
+
     if(isset($_POST['register'])){
-        $fullname = $_POST['fullname'];
-        $email = $_POST['email'];
-        $phone = $_POST['phoneno'];
-        $password = $_POST['password'];
-        $cpassword = $_POST['cpassword'];
+        $fullname = trim($_POST['fullname']);
+        $email = trim($_POST['email']);
+        $phone = trim($_POST['phoneno']);
+        $password = trim($_POST['password']);
+        $cpassword = trim($_POST['cpassword']);
 
         if(empty($fullname) && empty($email) && empty($password) && empty($cpassword)){
             $err = "please fill out the form";
@@ -33,7 +33,7 @@
             if($stmt->rowCount > 0){
                 $error = "Email already in use";
             } else {
-                $pass = password_hash($pass, PASSWORD_DEFAULT);
+                $pass = password_hash($password, PASSWORD_DEFAULT);
 
                 //generate sessionID userID
                 $generator = new RandomStringGenerator;
