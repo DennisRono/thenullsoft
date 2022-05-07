@@ -4,7 +4,7 @@
     use Utils\RandomStringGenerator;
     $err = "";
 
-    if(isset($_POST['register'])){
+    if(isset($_POST['login'])){
         $emphone = trim($_POST['emphone']);
         $password = trim($_POST['password']);
 
@@ -15,7 +15,7 @@
         } else if(empty($password)){
             $err = "Please enter your password";
         } else {
-            
+
         }
     }
 ?>
@@ -51,7 +51,7 @@
                             <?php } ?>
                         </div>
                         <br>
-                        <form action="" class="regform">
+                        <form action="login.php" method="POST" class="regform">
                             <div class="user-input-wrp">
                                 <br/>
                                 <input id="usrcpass" type="text" onkeyup="this.setAttribute('value', this.value); confirmpass(this.value);" class="inputText" name="emphone" value=""/>
