@@ -114,5 +114,8 @@
     }
 }
 @media(max-width: 650px){
-    
+    .hnavigation{
+        display: flex;
+        flex-direction: column;
+    }
 }
