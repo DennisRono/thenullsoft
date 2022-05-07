@@ -132,7 +132,10 @@
             text-align: center;
             li{
                 a{
-                    padding: 20px;
+                    position: relative;
+                    left: 0;
+                    right: 0;
+                    padding: 20px !important;
                 }
             }
         }
