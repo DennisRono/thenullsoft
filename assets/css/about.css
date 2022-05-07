@@ -66,4 +66,90 @@
   font-style: normal;
   margin-top: 0px;
 }
+
+/* ======frequently asked questions stylings====== */
+.faqmainSection {
+  margin: 4rem 0;
+}
+
+.faqmainSection .faqsection .faqcontainer {
+  margin: 0 15%;
+}
+
+.faqmainSection .faqsection .faqcontainer .faqwrapper {
+  padding: 6rem;
+  padding-bottom: 4rem;
+  border-radius: 23px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#14a9ff), to(#0088f0)) !important;
+  background: linear-gradient(to bottom right, #14a9ff, #0088f0) !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqtitle {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  color: #f6f6f6;
+  text-transform: uppercase;
+}
+
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqdroptitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqdroptitle .faqText, .faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqdroptitle i {
+  color: #f6f6f6;
+  font-size: 20px;
+  font-weight: 700;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  letter-spacing: 1.4;
+}
+
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqdroptitle .angleDown {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  display: unset;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: .15s;
+          transition-duration: .15s;
+}
+
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqdropcontents {
+  display: none;
+}
+
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqdropcontents .faqdroptexts {
+  color: #f6f6f6;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.faqmainSection .faqsection .faqcontainer .faqwrapper .faqflex .faqdrop .faqShow {
+  display: unset;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: .15s;
+          transition-duration: .15s;
+}
 /*# sourceMappingURL=about.css.map */

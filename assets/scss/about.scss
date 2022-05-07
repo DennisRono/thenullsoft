@@ -57,3 +57,67 @@
         }
     }
 }
+
+/* ======frequently asked questions stylings====== */
+.faqmainSection{
+    margin: 4rem 0;
+    .faqsection{
+        .faqcontainer{
+            margin: 0 15%;
+            .faqwrapper{
+                padding: 6rem;
+                padding-bottom: 4rem;
+                border-radius: 23px;
+                background: linear-gradient(to bottom right,#14a9ff,#0088f0)!important;
+                transition: 0.3s;
+                .faqflex{
+                    .faqtitle{
+                        margin-bottom: 40px;
+                        text-align: center;
+                        font-weight: 700;
+                        font-size: 32px;
+                        color: #f6f6f6;
+                        text-transform: uppercase;
+                    }
+                    .faqdrop{
+                        .faqdroptitle{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            margin-bottom: 20px;
+                            cursor: pointer;
+                            .faqText, i{
+                                color: #f6f6f6;
+                                font-size: 20px;
+                                font-weight: 700;
+                                user-select: none;
+                                letter-spacing: 1.4;
+                            }
+                            .angleDown{
+                                transform: rotate(90deg);
+                                display: unset;
+                                transition-property: all;
+                                transition-timing-function: cubic-bezier(.4,0,.2,1);
+                                transition-duration: .15s;
+                            }
+                        }
+                        .faqdropcontents{
+                            display: none;
+                            .faqdroptexts{
+                                color: #f6f6f6;
+                                line-height: 1.5;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        .faqShow{
+                            display: unset;
+                            transition-property: all;
+                            transition-timing-function: cubic-bezier(.4,0,.2,1);
+                            transition-duration: .15s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

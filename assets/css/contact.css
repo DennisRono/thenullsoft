@@ -297,4 +297,13 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
+@media (max-width: 800px) {
+  .contactSidebar {
+    display: none !important;
+  }
+  .contactPlayarea {
+    width: 100% !important;
+  }
+}
 /*# sourceMappingURL=contact.css.map */

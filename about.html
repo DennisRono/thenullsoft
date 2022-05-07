@@ -38,7 +38,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="features.html">Features</a></li>
+                        
                         <li><a href="contact.html">Contact</a></li>
                     </nav>
                     <div class="hcalltoaction">
@@ -124,6 +124,80 @@
             </div>
         </div>
     </div>
+    <!-- frequently asked questions -->
+    <section class="faqmainSection">
+        <div class="faqsection">
+            <div class="faqcontainer">
+                <div class="faqwrapper">
+                    <div class="faqflex">
+                        <h1 class="faqtitle">faq</h1>
+                        <div class="faqdrop">
+                            <div class="faqdroptitle">
+                                <h2 class="faqText">How do you get started with nullAPI?</h2>
+                                <i class="fa-solid fa-angle-right faqangleright"></i>
+                            </div>
+                            <div class="faqdropcontents">
+                                <p class="faqdroptexts">
+                                    We are on the mission of building an interoperable and open metaverse made of thousands of virtual worlds. We strongly believe in NFTs as one of key technologies that enable interoperability. We want to give users of Ready Player Me a way to buy and access NFTs compatible with our and other platforms.
+                                </p>
+                                <p class="faqdroptexts">
+                                    We share the revenue from sales of the NFTs with our partner apps and worlds, helping them monetize and build better experiences. Partners don’t need to implement blockchain tech into their products – everything is integrated directly into Ready Player Me.
+                                </p>
+                            </div>
+                            <div class="faqdroptitle">
+                                <h2 class="faqText">How do I get my API key for nullAPI?</h2>
+                                <i class="fa-solid fa-angle-right faqangleright"></i>
+                            </div>
+                            <div class="faqdropcontents">
+                                <p class="faqdroptexts">
+                                    We are on the mission of building an interoperable and open metaverse made of thousands of virtual worlds. We strongly believe in NFTs as one of key technologies that enable interoperability. We want to give users of Ready Player Me a way to buy and access NFTs compatible with our and other platforms.
+                                </p>
+                                <p class="faqdroptexts">
+                                    We share the revenue from sales of the NFTs with our partner apps and worlds, helping them monetize and build better experiences. Partners don’t need to implement blockchain tech into their products – everything is integrated directly into Ready Player Me.
+                                </p>
+                            </div>
+                            <div class="faqdroptitle">
+                                <h2 class="faqText">Which endpoints do I authenticate my requests?</h2>
+                                <i class="fa-solid fa-angle-right faqangleright"></i>
+                            </div>
+                            <div class="faqdropcontents">
+                                <p class="faqdroptexts">
+                                    We are on the mission of building an interoperable and open metaverse made of thousands of virtual worlds. We strongly believe in NFTs as one of key technologies that enable interoperability. We want to give users of Ready Player Me a way to buy and access NFTs compatible with our and other platforms.
+                                </p>
+                                <p class="faqdroptexts">
+                                    We share the revenue from sales of the NFTs with our partner apps and worlds, helping them monetize and build better experiences. Partners don’t need to implement blockchain tech into their products – everything is integrated directly into Ready Player Me.
+                                </p>
+                            </div>
+                            <div class="faqdroptitle">
+                                <h2 class="faqText">Which authentication technique does nullAPI supports (Sessions or JWT)?</h2>
+                                <i class="fa-solid fa-angle-right faqangleright"></i>
+                            </div>
+                            <div class="faqdropcontents">
+                                <p class="faqdroptexts">
+                                    We are on the mission of building an interoperable and open metaverse made of thousands of virtual worlds. We strongly believe in NFTs as one of key technologies that enable interoperability. We want to give users of Ready Player Me a way to buy and access NFTs compatible with our and other platforms.
+                                </p>
+                                <p class="faqdroptexts">
+                                    We share the revenue from sales of the NFTs with our partner apps and worlds, helping them monetize and build better experiences. Partners don’t need to implement blockchain tech into their products – everything is integrated directly into Ready Player Me.
+                                </p>
+                            </div>
+                            <div class="faqdroptitle">
+                                <h2 class="faqText">How do you get started with nullAPI?</h2>
+                                <i class="fa-solid fa-angle-right faqangleright"></i>
+                            </div>
+                            <div class="faqdropcontents">
+                                <p class="faqdroptexts">
+                                    We are on the mission of building an interoperable and open metaverse made of thousands of virtual worlds. We strongly believe in NFTs as one of key technologies that enable interoperability. We want to give users of Ready Player Me a way to buy and access NFTs compatible with our and other platforms.
+                                </p>
+                                <p class="faqdroptexts">
+                                    We share the revenue from sales of the NFTs with our partner apps and worlds, helping them monetize and build better experiences. Partners don’t need to implement blockchain tech into their products – everything is integrated directly into Ready Player Me.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="fcontainer">
             <div class="fdet">
@@ -179,6 +253,27 @@
             <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> | built by <a title="Developer" target="blank" href="https://denniskibet.com">DennisRono</a> <a href="https://github.com/DennisRono" title="Github"><i class="fa-brands fa-github"></i></a></p>
         </div>
     </footer>
+    <script>
+        faq()
+        function faq() {
+        let faqquestion = document.querySelectorAll('.faqdroptitle')
+        Array.from(faqquestion).forEach(header => {
+            header.addEventListener('click', () => {
+                if(!header.nextElementSibling.classList.contains('faqShow')){
+                for (let i = 0; i < Array.from(faqquestion).length; i++) {
+                    Array.from(faqquestion)[i].nextElementSibling.classList.remove('faqShow')
+                    Array.from(faqquestion)[i].firstElementChild.nextElementSibling.classList.remove('angleDown')  
+                }
+                    header.nextElementSibling.classList.toggle('faqShow')
+                    header.firstElementChild.nextElementSibling.classList.toggle('angleDown')
+                } else {
+                    header.nextElementSibling.classList.remove('faqShow')
+                    header.firstElementChild.nextElementSibling.classList.remove('angleDown')
+                }
+            });
+        });
+        }
+    </script>
     <script src="./js/main.js"></script>
     <script src="https://kit.fontawesome.com/6d5a084346.js" crossorigin="anonymous"></script>
 </body>
