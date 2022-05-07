@@ -43,7 +43,7 @@ function reverseString(str) {
 }
 cpass = reverseString(cpass);
 document.getElementById("loginBtn").addEventListener("click", ()=>{
-  var data = $('.sign-in-form').serializeArray().reduce(function(obj, item) {
+  var data = $('#logform').serializeArray().reduce(function(obj, item) {
       obj[item.name] = item.value;
       return obj;
   }, {});
