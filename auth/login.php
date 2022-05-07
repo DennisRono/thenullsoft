@@ -5,7 +5,7 @@
     $err = "";
 
     if(isset($_POST['register'])){
-
+        $emphone = trim($_POST['emphone']);
     }
 ?>
 <!DOCTYPE html>
