@@ -19,6 +19,8 @@
             $err = "You must confirm your password!";
         } else if($password != $cpassword){
             $err = "passwords mismatch!";
+        } else if(!preg_match("/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im", $phone)){
+            $err = "invalid phone number";
         }
     }
 ?>
