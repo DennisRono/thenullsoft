@@ -65,6 +65,7 @@ function autologin(userdet){
         success: function(result) {
             result = result.split(":#:");
             if(result[0] == "success"){
+              console.log("login succesful");
                 window.location.href = "../index.html?Sessionid="+result[1];
             }
         }
