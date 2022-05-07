@@ -44,8 +44,8 @@
                 echo $sessionid.'    '.$userid;
 
                 //save user data to database
-                $stmt = $conn->prepare("INSERT INTO users(Name, Email, Password, User_Type, SessionID, UserID) values(?, ?, ?,?,?,?)");
-                $stmt->execute([$name, $email, $pass, $user_type, $sessionid, $userid]);
+                $stmt = $conn->prepare("INSERT INTO users(FullName, Email, Phone, Password) values(?, ?, ?, ?)");
+                $stmt->execute([$fullname, $email, $phone, $pass]);
                 $stmt=NULL;
 
                 //redirect user to homepage
