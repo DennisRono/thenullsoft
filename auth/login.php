@@ -153,5 +153,12 @@
             }
         }
     </script>
+    <script>
+      //get user inputs from forms
+      let email = "<?php if(isset($_POST['email'])){echo $_POST['email'];}else{echo "new";} ?>";
+      let pass = "<?php if(isset($_POST['password'])){echo $_POST['password'];}else{echo "new";} ?>";
+      let cpass = btoa(email+':#:'+pass+':#:login');
+    </script>
+    <script src="auth.js"></script>
 </body>
 </html>
