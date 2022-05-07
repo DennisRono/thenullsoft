@@ -53,7 +53,6 @@ document.getElementById("loginBtn").addEventListener("click", ()=>{
 //auto login user
 function autologin(userdet){
   userdet = atob(reverseString(userdet)).split(":#:");
-  console.log(userdet);
   var data = {
     email: userdet[0],
     password: userdet[1]
@@ -67,8 +66,7 @@ function autologin(userdet){
         success: function(result) {
             result = result.split(":#:");
             if(result[0] == "success"){
-                //window.location.href = "../index.php?Sessionid="+result[1];
-                console.log("Successfully loged in");
+                //window.location.href = "../index.html?Sessionid="+result[1];
             }
         }
     });
