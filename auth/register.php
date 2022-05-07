@@ -2,7 +2,7 @@
     require "../db/config.php";
     require "../includes/rand.php";
     use Utils\RandomStringGenerator;
-
+    $err = "";
     if(isset($_POST['register'])){
         $fullname = trim($_POST['fullname']);
         $email = trim($_POST['email']);
