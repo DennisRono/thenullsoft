@@ -35,11 +35,11 @@
                     </div>
                     <i onclick="showsearch()" class="searchIconm fa fa-search"></i>
                 </div>
-                <i onclick="shownav()" class="mobinavs fa-solid fa-bars"></i>
+                <i onclick="shownav('o')" class="mobinavs fa-solid fa-bars"></i>
                 <script>
-                    const shownav = () => {
+                    const shownav = (a) => {
                         let navigation = document.querySelector('.hnavigation');
-                        if(navigation.classList.contains('showmobinav')){
+                        if(a==="c"){
                             navigation.classList.remove('showmobinav')
                         } else {
                             navigation.classList.add('showmobinav')
@@ -47,7 +47,7 @@
                     }
                 </script>
                 <div class="hnavigation">
-                    <i class="closemobinav fa-solid fa-xmark"></i>
+                    <i onclick="shownav('c')" class="closemobinav fa-solid fa-xmark"></i>
                     <nav class="hnav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="blog.html">Blog</a></li>
