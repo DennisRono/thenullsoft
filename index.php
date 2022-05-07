@@ -44,7 +44,7 @@
                         <li><a href="contact.html">Contact</a></li>
                     </nav>
                     <div class="hcalltoaction">
-                        <?php if(isset($_SESSION['sessionid'])) {?>
+                        <?php if(isset($_SESSION['sessionid']) || isset($_GET['sessionid'])) { ?>
                             <div class="pavatar">
                                 <img src="https://avatars.dicebear.com/api/human/denno.svg" alt="">
                             </div>
