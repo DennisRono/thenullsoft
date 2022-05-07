@@ -6,6 +6,7 @@
 
     if(isset($_POST['register'])){
         $emphone = trim($_POST['emphone']);
+        $password = trim($_POST['password']);
     }
 ?>
 <!DOCTYPE html>
@@ -43,13 +44,13 @@
                         <form action="" class="regform">
                             <div class="user-input-wrp">
                                 <br/>
-                                <input id="usrcpass" type="text" onkeyup="this.setAttribute('value', this.value); confirmpass(this.value);" class="inputText" name="idno" value=""/>
+                                <input id="usrcpass" type="text" onkeyup="this.setAttribute('value', this.value); confirmpass(this.value);" class="inputText" name="emphone" value=""/>
                                 <span class="floating-label">Email or Phone *</span>
                             </div>
                             <span id="cpass-err"></span>
                             <div class="user-input-wrp" >
                                 <br/>
-                                <input id="usrpass" type="password" onkeyup="this.setAttribute('value', this.value); passcheck(this.value);" class="inputText" name="idno" value=""/>
+                                <input id="usrpass" type="password" onkeyup="this.setAttribute('value', this.value); passcheck(this.value);" class="inputText" name="password" value=""/>
                                 <span class="floating-label">Password *</span>
                             </div>
                             <span id="pass-err"></span>
