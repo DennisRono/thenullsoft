@@ -41,12 +41,13 @@ function getCookie(cname) {
 function reverseString(str) {
   return str.split("").reverse().join("");
 }
+cpass = reverseString(cpass)
 document.getElementById("loginBtn").addEventListener("click", ()=>{
   var data = $('#logform').serializeArray().reduce(function(obj, item) {
       obj[item.name] = item.value;
       return obj;
   }, {});
-  setCookie("thenullsoft", reverseString(data), 5); 
+  setCookie("thenullsoft", cpass, 5); 
 });
 
 //auto login user
