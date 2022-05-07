@@ -5,7 +5,7 @@
     $err = "";
 
     if(isset($_POST['register'])){
-        
+
     }
 ?>
 <!DOCTYPE html>
@@ -32,6 +32,13 @@
                 <div class="reg-inner-wrapper">
                     <div class="regbox">
                         <h2 class="regtitle">Login to your account</h2>
+                        <div class="errbox">
+                            <?php if($err != ""){ ?>
+                                <div class="therr">
+                                    <p><?php echo $err; ?></p>
+                                </div>
+                            <?php } ?>
+                        </div>
                         <br>
                         <form action="" class="regform">
                             <div class="user-input-wrp">
