@@ -1,3 +1,13 @@
+<?php
+    require "../db/config.php";
+    if(isset($_POST['register'])){
+        $fullname = $_POST['fullname'];
+        $email = $_POST['email'];
+        $phone = $_POST['phoneno'];
+        $password = $_POST['password'];
+        $cpassword = $_POST['cpassword'];
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +35,7 @@
                         <form action="" class="regform">
                             <div class="user-input-wrp">
                                 <br/>
-                                <input id="id-input" type="text" onkeyup="this.setAttribute('value', this.value);" class="inputText" name="idno" value=""/>
+                                <input id="id-input" type="text" onkeyup="this.setAttribute('value', this.value);" class="inputText" name="fullname" value=""/>
                                 <span class="floating-label">Your Full Name *</span>
                             </div>
                             <span id="id-err"></span>
@@ -33,7 +43,7 @@
                                 <div class="contPut">
                                     <div class="user-input-wrp">
                                         <br/>
-                                        <input id="emailaddr" type="email" onkeyup="this.setAttribute('value', this.value); checkemail(this.value);" class="inputText" name="idno" value=""/>
+                                        <input id="emailaddr" type="email" onkeyup="this.setAttribute('value', this.value); checkemail(this.value);" class="inputText" name="email" value=""/>
                                         <span class="floating-label">Your Email *</span>
                                     </div>
                                     <span id="email-err"></span>
@@ -41,7 +51,7 @@
                                 <div class="contPut">
                                     <div class="user-input-wrp">
                                         <br/>
-                                        <input id="phoneNumber" type="text" onkeyup="this.setAttribute('value', this.value); checkphone(this.value);" class="inputText" name="idno" value=""/>
+                                        <input id="phoneNumber" type="text" onkeyup="this.setAttribute('value', this.value); checkphone(this.value);" class="inputText" name="phoneno" value=""/>
                                         <span class="floating-label">Your Phone Number</span>
                                     </div>
                                     <span id="phone-err"></span>
@@ -49,13 +59,13 @@
                             </div>
                             <div class="user-input-wrp" >
                                 <br/>
-                                <input id="usrpass" type="password" onkeyup="this.setAttribute('value', this.value); passcheck(this.value);" class="inputText" name="idno" value=""/>
+                                <input id="usrpass" type="password" onkeyup="this.setAttribute('value', this.value); passcheck(this.value);" class="inputText" name="password" value=""/>
                                 <span class="floating-label">Password *</span>
                             </div>
                             <span id="pass-err"></span>
                             <div class="user-input-wrp">
                                 <br/>
-                                <input id="usrcpass" type="password" onkeyup="this.setAttribute('value', this.value); confirmpass(this.value);" class="inputText" name="idno" value=""/>
+                                <input id="usrcpass" type="password" onkeyup="this.setAttribute('value', this.value); confirmpass(this.value);" class="inputText" name="cpassword" value=""/>
                                 <span class="floating-label">Confirm Password *</span>
                             </div>
                             <span id="cpass-err"></span>
