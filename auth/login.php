@@ -35,9 +35,9 @@
                     $sql = "UPDATE users SET Sessionid=? WHERE Email=?";
                     $conn->prepare($sql)->execute([$sessionid, $email]);
                     $_SESSION['sessionid'] = $sessionid;
-                    echo '<script>window.location.href="../index.php?Sessionid='.$sessionid.'"</script>';
+                    header("Location: ../index.html");
                 } else {
-                    $msgErr = "Wrong Password!";
+                    $err = "invalid details!";
                 }
             } else {
                 $err = "Your details did not match our records!";
