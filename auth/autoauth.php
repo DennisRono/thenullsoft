@@ -42,7 +42,7 @@
             //update session to database
             $sql = "UPDATE users SET Sessionid=? WHERE Email=?";
             $conn->prepare($sql)->execute([$sessionid, $email]);
-            $_SESSION['Sessionid'] = $sessionid;
+            $_SESSION['sessionid'] = $sessionid;
             echo "success".':#:'.$sessionid;
         } else {
             echo "Wrong Password!";
