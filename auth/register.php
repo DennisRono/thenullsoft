@@ -46,6 +46,8 @@
                 $stmt->execute([$fullname, $email, $phone, $pass, $sessionid, $userid]);
                 $stmt=NULL;
 
+                //send confirmation email
+
                 //redirect user to homepage
                 header("Location: login.php");
             }
