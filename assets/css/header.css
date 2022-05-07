@@ -163,6 +163,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-right: -70%;
   }
   .hnavigation .hnav {
     -webkit-box-ordinal-group: 3;
