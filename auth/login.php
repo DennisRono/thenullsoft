@@ -20,7 +20,7 @@
             //check if user is registered
             $stmt = $conn->prepare('SELECT Email FROM users WHERE Email=?');
             $stmt->execute([$email]);
-            if($stmt->rowCount > 0){
+            if($stmt->rowCount() > 0){
                 //fetch password
                 $query = $conn->prepare( "SELECT Password FROM users WHERE Email=?" );
                 $query->execute([$email]);
