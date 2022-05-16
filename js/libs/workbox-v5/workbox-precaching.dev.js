@@ -526,7 +526,7 @@ this.workbox.precaching = (function (exports, assert_js, cacheNames_js, getFrien
       }
       /**
        * Returns the cache key used for storing a given URL. If that URL is
-       * unversioned, like `/index.html', then the cache key will be the original
+       * unversioned, like `/index.php', then the cache key will be the original
        * URL with a search parameter appended to it.
        *
        * @param {string} url A URL whose cache key you want to look up.
@@ -548,9 +548,9 @@ this.workbox.precaching = (function (exports, assert_js, cacheNames_js, getFrien
        * and it will automatically look up the correct cache key for the currently
        * active revision of that URL.
        *
-       * E.g., `matchPrecache('index.html')` will find the correct precached
+       * E.g., `matchPrecache('index.php')` will find the correct precached
        * response for the currently active service worker, even if the actual cache
-       * key is `'/index.html?__WB_REVISION__=1234abcd'`.
+       * key is `'/index.php?__WB_REVISION__=1234abcd'`.
        *
        * @param {string|Request} request The key (without revisioning parameters)
        * to look up in the precache.
@@ -809,7 +809,7 @@ this.workbox.precaching = (function (exports, assert_js, cacheNames_js, getFrien
      *
      * @private
      * @param {Object} [options]
-     * @param {string} [options.directoryIndex=index.html] The `directoryIndex` will
+     * @param {string} [options.directoryIndex=index.php] The `directoryIndex` will
      * check cache entries for a URLs ending with '/' to see if there is a hit when
      * appending the `directoryIndex` value.
      * @param {Array<RegExp>} [options.ignoreURLParametersMatching=[/^utm_/]] An
@@ -823,7 +823,7 @@ this.workbox.precaching = (function (exports, assert_js, cacheNames_js, getFrien
 
     const addFetchListener = ({
       ignoreURLParametersMatching = [/^utm_/],
-      directoryIndex = 'index.html',
+      directoryIndex = 'index.php',
       cleanURLs = true,
       urlManipulation
     } = {}) => {
@@ -900,7 +900,7 @@ this.workbox.precaching = (function (exports, assert_js, cacheNames_js, getFrien
      * listeners.
      *
      * @param {Object} [options]
-     * @param {string} [options.directoryIndex=index.html] The `directoryIndex` will
+     * @param {string} [options.directoryIndex=index.php] The `directoryIndex` will
      * check cache entries for a URLs ending with '/' to see if there is a hit when
      * appending the `directoryIndex` value.
      * @param {Array<RegExp>} [options.ignoreURLParametersMatching=[/^utm_/]] An
