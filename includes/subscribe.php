@@ -5,7 +5,7 @@
             $err = "email cannot be empty!";
         } else {
 
-            $date = new DateTime("now", new DateTimeZone('America/New_York') );
+            $date = new DateTime("now", new DateTimeZone('Africa/Nairobi'));
             $time = $date->format('Y-m-d H:i:s');
             //save user data to database
             $stmt = $conn->prepare("INSERT INTO users(Email, Time) values(?, ?)");
