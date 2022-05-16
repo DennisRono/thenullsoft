@@ -1,6 +1,7 @@
 <?php
     if(isset($_POST['subscribe'])){
         $email = trim($_POST['email']);
+        $page = $_POST($_POST['page']);
         if(empty($email)){
             $err = "email cannot be empty!";
         } else {
