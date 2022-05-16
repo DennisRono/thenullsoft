@@ -39,16 +39,18 @@
                 $sessionid = $generator->generate(10);
                 $generator = new RandomStringGenerator;
                 $userid = $generator->generate(8);
+                $generator = new RandomStringGenerator;
+                $emtoken = $generator->generate(32);
                
                 echo $sessionid.'    '.$userid;
 
                 //save user data to database
-                $stmt = $conn->prepare("INSERT INTO users(FullName, Email, Phone, Password, SessionID, UserID) values(?, ?, ?, ?, ?, ?)");
-                $stmt->execute([$fullname, $email, $phone, $pass, $sessionid, $userid]);
+                $stmt = $conn->prepare("INSERT INTO users(FullName, Email, Phone, Password, SessionID, UserID, Token) values(?, ?, ?, ?, ?, ?, ?)");
+                $stmt->execute([$fullname, $email, $phone, $pass, $sessionid, $userid, $emtoken]);
                 $stmt=NULL;
 
                 //send confirmation email
-                emailconfirm($email);
+                emailconfirm($email, $emtoken);
 
                 //redirect user to homepage
                 header("Location: login.php");
@@ -149,7 +151,7 @@
             </div>
         </div>
     </div>
-    <script typee="text/JavaScript">
+    <script type="text/JavaScript">
         const checkphone = (a) => {
             let phoneErr = document.getElementById('phone-err');
             if(isNaN(a) || a.length >= 10 && !/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im.test(a)){

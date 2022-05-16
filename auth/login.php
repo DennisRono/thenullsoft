@@ -93,7 +93,7 @@
                             </div>
                             <span id="pass-err"></span>
                             <div class="forgotpass">
-                                <a href="forgot.html">forgot password?</a>
+                                <a href="forgot.php">forgot password?</a>
                             </div>
                             <div class="termsofservice">
                                 <br>
@@ -105,7 +105,7 @@
                                 <div class="logDirect">
                                     <p>
                                         Don't have an account? 
-                                        <a href="./register.html">register here</a>
+                                        <a href="./register.php">register here</a>
                                     </p>
                                 </div>
                             </div>

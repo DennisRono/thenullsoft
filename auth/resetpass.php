@@ -1,3 +1,35 @@
+<?php
+    session_start();
+    require "../db/config.php";
+    $err = "";
+
+    if(isset($_SESSION['otp'])){
+        if(isset($_POST['resetpass'])){
+            $pass = trim($_POST['pass']);
+            $cpass = trim($_POST['cpass']);
+            $email = $_SESSION['email'];
+
+            if(empty($pass) && empty($cpass)){
+                $err = "please fill the form!";
+            } else if(empty($pass)){
+                $err = "please enter your password!";
+            } else if(empty($cpass)){
+                $err = "please confirm your password!";
+            } else if($pass != $cpass) {
+                $err = "passwords must match!";
+            } else {
+                $password = password_hash($pass, PASSWORD_DEFAULT);
+                //update the database
+                $sql = "UPDATE users SET Password=? WHERE Email=?";
+                $conn->prepare($sql)->execute([$password, $email]);
+
+                header('Location: login.php');
+            }
+        }
+    } else {
+        header('Location: login.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,23 +54,30 @@
                 <div class="reg-inner-wrapper">
                     <div class="regbox">
                         <h2 class="regtitle">Enter your new password</h2>
+                        <div class="errbox">
+                            <?php if($err != ""){ ?>
+                                <div class="therr">
+                                    <p><?php echo $err; ?></p>
+                                </div>
+                            <?php } ?>
+                        </div>
                         <br>
-                        <form action="" class="regform">
+                        <form action="resetpass.php" method="POST" class="regform">
                             <div class="user-input-wrp" >
                                 <br/>
-                                <input id="usrpass" type="password" onkeyup="this.setAttribute('value', this.value); passcheck(this.value);" class="inputText" name="idno" value=""/>
+                                <input id="usrpass" type="password" onkeyup="this.setAttribute('value', this.value); passcheck(this.value);" class="inputText" name="pass" value=""/>
                                 <span class="floating-label">Password *</span>
                             </div>
                             <span id="pass-err"></span>
                             <div class="user-input-wrp" >
                                 <br/>
-                                <input id="usrpass" type="password" onkeyup="this.setAttribute('value', this.value); passcheck(this.value);" class="inputText" name="idno" value=""/>
+                                <input id="usrpass" type="password" onkeyup="this.setAttribute('value', this.value); passcheck(this.value);" class="inputText" name="cpass" value=""/>
                                 <span class="floating-label">Confirm Password *</span>
                             </div>
                             <span id="pass-err"></span>
                             <br>
                             <div class="subflex">
-                                <input type="submit" value="sign in" name="login" class="register-btn">
+                                <input type="submit" value="sign in" name="resetpass" class="register-btn">
                                 <div class="logDirect">
                                     <p>
                                         Login to your aaccount? 

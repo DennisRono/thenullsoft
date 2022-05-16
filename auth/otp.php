@@ -1,3 +1,30 @@
+<?php
+    require "../db/config.php";
+    $err = "";
+
+    if(isset($_POST['sumbit'])){
+        $otp = trim($_POST['otp']);
+
+        if(empty($otp)){
+            $err = "OTP is required!";
+        } else {
+            session_start();
+            //fetch OTP
+            $email = $_SESSION['email'];
+            $query = $conn->prepare( "SELECT OTP FROM users WHERE Email=?" );
+            $query->execute([$email]);
+            $row = $query->fetch(PDO::FETCH_OBJ);
+            $db_otp = $row->OTP;
+
+            if($otp == $db_otp){
+                $_SESSION['otp'] = random_int(100000, 999999);
+                header('Location: resetpass.php');
+            } else {
+                $err = "incorrect OTP!";
+            }
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,11 +49,18 @@
                 <div class="reg-inner-wrapper">
                     <div class="regbox">
                         <h2 class="regtitle">Enter the OTP we sent you</h2>
+                        <div class="errbox">
+                            <?php if($err != ""){ ?>
+                                <div class="therr">
+                                    <p><?php echo $err; ?></p>
+                                </div>
+                            <?php } ?>
+                        </div>
                         <br>
-                        <form action="" class="regform">
+                        <form action="otp.php" method="POST" class="regform">
                             <div class="user-input-wrp">
                                 <br/>
-                                <input id="usrotp" type="text" onkeyup="this.setAttribute('value', this.value); checkotp(this.value);" class="inputText" name="idno" value=""/>
+                                <input id="usrotp" type="text" onkeyup="this.setAttribute('value', this.value); checkotp(this.value);" class="inputText" name="otp" value=""/>
                                 <span class="floating-label">OTP *</span>
                             </div>
                             <span id="otp-err"></span>
@@ -36,7 +70,7 @@
                                 <div class="logDirect">
                                     <p>
                                         Didn't get an OTP? 
-                                        <a href="./login.html">Resend</a>
+                                        <a href="./login.php">Resend</a>
                                     </p>
                                 </div>
                             </div>
@@ -54,7 +88,7 @@
     <script typee="text/JavaScript">
         const checkotp =  (a) => {
             let otpErr = document.getElementById('otp-err');
-            if(isNaN(a) || a.length > 5){
+            if(isNaN(a) || a.length > 6){
                 otpErr.innerHTML = "Invalid OTP";
                 otpErr.classList.add('id-err')
                 document.getElementById('usrotp').classList.add('id-input')

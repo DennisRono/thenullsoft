@@ -10,8 +10,8 @@ require '../vendor/autoload.php';
 
 //Create an instance; passing `true` enables exceptions
 
-function emailconfirm($email, $token){
-    $message = '<strong>Welcome to thenullsoft Team</strong> <br><br>Confirm your Email Address <br><a href="https://thenullsoft.co.ke/auth/verify.php?email='.$email.'?tk='.$token.'">Confirm</a>';
+function sendotp($email, $otp){
+    $message = '<strong>thenullsoft Team</strong> <br><br>Use this One Time Pin (OTP) to reset your account pin <br><h1>'.$otp.'</h1>';
     try {
         //Server settings
         $mail = new PHPMailer(true);
@@ -39,7 +39,7 @@ function emailconfirm($email, $token){
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Confirm Your Email Address';
+        $mail->Subject = 'One Time Pin (OTP)';
         $mail->Body    = $message;
         //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 

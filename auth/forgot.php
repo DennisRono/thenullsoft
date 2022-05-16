@@ -1,3 +1,30 @@
+<?php
+    require "../db/config.php";
+    require "../includes/sendotp.php";
+
+    $err = "";
+    if(isset($_POST['forgot'])){
+        $email = trim($_POST['email']);
+        if(empty($email)){
+            $err = "email is required!";
+        } else {
+            //check if user is registered in database
+            //check if user is registered
+            $stmt = $conn->prepare('SELECT Email FROM users WHERE Email=?');
+            $stmt->execute([$email]);
+            if($stmt->rowCount() > 0){
+                session_start();
+                $_SESSION['email'] = $email;
+                $otp = random_int(100000, 999999);
+                $sql = "UPDATE users SET OTP=? WHERE Email=?";
+                $conn->prepare($sql)->execute([$otp, $email]);
+                sendotp($email, $otp);
+            } else {
+                $err = "Your details did not match our records!";
+            }
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,21 +49,28 @@
                 <div class="reg-inner-wrapper">
                     <div class="regbox">
                         <h2 class="regtitle">Request password reset code</h2>
+                        <div class="errbox">
+                            <?php if($err != ""){ ?>
+                                <div class="therr">
+                                    <p><?php echo $err; ?></p>
+                                </div>
+                            <?php } ?>
+                        </div>
                         <br>
-                        <form action="" class="regform">
+                        <form action="forgot.php" method="POST" class="regform">
                             <div class="user-input-wrp">
                                 <br/>
-                                <input id="usrcpass" type="email" onkeyup="this.setAttribute('value', this.value); checkemail(this.value);" class="inputText" name="idno" value=""/>
+                                <input id="usrcpass" type="email" onkeyup="this.setAttribute('value', this.value); checkemail(this.value);" class="inputText" name="email" value=""/>
                                 <span class="floating-label">Email *</span>
                             </div>
                             <span id="cpass-err"></span>
                             <br>
                             <div class="subflex">
-                                <input type="submit" value="get otp" name="login" class="register-btn">
+                                <input type="submit" value="get otp" name="forgot" class="register-btn">
                                 <div class="logDirect">
                                     <p>
                                         Get to your account? 
-                                        <a href="./login.html">login here</a>
+                                        <a href="./login.php">login here</a>
                                     </p>
                                 </div>
                             </div>

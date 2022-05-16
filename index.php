@@ -122,7 +122,7 @@
                     <div class="passOutroTexts">
                         <div>
                             <h2>Unlock a your potentials with Our API(nullapi)</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo neque odio mollitia, earum ipsa velit pariatur perspiciatis ab voluptas tempora.</p>
+                            <p>Get out api's postma's collection to start connecting to our Endpoints.</p>
                         </div>
                     </div>
                 </div>
@@ -138,12 +138,12 @@
                         <h4 class="fordestxt">for developers</h4>
                         <h1 class="devstitle">One-Stop-Shop For Your Avatar Needs</h1>
                         <p class="devtext">
-                            We spent seven years building the perfect avatar system, so you don't have to. Integrate Ready Player Me into your product in less than a day. For free.
+                            We spent six months building the perfect avatar system, so you don't have to. Integrate nullApi into your product in less than a day. For free.
                         </p>
                         <p class="devtext">
                             Have a question about integration?
-                            <a href="">
-                            Contact us info@wolf3d.io
+                            <a href="mailto:contact@thenullsoft.co.ke">
+                            Contact us contact@thenullsoft.co.ke
                             </a>
                         </p>
                         <div class="devbtns">
@@ -253,27 +253,27 @@
                         </div>
                         <div class="bloghighTitle">
                             <a href="">
-                                <h2>Wolf3D & Rovio Talking About 3D Avatars and Virtual Identities in Games and Metaverses</h2>
+                                <h2>Daraja API intergrate M-Pesa payment to your business using PHP-CUrl</h2>
                             </a>
                         </div>
                     </div>
                     <div class="highblogcard">
                         <div class="bloghighImage">
-                            <img src="./assets/images/daraja.png" alt="">
+                            <img src="./assets/images/api.png" alt="">
                         </div>
                         <div class="bloghighTitle">
                             <a href="">
-                                <h2>Wolf3D & Rovio Talking About 3D Avatars and Virtual Identities in Games and Metaverses</h2>
+                                <h2>Getting started with null api (installation and Authentication)</h2>
                             </a>
                         </div>
                     </div>
                     <div class="highblogcard">
                         <div class="bloghighImage">
-                            <img src="./assets/images/daraja.png" alt="">
+                            <img src="./assets/images/php-sql-connect.png" alt="">
                         </div>
                         <div class="bloghighTitle">
                             <a href="">
-                                <h2>Wolf3D & Rovio Talking About 3D Avatars and Virtual Identities in Games and Metaverses</h2>
+                                <h2>PHP connecting to your mysql database</h2>
                             </a>
                         </div>
                     </div>
