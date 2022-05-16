@@ -49,7 +49,7 @@
                 <div class="hnavigation">
                     <i onclick="shownav('c')" class="closemobinav fa-solid fa-xmark"></i>
                     <nav class="hnav">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
