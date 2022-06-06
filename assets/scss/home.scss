@@ -466,6 +466,8 @@
 @media(max-width: 768px){
     /* ======Jumbotron stylings====== */
 .landing{
+    height: min-content;
+    margin-bottom: 100px;
     .landcontainer{
         .landflex{
             flex-direction: column-reverse;
