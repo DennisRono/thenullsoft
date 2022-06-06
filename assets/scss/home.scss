@@ -498,7 +498,7 @@
         .passCardWrapper{
             height: 100%;
             .passCardContainer{
-                margin-top: -110px;
+                margin-top: -70px;
                 .passCardFlex{
                     flex-direction: column;
                     .passCardTiler{
@@ -528,6 +528,7 @@
                     }
                     .passOutroTexts{
                         width: 100%;
+                        margin-top: 30px;
                         div{
                             h2{
                                 font-size: 1.5rem;

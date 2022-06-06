@@ -648,7 +648,7 @@
     height: 100%;
   }
   .passCard .passCardWrapper .passCardContainer {
-    margin-top: -110px;
+    margin-top: -70px;
   }
   .passCard .passCardWrapper .passCardContainer .passCardFlex {
     -webkit-box-orient: vertical;
@@ -669,6 +669,7 @@
   }
   .passCard .passCardWrapper .passCardContainer .passCardFlex .passOutroTexts {
     width: 100%;
+    margin-top: 30px;
   }
   .passCard .passCardWrapper .passCardContainer .passCardFlex .passOutroTexts div h2 {
     font-size: 1.5rem;
