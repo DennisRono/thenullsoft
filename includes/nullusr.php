@@ -1,5 +1,6 @@
 <?php
     $prevdat = (array) file_get_contents("../data/usrdat.json");
+    array_push($prevdat,"blue","yellow");
     var_dump($prevdat);
     $name = "dennis";
     $id = "1";
