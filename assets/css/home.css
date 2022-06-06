@@ -653,5 +653,9 @@
   .passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler {
     width: 100%;
   }
+  .passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard {
+    width: unset;
+    height: unset;
+  }
 }
 /*# sourceMappingURL=home.css.map */

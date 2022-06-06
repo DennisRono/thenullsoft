@@ -502,6 +502,8 @@
                     .passCardTiler{
                         width: 100%;
                         .passTiltCard{
+                            width: unset;
+                            height: unset;
                             .passTiltCardImage{
                                 img{
                                 }
