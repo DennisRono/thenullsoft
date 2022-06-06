@@ -464,7 +464,28 @@
 
 //iPads, Tablets
 @media(max-width: 768px){
-
+    /* ======Jumbotron stylings====== */
+.landing{
+    .landcontainer{
+        .landflex{
+            .landtexts{
+                flex-direction: column;
+                h1{
+                    span{
+                    }
+                }
+                p{
+                }
+                a{
+                }
+            }
+            .landimages{
+                img{
+                }
+            }
+        }
+    }
+}
 }
 
 //iPads, Tablets

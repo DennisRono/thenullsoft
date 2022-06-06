@@ -611,4 +611,13 @@
 * 1025px — 1200px: Desktops, large screens
 * 1201px and more —  Extra large screens, TV
 */
+@media (max-width: 768px) {
+  /* ======Jumbotron stylings====== */
+  .landing .landcontainer .landflex .landtexts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=home.css.map */
