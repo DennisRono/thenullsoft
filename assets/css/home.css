@@ -674,6 +674,9 @@
   .passCard .passCardWrapper .passCardContainer .passCardFlex .passOutroTexts div h2 {
     font-size: 1.5rem;
   }
+  .forthedevs .devswrapper .devcontainer {
+    margin: unset;
+  }
   .forthedevs .devswrapper .devcontainer .devflex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -690,6 +693,7 @@
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=home.css.map */
