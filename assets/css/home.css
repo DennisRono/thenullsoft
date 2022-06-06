@@ -659,6 +659,7 @@
   }
   .passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts {
     width: unset;
+    margin-bottom: -35px;
   }
 }
 /*# sourceMappingURL=home.css.map */
