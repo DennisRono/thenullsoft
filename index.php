@@ -379,7 +379,6 @@
     <script src="./js/firstImpression.min.js"></script>
     <!-- users -->
     <script>
-        // Specify cookie name
         if ( firstImpression('nullusr') ) {
             $.get("./includes/nullusr.php", function(data) {
             });
