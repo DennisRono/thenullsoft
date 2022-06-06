@@ -554,51 +554,17 @@
                             font-size: 1.7rem;
                         }
                         .testimonial-slider{
-                            width: 100%;
-                            margin-top: 110px;
-                            margin-bottom: 72px;
-                            position: relative;
-                            &::before{
-                                content: "";
-                                width: 100px;
-                                height: 71px;
-                                background: url(../svg/quote-gray.svg);
-                                position: absolute;
-                                fill: #753aff !important;
-                                top: -40px;
-                                left: 0px;
-                                right: 0px;
-                                margin: 0px auto;
-                                z-index: 1;
-                            }
                             .test-soc-slide{
-                                margin: 0 15%;
                                 .socproof-texts{
                                     font-size: 16px;
                                 }
                             }
                             .socproof-testimonials-authors{
-                                display: flex;
-                                justify-content: space-evenly;
-                                align-items: center;
-                                width: min-content;
-                                margin: 80px auto;
-                                margin-top: 40px;
-                                width: 900px;
                                 .test-author-one{
-                                    display: flex;
-                                    cursor: pointer;
-                                    padding: 10px;
                                     img{
-                                        width: 50px;
-                                        height: 50px;
-                                        border-radius: 50%;
-                                        margin-right: 20px;
                                     }
                                 }
                                 .activeAuthor{
-                                    border-top: 2px solid cyan;
-                                    transition: .3s;
                                 }
                             }
                         }
