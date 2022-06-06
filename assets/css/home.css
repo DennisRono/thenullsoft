@@ -675,7 +675,7 @@
     font-size: 1.5rem;
   }
   .forthedevs .devswrapper .devcontainer {
-    margin: unset;
+    margin: 0 5%;
   }
   .forthedevs .devswrapper .devcontainer .devflex {
     -webkit-box-orient: vertical;
@@ -684,7 +684,7 @@
             flex-direction: column-reverse;
   }
   .forthedevs .devswrapper .devcontainer .devflex .devstext {
-    width: 0 5%;
+    width: 100%;
   }
   .forthedevs .devswrapper .devcontainer .devflex .devstech {
     display: -webkit-box;

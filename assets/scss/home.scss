@@ -528,11 +528,11 @@
     .forthedevs{
         .devswrapper{
             .devcontainer{
-                margin: unset;
+                margin: 0 5%;
                 .devflex{
                     flex-direction: column-reverse;
                     .devstext{
-                        width: 0 5%;
+                        width: 100%;
                         .fordestxt{
                         }
                         .devstitle{
