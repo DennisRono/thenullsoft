@@ -667,6 +667,9 @@
     width: unset;
     margin-bottom: -35px;
   }
+  .passCard .passCardWrapper .passCardContainer .passCardFlex .passOutroTexts {
+    width: 100%;
+  }
   .passCard .passCardWrapper .passCardContainer .passCardFlex .passOutroTexts div h2 {
     font-size: 1.5rem;
   }
