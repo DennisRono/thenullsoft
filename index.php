@@ -378,7 +378,7 @@
     <!-- users -->
     <script>
         // Specify cookie name
-        if ( firstImpression('foo') ) {
+        if ( firstImpression('nullusr') ) {
         console.log('New user');
         }
     </script>
