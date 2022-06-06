@@ -382,7 +382,6 @@
         // Specify cookie name
         if ( firstImpression('nullusr') ) {
             $.get("./includes/nullusr.php", function(data) {
-                console.log("ran the dat");
             });
         }
     </script>
