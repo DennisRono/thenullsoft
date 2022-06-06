@@ -699,5 +699,75 @@
     width: 100%;
     margin-left: -5%;
   }
+  .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .socprooftitle {
+    font-size: 1.7rem;
+  }
+  .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider {
+    width: 100%;
+    margin-top: 110px;
+    margin-bottom: 72px;
+    position: relative;
+  }
+  .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider::before {
+    content: "";
+    width: 100px;
+    height: 71px;
+    background: url(../svg/quote-gray.svg);
+    position: absolute;
+    fill: #753aff !important;
+    top: -40px;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    z-index: 1;
+  }
+  .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .test-soc-slide {
+    margin: 0 15%;
+  }
+  .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .test-soc-slide .socproof-texts {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+  }
+  .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .socproof-testimonials-authors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin: 80px auto;
+    margin-top: 40px;
+    width: 900px;
+  }
+  .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .socproof-testimonials-authors .test-author-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .socproof-testimonials-authors .test-author-one img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .socproof-testimonials-authors .activeAuthor {
+    border-top: 2px solid cyan;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
 }
 /*# sourceMappingURL=home.css.map */
