@@ -725,14 +725,7 @@
     margin: 0 15%;
   }
   .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .test-soc-slide .socproof-texts {
-    text-align: center;
-    position: relative;
-    z-index: 2;
-    font-size: 26px;
-    line-height: 36px;
-    letter-spacing: 0.04em;
-    font-family: 'Merriweather', serif;
-    font-style: italic;
+    font-size: 16px;
   }
   .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .socproof-testimonials-authors {
     display: -webkit-box;
