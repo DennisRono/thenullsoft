@@ -104,7 +104,7 @@
         }
     }
 }
-@media(min-width: 650px){
+@media(min-width: 740px){
     .closemobinav, .mobinavs{
         display: none;
         visibility: hidden;
@@ -122,7 +122,7 @@
         display: none;
     }
 }
-@media(max-width: 650px){
+@media(max-width: 740px){
     .mobinavs{
         display: unset;
         visibility: visible;
