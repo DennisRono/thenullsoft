@@ -506,23 +506,9 @@
                         .passTiltCard{
                             width: unset;
                             height: unset;
-                            .passTiltCardImage{
-                                img{
-                                }
-                            }
                             .passTiltCardTexts{
                                 width: unset;
-                                margin-bottom: -35px;
-                                div{
-                                    h1,p{
-                                        span{
-                                        }
-                                        .apikey{
-                                        }
-                                    }
-                                    p{
-                                    }
-                                }                        
+                                margin-bottom: -35px;                    
                             }
                         }
                     }
@@ -533,7 +519,39 @@
                             h2{
                                 font-size: 1.5rem;
                             }
-                            p{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .forthedevs{
+        .devswrapper{
+            .devcontainer{
+                .devflex{
+                    flex-direction: column-reverse;
+                    .devstext{
+                        .fordestxt{
+                        }
+                        .devstitle{
+                        }
+                        .devtext{
+                            a{
+                            }
+                        }
+                        .devbtns{
+                            .devlearn{
+                            }
+                            .devdocs{
+                            }
+                        }
+                    }
+                    .devstech{
+                        .devtechcard{
+                            .devIcon{
+                            }
+                            .devbrandIc{
+
                             }
                         }
                     }
