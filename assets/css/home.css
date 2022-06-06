@@ -622,6 +622,7 @@
   }
   .landing .landcontainer .landflex .landtexts {
     width: 100%;
+    padding-top: 0;
   }
   .landing .landcontainer .landflex .landtexts h1 {
     font-size: 1.9rem;
