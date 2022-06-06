@@ -153,8 +153,8 @@
                         </p>
                         <p class="devtext">
                             Have a question about integration?
-                            <a href="mailto:contact@thenullsoft.co.ke">
-                            Contact us contact@thenullsoft.co.ke
+                            <a href="mailto:contact@nullchemy.com">
+                            Contact us contact@nullchemy.com
                             </a>
                         </p>
                         <div class="devbtns">
