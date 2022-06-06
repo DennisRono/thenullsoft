@@ -468,8 +468,9 @@
 .landing{
     .landcontainer{
         .landflex{
+            flex-direction: column-reverse;
             .landtexts{
-                flex-direction: column;
+                width: 100%;
                 h1{
                     span{
                     }
@@ -480,6 +481,7 @@
                 }
             }
             .landimages{
+                width: 100%;
                 img{
                 }
             }

@@ -613,11 +613,17 @@
 */
 @media (max-width: 768px) {
   /* ======Jumbotron stylings====== */
-  .landing .landcontainer .landflex .landtexts {
+  .landing .landcontainer .landflex {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .landing .landcontainer .landflex .landtexts {
+    width: 100%;
+  }
+  .landing .landcontainer .landflex .landimages {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=home.css.map */
