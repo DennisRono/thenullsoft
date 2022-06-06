@@ -554,6 +554,9 @@
                             font-size: 1.7rem;
                         }
                         .testimonial-slider{
+                            &::before{
+                                top: -80px;
+                            }
                             .test-soc-slide{
                                 .socproof-texts{
                                     font-size: 16px;

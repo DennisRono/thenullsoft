@@ -702,6 +702,9 @@
   .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .socprooftitle {
     font-size: 1.7rem;
   }
+  .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider::before {
+    top: -80px;
+  }
   .secsocproof .socproof .socproofcontainer .socproofflex .socproofwrapper .testimonial-slider .test-soc-slide .socproof-texts {
     font-size: 16px;
     line-height: 26px;
