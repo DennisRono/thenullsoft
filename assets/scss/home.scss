@@ -465,34 +465,72 @@
 //iPads, Tablets
 @media(max-width: 768px){
     /* ======Jumbotron stylings====== */
-.landing{
-    height: min-content;
-    margin-bottom: 80px;
-    overflow: visible !important;
-    .landcontainer{
-        .landflex{
-            flex-direction: column-reverse;
-            height: unset !important;
-            .landtexts{
-                width: 100%;
-                padding-top: 0;
-                margin-top: -30px;
-                h1{
-                    font-size: 1.9rem;
-                    line-height: 2rem;
-                    margin-bottom: 0.2rem;
+    .landing{
+        height: min-content;
+        margin-bottom: 80px;
+        overflow: visible !important;
+        .landcontainer{
+            .landflex{
+                flex-direction: column-reverse;
+                height: unset !important;
+                .landtexts{
+                    width: 100%;
+                    padding-top: 0;
+                    margin-top: -30px;
+                    h1{
+                        font-size: 1.9rem;
+                        line-height: 2rem;
+                        margin-bottom: 0.2rem;
+                    }
+                    p{
+                        line-height: 1.7rem;
+                        font-size: 1rem;
+                    }
                 }
-                p{
-                    line-height: 1.7rem;
-                    font-size: 1rem;
+                .landimages{
+                    width: 100%;
                 }
-            }
-            .landimages{
-                width: 100%;
             }
         }
     }
-}
+
+    .passCard{
+        .passCardWrapper{
+            .passCardContainer{
+                .passCardFlex{
+                    flex-direction: column;
+                    .passCardTiler{
+                        .passTiltCard{
+                            .passTiltCardImage{
+                                img{
+                                }
+                            }
+                            .passTiltCardTexts{
+                                div{
+                                    h1,p{
+                                        span{
+                                        }
+                                        .apikey{
+                                        }
+                                    }
+                                    p{
+                                    }
+                                }                        
+                            }
+                        }
+                    }
+                    .passOutroTexts{
+                        div{
+                            h2{
+                            }
+                            p{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 //iPads, Tablets
