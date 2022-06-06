@@ -34,15 +34,18 @@
     <title>Forgot Password | thenullsoft</title>
     <link rel="manifest" href="../manifest.json" />
     <link rel="shortcut icon" href="../assets/images/icons/favicon.ico" type="image/x-icon">
-    <link rel="text/html" href="../assets/fontawesome-5.0.8/css/fontawesome-all.min.css">
-    <link rel="text/html" href="../assets/fontawesome-5.0.8/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/globals.css?">
     <link rel="stylesheet" href="../assets/css/login.css?">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9696700520011456"
+     crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="back-home" style="position: absolute; top: 30px; right: 30px; z-index: 999;"><a href="../index.php"><i class="fa-solid fa-house"></i></a></div>
     <div class="reg">
         <div class="regcontainer">
             <div class="regwrapper">

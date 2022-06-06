@@ -4,7 +4,6 @@ const OFFLINE_URL = "/offline/offline.html";
 
 const filespaths = ['/about.html',
 '/assets/css/blog.css',
-'/assets/css/features.css',
 '/assets/css/footer.css',
 '/assets/css/globals.css',
 '/assets/css/header.css',
@@ -40,19 +39,11 @@ const filespaths = ['/about.html',
 '/assets/images/rehemaone.png',
 '/assets/images/semiconductor.png',
 '/assets/images/wolve.png',
-'/assets/scss/blog.scss',
-'/assets/scss/features.scss',
-'/assets/scss/footer.scss',
-'/assets/scss/globals.scss',
-'/assets/scss/header.scss',
-'/assets/scss/home.scss',
-'/assets/scss/newsletter.scss',
 '/assets/svg/envelop.svg',
 '/assets/svg/facebook.svg',
 '/assets/svg/glow-blue-02.svg',
 '/assets/svg/glow-purple-02.svg',
 '/assets/svg/quote-gray.svg',
-'/features.html',
 '/index.php',
 '/js/fuse-search.js',
 '/js/libs/fuse.js',
@@ -112,10 +103,10 @@ function fromCache(event, request) {
 }
 
 //cache aricle page from user
-document.querySelector('.cache-article').addEventListener('click', function(event) {
-  event.preventDefault();
-  caches.open(CACHE_NAME).then(cache => cache.addAll([event.request.url]));
-});
+// document.querySelector('.cache-article').addEventListener('click', function(event) {
+//   event.preventDefault();
+//   caches.open(CACHE_NAME).then(cache => cache.addAll([event.request.url]));
+// });
 
 
 // handle push notifications

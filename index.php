@@ -18,7 +18,18 @@
     <link rel="stylesheet" href="./assets/css/newsletter.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/home.css">
-</head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9696700520011456"
+     crossorigin="anonymous"></script>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXF0YL9XMJ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JXF0YL9XMJ');
+    </script>
+    </head>
 <body>
     <header class="header">
         <div class="hcontainer">
@@ -52,7 +63,7 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.php">Contact</a></li>
                     </nav>
                     <div class="hcalltoaction">
                         <?php if(isset($_SESSION['sessionid']) || isset($_GET['sessionid'])) { ?>
@@ -190,23 +201,23 @@
                         <div class="testimonial-slider">
                             <div class="test-soc-slide fade">
                                 <p class="socproof-texts">
-                                    “I’ve really got to give credit to the teams that are working with us, Simform is not only a backbone to our team, it is a backbone to our business.
+                                    “I’ve really got to give credit to the teams that are working with us, thenullsoft is not only a backbone to our team, it is a backbone to our business.
                                     <br>
-                                    <span>We can better manage business because of Simform.</span>”
+                                    <span>We can better manage business because of thenullsoft.</span>”
                                 </p>
                             </div>
                             <div class="test-soc-slide fade">
                                 <p class="socproof-texts">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus adipisci, minus veniam tenetur similique officia mollitia autem modi. Labore, voluptas.
+                                    “The feedback on the product has been great. Users can quickly get information they need.
                                     <br>
-                                    <span>We can better manage business because of Simform.</span>”
+                                    <span>It’s intuitive and easy for them to find the right Hockey stats.</span>”
                                 </p>
                             </div>
                             <div class="test-soc-slide fade">
                                 <p class="socproof-texts">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum maiores inventore optio, pariatur non deserunt error facere ullam harum itaque!
+                                    “thenullsoft has become a trusted partner as we push the edge of innovation for connected charging platform.
                                     <br>
-                                    <span>We can better manage business because of Simform.</span>”
+                                    <span>Their proven technical competency and delivery track record made them our partner of choice.</span>”
                                 </p>
                             </div>
                             <div class="socproof-testimonials-authors">
@@ -294,7 +305,7 @@
                         <div class="subnewsform">
                             <form action="" class="subNewsFormf">
                                 <div class="subinputsFlex">
-                                    <input type="text" class="subnewsinput" placeholder="your e-mail address">
+                                    <input type="text" class="subnewsinput" onkeyup="this.setAttribute('value', this.value); checkotp(this.value);" placeholder="your e-mail address">
                                     <input type="submit" value="Subscribe" class="subnewsButton">
                                 </div>
                             </form>
@@ -338,7 +349,7 @@
                         <ul>
                             <li><a href="./about.html">About US</a></li>
                             <li><a href="./partners.html">Our Partners</a></li>
-                            <li><a href="./contact.html">Contact Us</a></li>
+                            <li><a href="./contact.php">Contact Us</a></li>
                             <li><a href="./careers.html">Careers</a></li>
                             <li><a href="./events.html">Events</a></li>
                         </ul>
@@ -360,9 +371,9 @@
             <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> | built by <a title="Developer" target="blank" href="https://denniskibet.com">DennisRono</a> <a href="https://github.com/DennisRono" title="Github"><i class="fa-brands fa-github"></i></a></p>
         </div>
     </footer>
-    <script src="./js/main.js"></script>
-    <script src="https://kit.fontawesome.com/6d5a084346.js" crossorigin="anonymous"></script>
     <!-- register a service worker -->
     <script src="./sw.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/6d5a084346.js" crossorigin="anonymous"></script>
 </body>
 </html>
