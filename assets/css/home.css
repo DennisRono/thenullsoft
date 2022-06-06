@@ -683,6 +683,9 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .forthedevs .devswrapper .devcontainer .devflex .devstext {
+    width: 0 5%;
+  }
   .forthedevs .devswrapper .devcontainer .devflex .devstech {
     display: -webkit-box;
     display: -ms-flexbox;
