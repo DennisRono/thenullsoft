@@ -623,6 +623,11 @@
   .landing .landcontainer .landflex .landtexts {
     width: 100%;
   }
+  .landing .landcontainer .landflex .landtexts h1 {
+    font-size: 1.9rem;
+    line-height: 1.6rem;
+    margin-bottom: 0.2rem;
+  }
   .landing .landcontainer .landflex .landimages {
     width: 100%;
   }
