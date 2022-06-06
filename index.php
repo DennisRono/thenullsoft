@@ -375,5 +375,12 @@
     <script src="./sw.js"></script>
     <script src="./js/main.js"></script>
     <script src="https://kit.fontawesome.com/6d5a084346.js" crossorigin="anonymous"></script>
+    <!-- users -->
+    <script>
+        // Specify cookie name
+        if ( firstImpression('foo') ) {
+        console.log('New user');
+        }
+    </script>
 </body>
 </html>
