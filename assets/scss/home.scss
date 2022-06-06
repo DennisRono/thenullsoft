@@ -59,10 +59,10 @@
                 }
                 p{
                     font-family: canada-type-gibson,sans-serif;
-                    font-size: 1.3rem!important;
+                    font-size: 1.3rem;
                     font-style: normal;
                     font-weight: 300;
-                    line-height: 2.4rem!important;
+                    line-height: 2.4rem;
                     margin-bottom: 50px;
                     color: rgb(36, 36, 36);
                 }
@@ -481,6 +481,8 @@
                     }
                 }
                 p{
+                    line-height: 1.7rem;
+                    font-size: 1rem;
                 }
                 a{
                 }

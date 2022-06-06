@@ -79,10 +79,10 @@
 
 .landing .landcontainer .landflex .landtexts p {
   font-family: canada-type-gibson,sans-serif;
-  font-size: 1.3rem !important;
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 2.4rem !important;
+  line-height: 2.4rem;
   margin-bottom: 50px;
   color: #242424;
 }
@@ -628,6 +628,10 @@
     font-size: 1.9rem;
     line-height: 2rem;
     margin-bottom: 0.2rem;
+  }
+  .landing .landcontainer .landflex .landtexts p {
+    line-height: 1.7rem;
+    font-size: 1rem;
   }
   .landing .landcontainer .landflex .landimages {
     width: 100%;
