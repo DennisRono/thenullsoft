@@ -1,5 +1,5 @@
 <?php
-    echo file_get_contents("../data/usrdat.json");
+    $prevdat = file_get_contents("../data/usrdat.json");
     $name = "dennis";
     $id = "1";
     $url = "https://hello.com";
