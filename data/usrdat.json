@@ -1,5 +1,6 @@
-{
-    "name": "dennis",
-    "id": "1",
-    "url": "https:\/\/hello.com"
-}
+[
+    "[\n    \"{\\n    \\\"name\\\": \\\"dennis\\\",\\n    \\\"id\\\": \\\"1\\\",\\n    \\\"url\\\": \\\"https:\\\\\\\/\\\\\\\/hello.com\\\"\\n}\",\n    {\n        \"Time\": null,\n        \"id\": null,\n        \"url\": null\n    }\n]",
+    {
+        "Time": "2022-06-06 12:52:36"
+    }
+]
