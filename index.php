@@ -381,7 +381,9 @@
     <script>
         // Specify cookie name
         if ( firstImpression('nullusr') ) {
-        console.log('New user');
+            $.get("./includes/nullusr.php", function(data) {
+                console.log(data);
+            });
         }
     </script>
 </body>
