@@ -647,6 +647,9 @@
   .passCard .passCardWrapper {
     height: 100%;
   }
+  .passCard .passCardWrapper .passCardContainer {
+    margin-top: -110px;
+  }
   .passCard .passCardWrapper .passCardContainer .passCardFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
