@@ -657,5 +657,8 @@
     width: unset;
     height: unset;
   }
+  .passCard .passCardWrapper .passCardContainer .passCardFlex .passCardTiler .passTiltCard .passTiltCardTexts {
+    width: unset;
+  }
 }
 /*# sourceMappingURL=home.css.map */
