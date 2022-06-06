@@ -644,6 +644,9 @@
   .landing .landcontainer .landflex .landimages {
     width: 100%;
   }
+  .passCard .passCardWrapper {
+    height: unset;
+  }
   .passCard .passCardWrapper .passCardContainer .passCardFlex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
