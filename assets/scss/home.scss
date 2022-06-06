@@ -467,7 +467,8 @@
     /* ======Jumbotron stylings====== */
 .landing{
     height: min-content;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    overflow: visible !important;
     .landcontainer{
         .landflex{
             flex-direction: column-reverse;

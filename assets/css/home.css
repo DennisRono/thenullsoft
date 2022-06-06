@@ -617,7 +617,8 @@
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+    overflow: visible !important;
   }
   .landing .landcontainer .landflex {
     -webkit-box-orient: vertical;
