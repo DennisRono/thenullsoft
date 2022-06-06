@@ -618,6 +618,7 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    height: unset !important;
   }
   .landing .landcontainer .landflex .landtexts {
     width: 100%;

@@ -469,6 +469,7 @@
     .landcontainer{
         .landflex{
             flex-direction: column-reverse;
+            height: unset !important;
             .landtexts{
                 width: 100%;
                 h1{
