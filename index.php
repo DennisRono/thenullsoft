@@ -379,7 +379,7 @@
     <script src="./js/firstImpression.min.js"></script>
     <!-- users -->
     <script>
-        if ( firstImpression('nullusr') ) {
+        if ( firstImpression('_yus3j42ns7WosA') ) {
             $.get("./includes/nullusr.php", function(data) {
             });
         }
