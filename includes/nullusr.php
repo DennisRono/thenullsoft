@@ -5,6 +5,6 @@
     $nusr = array('Time' => $time);
     array_push($prevdat,$nusr);
     $fp = fopen('../data/usrdat.json', 'w');
-    fwrite($fp, json_encode($prevdat, JSON_PRETTY_PRINT));   // here it will print the array pretty
+    fwrite($fp, json_encode($prevdat, JSON_PRETTY_PRINT));
     fclose($fp);
 ?>
