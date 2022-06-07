@@ -86,6 +86,6 @@
 }
 @media(max-width: 480px){
     .subnewsFlex{
-        flex-direction: column;
+        flex-direction: column !important;
     }
 }
