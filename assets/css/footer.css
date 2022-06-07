@@ -142,7 +142,7 @@
             flex-direction: column-reverse;
   }
   .footer .fcontainer .fdet .fdetflex .fflexsecs {
-    width: 100%;
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=footer.css.map */
