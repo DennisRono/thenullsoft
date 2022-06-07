@@ -109,5 +109,11 @@
         -ms-flex-direction: column !important;
             flex-direction: column !important;
   }
+  .subNewstexts {
+    width: 100% !important;
+  }
+  .subnewsform {
+    width: 100% !important;
+  }
 }
 /*# sourceMappingURL=newsletter.css.map */
