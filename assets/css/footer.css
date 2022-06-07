@@ -125,4 +125,16 @@
 .footer .fcopyright p a {
   cursor: pointer;
 }
+
+@media (max-width: 480px) {
+  .footer .fcontainer .fdet .fdetflex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer .fcontainer .fdet .fdetflex .fflexsecs {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=footer.css.map */

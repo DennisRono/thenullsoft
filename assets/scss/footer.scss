@@ -91,7 +91,9 @@
         .fcontainer{
             .fdet{
                 .fdetflex{
+                    flex-direction: column-reverse;
                     .fflexsecs{
+                        width: 100%;
                         h2{
                         }
                         ul{
