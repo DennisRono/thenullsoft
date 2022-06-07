@@ -126,7 +126,7 @@
 
 @media (max-width: 950px) {
   .fflexsecs {
-    width: 50%;
+    width: 70% !important;
   }
   .fdetflex {
     -ms-flex-wrap: wrap-reverse;
