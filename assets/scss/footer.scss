@@ -85,3 +85,50 @@
         }
     }
 }
+
+@media(max-width: 480px){
+    .footer{
+        .fcontainer{
+            .fdet{
+                .fdetflex{
+                    .fflexsecs{
+                        h2{
+                        }
+                        ul{
+                            li{
+                                a:hover{
+                                }
+                            }
+                        }
+                        &:nth-child(1){
+                            .flogo{
+                                img{
+                                }
+                                h3{
+                                }
+                            }
+                            .fsocials{
+                                i{
+                                }
+                            }
+                            .siteProtection{
+                                img{
+                                    &:nth-child(1){
+                                    }
+                                    &:nth-child(2){
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .fcopyright{
+            p{
+                a{
+                }
+            }
+        }
+    }
+}
