@@ -128,6 +128,10 @@
   .fflexsecs {
     width: 50%;
   }
+  .fdetflex {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
 }
 
 @media (max-width: 480px) {
