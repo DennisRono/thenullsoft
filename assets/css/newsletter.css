@@ -101,4 +101,13 @@
   outline: none;
   border: none;
 }
+
+@media (max-width: 480px) {
+  .subnewsFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=newsletter.css.map */
