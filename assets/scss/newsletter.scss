@@ -84,3 +84,8 @@
         }
     }
 }
+@media(max-width: 480px){
+    .subnewsFlex{
+        flex-direction: column;
+    }
+}
