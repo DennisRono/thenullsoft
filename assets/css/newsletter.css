@@ -32,10 +32,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding: 3rem 5rem;
   background-image: url(../svg/envelop.svg);
 }
 
