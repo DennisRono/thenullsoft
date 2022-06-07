@@ -22,10 +22,6 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .footer .fcontainer .fdet .fdetflex .fflexsecs {
@@ -129,6 +125,12 @@
 }
 
 @media (max-width: 950px) {
+  .fflexsecs {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
   .footer .fcontainer .fdet .fdetflex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

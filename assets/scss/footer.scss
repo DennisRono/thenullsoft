@@ -10,8 +10,6 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
-                flex-wrap: wrap-reverse;
-                flex-wrap: wrap;
                 .fflexsecs{
                     width: 22%;
                     height: min-content;
@@ -86,8 +84,13 @@
         }
     }
 }
-
 @media(max-width: 950px){
+    .fflexsecs{
+        width: 50%;
+    }
+}
+
+@media(max-width: 480px){
     .footer{
         .fcontainer{
             .fdet{
